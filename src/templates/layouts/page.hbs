@@ -2,14 +2,24 @@
 <div class="page-menu">
 	<ul>
 		{{#withSort main_menu 'data.menu_index'}}
-			{{#each this.pages }}
-				<li><a href="/{{ replaceStr this.dest 'dist' '' }}">{{ this.data.title }}</a></li>
-			{{/each}}
+		{{#each pages }}
+		<li{{#is ../../page.dest dest}} class="active"{{/is}}><a href="/{{ replaceStr dest 'dist' '' }}">{{ data.title }}</a></li>
+		{{/each}}
 		{{/withSort}}
 	</ul>
 </div>
 <div class="page-content">
-	<h2>{{ this.page.title }}</h2>
+	<h2>{{ page.title }}</h2>
+	{{#contains page.dirname 'blog'}}
+		Exploring the blog
+		<ul>
+		  {{#withSort post 'data.posted'}}
+		    {{#each this.pages }}
+		    <li{{#is ../../page.dest dest}} class="active"{{/is}}><a href="/{{ replaceStr this.dest 'dist' '' }}">{{ this.data.title }}</a></li>
+		    {{/each}}
+		  {{/withSort}}
+		</ul>
+	{{/contains}}
 	{{#markdown}} 
 	  {{> body}} 
 	{{/markdown}}
