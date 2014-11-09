@@ -37,7 +37,7 @@ module.exports = function (grunt) {
           cwd: './src/content/',
           dest: './',
           expand: true,
-          src: ['**/*.md', '!pages/**/*.hbs']
+          src: ['**/*.hbs', '!pages/**/*.hbs']
         }, {
           cwd: './src/content/pages/',
           dest: './',
@@ -49,10 +49,9 @@ module.exports = function (grunt) {
   });
 
   /* load every plugin in package.json */
-  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('assemble');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['assemble', 'connect']);
+  grunt.registerTask('default', ['assemble', ]);
 
 };
