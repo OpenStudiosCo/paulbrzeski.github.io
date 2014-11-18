@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	var callback = function(data) {
-		// Bizarre odd way of getting around cross domain scripting?
-	};
+	$('.ui.accordion').accordion();
+	$('.ui.sidebar').sidebar('show');
 	$.ajax(
 		{	
 			dataType: "jsonp",
