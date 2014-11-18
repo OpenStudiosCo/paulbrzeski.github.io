@@ -7,18 +7,34 @@ $(document).ready(function(){
 });
 
 function init() {
+	var dir_callback = function(data) {
+		data.data.forEach(function(file){
+			console.log(file);
+			getdata(file.path, file_callback)
+		});
+	};
+
+	var file_callback = function(data) {
+		var d = data.data.content.replace('\n','');
+		var raw_blob = Base64.decode(d);
+		raw_blob = raw_blob.split(/\}\)/);
+
+		// TODO account for uses of }) later in the document.. for whatever reason :P
+		var blob_meta = eval(raw_blob[0] + "})");
+		var blob_data = markdown.toHTML(raw_blob[1]);
+		console.log(raw_blob);
+		console.log(blob_meta);
+		console.log(blob_data);
+	}
+	getdata("src/content/archive/2014/11",dir_callback);
+}
+
+function getdata(url, callback) {
 	$.ajax({	
 		dataType: "jsonp",
-		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/src/content/archive/2014/11/1-1.blob",
+		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/" + url,
 		success: function(data){
-			var d = data.data.content.replace('\n','');
-			var raw_blob = Base64.decode(d);
-			raw_blob = raw_blob.split(/^[^\}\)]+-[^\}\)]+$/);
-
-			console.log(raw_blob)
-			var blob_meta = eval(raw_blob[0]);
-			var blob_data = markdown(raw_blob[1])
-			
+			callback(data);
 		}
-	});	
+	});
 }
