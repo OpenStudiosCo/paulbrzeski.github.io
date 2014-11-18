@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	Handlebars.templates = {};
 	$.ajax({	
 		dataType: "text",
 		url: "/src/templates/blocks/blog-article.hbs",
@@ -12,9 +12,9 @@ $(document).ready(function(){
 		dataType: "text",
 		url: "/src/templates/layouts/homepage.hbs",
 		success: function(data) {
-			var template = Handlebars.compile(data);
+			Handlebars.templates["homepage"] = Handlebars.compile(data);
 
-			$('body').html(template())
+			$('body').html(Handlebars.templates["homepage"]());
 			$('.ui.accordion').accordion();
 			$('.ui.sidebar').sidebar('show');
 		}
