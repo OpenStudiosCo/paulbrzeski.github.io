@@ -2,16 +2,25 @@ $(document).ready(function(){
 
 	$.ajax({	
 		dataType: "text",
+		url: "/src/templates/blocks/blog-article.hbs",
+		success: function(data) {
+			Handlebars.registerPartial("blog-article",data);
+		}
+	});
+
+	$.ajax({	
+		dataType: "text",
 		url: "/src/templates/layouts/homepage.hbs",
 		success: function(data) {
 			var template = Handlebars.compile(data);
+
 			$('body').html(template())
 			$('.ui.accordion').accordion();
 			$('.ui.sidebar').sidebar('show');
 		}
 	});
 	
-	init();
+	//init();
 });
 
 function init() {
@@ -45,7 +54,7 @@ function init() {
 function getdata(url, callback) {
 	$.ajax({	
 		dataType: "jsonp",
-		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/" + url+"?access_token=b42a5d8cbbb399c5da86",
+		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/" + url,
 		success: function(data){
 			callback(data);
 		}
