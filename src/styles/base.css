@@ -45,23 +45,32 @@ a {
 
 em {
 	font-style: italic;
+
 }
 
 .sidebar h1, .sidebar h2 {
 	color: #FFFFFF!important;
-	text-align: center
+
 }
 .sidebar * {
 	color: #AAAAAA!important;
 }
 
+.ui.accordion {
+	text-align: left;
+}
+
 .ui.accordion > .content, .ui.accordion .content > .content, .ui.accordion .accordion .content {
 	padding: 1.3em 1em;
+}
+.content .content {
+	padding: 0.5em 1em!important;
 }
 .content .content .content {
 	padding: 0 1em!important;
 }
 
 .sidebar > .item > .menu.fitted.secondary .item a {
+	width: 100%;
 	line-height: 32px
 }
