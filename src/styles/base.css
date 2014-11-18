@@ -63,3 +63,8 @@ em {
 .content .content .content {
 	padding: 0 1em!important;
 }
+
+.sidebar > .item > .menu.fitted.secondary .item a {
+	width: 100%;
+	line-height: 32px
+}
