@@ -9,10 +9,11 @@ $(document).ready(function(){
 function init() {
 	var dir_callback = function(data) {
 		data.data.forEach(function(file){
-			console.log(file);
 			getdata(file.path, file_callback)
 		});
 	};
+
+	var articles = [];
 
 	var file_callback = function(data) {
 		var d = data.data.content.replace('\n','');
@@ -22,9 +23,12 @@ function init() {
 		// TODO account for uses of }) later in the document.. for whatever reason :P
 		var blob_meta = eval(raw_blob[0] + "})");
 		var blob_data = markdown.toHTML(raw_blob[1]);
-		console.log(raw_blob);
-		console.log(blob_meta);
-		console.log(blob_data);
+		articles.push({
+			title: blob_meta.title,
+			posted: blob_meta.posted,
+			content: blob_data
+		});
+		console.log(articles)
 	}
 	getdata("src/content/archive/2014/11",dir_callback);
 }
