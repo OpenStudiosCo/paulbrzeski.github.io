@@ -34,8 +34,11 @@ html {
 	font-size: 1.5em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
 	font-family: 'Karmatic Arcade';
+}
+h3,h4,h5,h6 {
+	font-family: 'KolquatFunkyBitm';	
 }
 
 a {
