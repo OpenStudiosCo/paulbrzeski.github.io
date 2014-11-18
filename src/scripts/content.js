@@ -1,13 +1,22 @@
 $(document).ready(function(){
-	$('.ui.accordion').accordion();
-	$('.ui.sidebar').sidebar('show');
 
-	init();
+	$.ajax({	
+		dataType: "text",
+		url: "/src/templates/layouts/homepage.hbs",
+		success: function(data) {
+			var template = Handlebars.compile(data);
+			$('body').html(template())
+			$('.ui.accordion').accordion();
+			$('.ui.sidebar').sidebar('show');
+		}
+	});
 	
+	init();
 });
 
 function init() {
 	var dir_callback = function(data) {
+		console.log(data)
 		data.data.forEach(function(file){
 			getdata(file.path, file_callback)
 		});
@@ -36,7 +45,7 @@ function init() {
 function getdata(url, callback) {
 	$.ajax({	
 		dataType: "jsonp",
-		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/" + url,
+		url:"https://api.github.com/repos/paulbrzeski/paulbrzeski.github.io/contents/" + url+"?access_token=b42a5d8cbbb399c5da86",
 		success: function(data){
 			callback(data);
 		}

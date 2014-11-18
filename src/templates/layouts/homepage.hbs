@@ -1,58 +1,111 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Paul's Blob Block Blog</title>
-		<link rel="stylesheet" href="/src/vendor/animate.css" />
-		<link rel="stylesheet" href="/src/vendor/typeplate.css" />
-		<link rel="stylesheet" href="/src/vendor/semantic/css/semantic.css" />
-		<link rel="stylesheet" href="/src/styles/base.css" />
-		<script src="/src/vendor/jquery-1.11.1.min.js"></script>
-		<script src="/src/vendor/jquery.lettering-0.6.1.min.js"></script>
-		<script src="/src/vendor/handlebars-v2.0.0.js"></script>
-		<script src="/src/vendor/semantic/javascript/semantic.min.js"></script>
-		<script src="/src/scripts/content.js"></script>
-	</head>
-	<body>
-		<div class="ui page grid masthead segment">
-			<div class="column">
-				<div class="page-menu">
-				<ul>
-					<li class="active header">
-						<a href="/"><h1>Paul's Blob Block Blog</h1></a>
-					</li>
-					<li>
-						blog-menu.hbs
-					</li>
-					<li>
-						<h3>My Stuff</h3>
-						<ul>
-							<li>
-
-								<a href="https://github.com/paulbrzeski/"><img src="/res/icons/social/Github.png" width="32" height="32" />Github</a>
-							</li>
-							<li>
-								<a href="http://thezeski.deviantart.com/"><img src="/res/icons/social/DeviantArt.png" width="32" height="32" />DeviantArt</a>
-							</li>
-							<li>
-								<a href="http://au.linkedin.com/pub/paul-brzeski/82/64b/597"><img src="/res/icons/social/LinkedIn.png" width="32" height="32" />LinkedIn</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/TheZeski"><img src="/res/icons/social/Twitter.png" width="32" height="32" />Twitter</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/TheZeski"><img src="/res/icons/social/Facebook.png" width="32" height="32" />Facebook</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				</div>
-				<div class="page-content">
-					<h2>Welcome</h2><br>
-					<p>Welcome to my Blob Block Blog.</p><br>
-					<p>Made with genuine Blob Blocks</p>
+<div class="ui large vertical inverted labeled icon sidebar menu">
+	<div class="item">
+		<a href="/">
+			<h1 class="typl8-epsilon">
+				Paul's 
+				<span class="ui red header">Blob</span>
+				<span class="ui green header">Block</span>
+				<span class="ui blue header">Blog</span>
+			</h1>
+		</a>			
+	</div>
+	<div class="item">
+		<a href="https://github.com/login/oauth/authorize?client_id=4c6622e717ccb066b303">Authorize(DEBUG)</a>
+	</div>
+	<div class="item">
+		<div class="ui accordion basic">
+			<a href="#" class="title typl8-delta"><i class="dropdown icon"></i>Archive</a>
+			<div class="content">
+				<a href="#" class="title"><i class="dropdown icon"></i>2014</a>
+				<div class="content">
+					<a href="#" class="title"><i class="dropdown icon"></i>November</a>
+					<div class="content">
+						<div class="title"><a href="#"><i class="dropdown icon"></i>3</a></div>
+						<div class="content">
+							<div class="ui list">
+								<div class="item"><a href="/#archive/2014/11/3-Lorem-Ipsum">Lorem Ipsum</a></div>
+								<div class="item"><a href="/#archive/2014/11/3-Dolorem-Set">Dolorem Set</a></div>
+							</div>
+						</div>								
+						<div class="title"><a href="#"><i class="dropdown icon"></i>2</a></div>
+						<div class="content">
+							<div class="ui list">
+								<div class="item"><a href="/#archive/2014/11/2-Amen-Non-Langenium">Amen Non Langenium</a></div>
+								<div class="item"><a href="/#archive/2014/11/2-Deux-Lux-Gratis">Deus Lux Gratis</a></div>
+							</div>
+						</div>
+						<div class="title"><a href="#"><i class="dropdown icon"></i>1</a></div>
+						<div class="content">
+							<div class="ui list">
+								<div class="item"><a href="/#archive/2014/11/1-Gloria-Estefan">Gloria Estefan</a></div>
+							</div>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+	</div>
+	<div class="item">
+		<h2 class="typl8-delta">My Stuff</h2>
+		<div class="ui menu fitted secondary">
+			<div class="item">
+				<a href="https://github.com/paulbrzeski/" class="typl8-delta">
+					<img src="/res/icons/social/Github.png" class="ui left floated mini image" /> 
+					Github
+				</a>
+			</div>
+			<div class="item">	
+				<a href="http://thezeski.deviantart.com/" class="typl8-delta">
+					<img src="/res/icons/social/DeviantArt.png" class="ui left floated mini image" />
+					DeviantArt
+				</a>
+			</div>
+			<div class="item">	
+				<a href="http://au.linkedin.com/pub/paul-brzeski/82/64b/597" class="typl8-delta">
+					<img src="/res/icons/social/LinkedIn.png" class="ui left floated mini image" />
+					LinkedIn
+				</a>
+			</div>
+			<div class="item">	
+				<a href="https://twitter.com/TheZeski" class="typl8-delta">
+					<img src="/res/icons/social/Twitter.png" class="ui left floated mini image" />
+					Twitter
+				</a>
+			</div>
+			<div class="item">	
+				<a href="https://www.facebook.com/TheZeski" class="typl8-delta">
+					<img src="/res/icons/social/Facebook.png" class="ui left floated mini image" />
+					Facebook
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ui grid">
+	<div class="column">
+		<div class="ui segment">
+			<h3 class="typl8-delta">Lorem Ipsum</h3>
+			<em>3 November 2014</em>
+			<div class="ui divider"></div>
+			<h4>Kielbasa dolore beef ribs meatloaf</h4>
+			<p>Flank turducken pork belly fatback spare ribs minim elit sausage salami culpa ribeye. Meatball nisi dolore nulla alcatra, brisket duis aute ad ribeye picanha beef ribs. </p>
+			<h4 >Excepteur elit landjaeger incididunt non corned beef ham hock t-bone</h4>
+			<p>Tongue velit prosciutto dolore, hamburger incididunt andouille ball tip voluptate tail commodo rump ex anim. Ball tip fatback boudin short loin et leberkas. Mollit sint boudin laboris, t-bone dolore bresaola. Shank venison ut pariatur beef ribs ex veniam ground round aliqua sed.</p>
+		</div>
+		<div class="ui segment">				
+			<h3 class="typl8-delta">Dolorem Set</h3>
+			<em>3 November 2014</em>
+			<div class="ui divider"></div>
+			<p>Eu porchetta excepteur tempor enim andouille picanha ullamco, chicken doner ground round jowl voluptate. Et commodo do pastrami id eu sirloin beef ribs short ribs. Labore in eu, magna cow non esse duis eiusmod nisi anim capicola ut. <br /><br />Qui short ribs deserunt, turkey consectetur nulla cow hamburger salami bacon non kevin shoulder. Sunt kielbasa strip steak minim pork loin boudin commodo qui bresaola cow elit pork consectetur chuck alcatra. Consequat shoulder cupidatat, ball tip meatloaf fatback eiusmod in ribeye dolore in corned beef beef ribs tongue.</p>
+		</div>
+		<div class="ui segment">
+			<h3 class="typl8-delta">Amen Non Langenium</h3>
+			<em>2 November 2014</em>
+			<div class="ui divider"></div>
+			<h4 >Ground round fatback pork loin</h4>
+			<p>Spare ribs capicola irure bacon picanha. Pork chop id pork loin in bacon nulla, cupim sirloin filet mignon sausage sed. Pariatur meatloaf beef dolore pork chop strip steak pastrami meatball landjaeger tail t-bone.</p>
+			<h4>Cow turducken</h4>
+			<p>Filet mignon dolor t-bone lorem, velit chuck jerky tri-tip frankfurter tail ipsum enim dolore. Beef filet mignon labore meatloaf, ut bacon veniam pork belly tenderloin nostrud eu. Tenderloin do elit, andouille tongue officia sed ut et pork chop veniam kevin cillum meatball. Voluptate et nulla landjaeger, mollit t-bone enim porchetta officia.</p>
+		</div>
+	</div>
+</div>
