@@ -44,9 +44,7 @@ a {
 }
 
 em {
-	font-family: 'Karmatic Arcade';
 	font-style: italic;
-
 }
 
 .sidebar h1, .sidebar h2 {
@@ -65,6 +63,5 @@ em {
 }
 
 .sidebar > .item > .menu.fitted.secondary .item a {
-	width: 100%;
 	line-height: 32px
 }
