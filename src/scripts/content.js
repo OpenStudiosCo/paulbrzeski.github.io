@@ -17,6 +17,7 @@ $(document).ready(function(){
 			$('body').html(Handlebars.templates["homepage"]());
 			$('.ui.accordion').accordion();
 			$('.ui.sidebar').sidebar('show');
+			$('h1').lettering();
 		}
 	});
 	

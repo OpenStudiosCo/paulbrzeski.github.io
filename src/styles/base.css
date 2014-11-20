@@ -26,14 +26,72 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+
 html {
 	font-family: 'ProggyClean';
-	
 }
 
 h1,h2,h3 {
 	font-family: 'Karmatic Arcade';
+
 }
+
+h1 {
+	padding: 2em 0 1em 0;
+	margin-left: -1em;
+	clear: both;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.sidebar .accordion a,
+.sidebar .accordion .title,
+.sidebar .accordion .title:hover,
+.sidebar .accordion .active.title,
+.sidebar h2,
+h1 .char1 {
+	color: grey;
+}
+
+
+h1 .char1 {
+	margin-top: -2.15em;
+	margin-left: .65em;
+	position: absolute;
+}
+h1 .char2 {
+	color: magenta;
+	
+	margin-top: -1em;
+	margin-left: .45em;
+}
+h1 .char3 {
+	color: yellow;
+	
+}
+h1 .char4 {
+	color: cyan;
+	margin-left: 1em;
+}
+
+h1 .char2, 
+h1 .char3,
+h1 .char4 {
+	position: absolute;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 h4,h5,h6 {
 	font-family: 'KolquatFunkyBitm';	
 	
@@ -48,13 +106,6 @@ em {
 
 }
 
-.sidebar h1, .sidebar h2 {
-	color: #FFFFFF!important;
-
-}
-.sidebar * {
-	color: #AAAAAA!important;
-}
 
 .ui.accordion {
 	text-align: left;
