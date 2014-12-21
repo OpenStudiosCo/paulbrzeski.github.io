@@ -126,7 +126,7 @@ h1 img {
 	Responsive
 */
 
-@media screen and (max-height : 800px)   and (min-aspect-ratio: 1/1)  {
+@media screen and (max-height : 800px)   {
 	h1 img {
 		margin-top: -20%;
 	}
