@@ -1,0 +1,176 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+  font-family: 'Franchise';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/res/fonts/francise.eot");
+  src: url("/res/fonts/franchise.eot?#iefix") format('embedded-opentype'), url("/res/fonts/franchise.woff") format('woff'), url("/res/font/franchise.ttf") format('truetype'), url("/assets/fonts/franchise.svg#franchiseregular") format('svg');
+}
+
+@font-face {
+	font-family: 'ProggyClean';
+	src: url('/res/fonts/ProggyClean.eot');
+	src: local('☺'), url('/res/fonts/ProggyClean.woff') format('woff'), url('/res/fonts/ProggyClean.ttf') format('truetype'), url('/res/fonts/ProggyClean.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*
+	Styles
+*/
+
+#container {
+	margin: 0px 5%;
+	width: 90%;
+}
+
+
+h1 {
+	text-align: center;
+	z-index: 0;
+	position: relative
+}
+h1 img {
+	width: 100%;
+	height: auto;
+	max-width: 868px;
+	max-height: 929px;
+	
+	margin: -12.5% auto 0px auto;
+}
+
+#menu {
+	margin-top: -15%;	
+	z-index: 1;
+	position: relative;
+	font-family: Franchise;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#menu a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.stuff a {
+	font-family: ProggyClean;
+}
+
+.cv, .blog, .stuff {
+	background-color: red;
+	float: left;
+	width: 33%;
+	padding: 5em 0;
+	height: 300px;
+}
+
+.cv, .blog {
+	line-height: 300px;
+	margin-right: .5%;
+	font-size: 4em;
+	padding: 1.25em 0;
+}
+.cv {
+	
+	background: #ffff00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffff00 0%, #f15a24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#f15a24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffff00 0%,#f15a24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffff00 0%,#f15a24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffff00 0%,#f15a24 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffff00 0%,#f15a24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#f15a24',GradientType=0 ); /* IE6-9 */
+
+}
+.blog {
+	background: #00ffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ffff 0%, #0071bc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ffff), color-stop(100%,#0071bc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ffff 0%,#0071bc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ffff 0%,#0071bc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ffff 0%,#0071bc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ffff 0%,#0071bc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#0071bc',GradientType=0 ); /* IE6-9 */
+}
+
+.stuff {
+	background: #ff00ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff00ff 0%, #662d91 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff00ff), color-stop(100%,#662d91)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff00ff 0%,#662d91 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff00ff 0%,#662d91 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff00ff 0%,#662d91 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff00ff 0%,#662d91 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00ff', endColorstr='#662d91',GradientType=0 ); /* IE6-9 */
+
+}
+
+.stuff li {
+	line-height: 70px;
+	position: relative;
+}
+.stuff li a {
+	margin-left: -15%;
+}
+.stuff li img {
+	margin-top: 12.5px;
+	right: 35%;
+	position: absolute;
+}
+
+/* 
+	Responsive
+*/
+
+@media screen and (max-height : 800px)   and (min-aspect-ratio: 1/1)  {
+	h1 img {
+		margin-top: -20%;
+	}
+	#menu {
+		margin-top: -30%;
+	}
+}
+
+@media screen and (max-height : 600px)   {
+	h1 img {
+		max-width: 434px;
+		max-height: 465px;
+	}
+	h1 img {
+		margin-top: -10%;
+	}
+	#menu {
+		margin-top: -12.5%;
+	}
+}
+
+@media screen and (max-width : 1200px)   {
+	.stuff li a {
+		margin-left: -17.5%;
+	}
+	.stuff li img {
+		right: 25%;
+	}
+
+}
+
+@media screen and (max-width : 800px)   {
+	h1 img {
+		max-width: 434px;
+		max-height: 465px;
+	}
+	.cv, .blog, .stuff {
+		width: 100%;
+		clear: both;
+	}
+	.stuff li a {
+		margin-left: -15%;
+	}
+	.stuff li img {
+		right: 35%;
+	}
+}
