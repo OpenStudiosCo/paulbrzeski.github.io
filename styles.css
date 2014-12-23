@@ -25,21 +25,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #container {
 	margin: 0px 10%;
 	width: 80%;
+	position: relative;
 }
 
 
 h1 {
 	text-align: center;
 	z-index: 0;
-	position: relative
+	position: relative;
 }
 h1 img {
 	width: 100%;
 	height: auto;
 	max-width: 868px;
 	max-height: 929px;
-	
-	margin: -12.5% auto 0px auto;
+	margin: -15% auto 0px auto;
 }
 
 #menu {
@@ -119,7 +119,7 @@ h1 img {
 }
 .stuff li img {
 	margin-top: 12.5px;
-	right: 25%;
+	right: 20%;
 	position: absolute;
 }
 
@@ -127,12 +127,12 @@ h1 img {
 	Responsive
 */
 
-@media screen and (max-height : 800px)   {
+@media screen and (max-height : 1000px)   {
 	h1 img {
 		margin-top: -20%;
 	}
 	#menu {
-		margin-top: -30%;
+		margin-top: -25%;
 	}
 }
 
@@ -172,12 +172,13 @@ h1 img {
 	}
 	.cv, .blog, .stuff {
 		width: 100%;
+		margin-bottom: .25em;
 		clear: both;
 	}
 	.stuff li a {
-		margin-left: 25%;
+		margin-left: 20%;
 	}
 	.stuff li img {
-		right: 25%;
+		right: 20%;
 	}
 }

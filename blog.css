@@ -1,0 +1,33 @@
+h1 {
+	padding: 7em 0 0 0;
+}
+
+h1 img {
+	max-width: 434px;
+	max-height: 465px;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.cv, .stuff {
+	padding: 1em 0;
+	margin: 1em 0;
+	position: absolute;
+	top: 0;
+	font-size: 2em;
+	width: 150px;
+	line-height: 100px;
+	height: 100px;
+}
+.cv {
+	left: 0;
+}
+.stuff {
+	right: 0;
+}
+
