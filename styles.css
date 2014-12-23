@@ -127,27 +127,7 @@ h1 img {
 	Responsive
 */
 
-@media screen and (max-height : 1000px)   {
-	h1 img {
-		margin-top: -20%;
-	}
-	#menu {
-		margin-top: -25%;
-	}
-}
 
-@media screen and (max-height : 600px)   {
-	h1 img {
-		max-width: 434px;
-		max-height: 465px;
-	}
-	h1 img {
-		margin-top: -10%;
-	}
-	#menu {
-		margin-top: -12.5%;
-	}
-}
 
 @media screen and (max-width : 1400px)   {
 	.cv, .blog, .stuff {
