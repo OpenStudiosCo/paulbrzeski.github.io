@@ -62,16 +62,18 @@ h1 img {
 
 .cv, .blog, .stuff {
 	float: left;
-	width: 33%;
+	width: 25%;
 	padding: 3.5em 0;
 }
 
 .cv, .blog {
 	line-height: 200px;
-	margin-right: .5%;
+	margin-right: 12.5%;
 	font-size: 4em;
 	padding: 1.25em 0;
 }
+
+
 .cv {
 	
 	background: #ffff00; /* Old browsers */
@@ -108,15 +110,16 @@ h1 img {
 }
 
 .stuff li {
+	text-align: left;
 	line-height: 60px;
 	position: relative;
 }
 .stuff li a {
-	margin-left: -15%;
+	margin-left: 22.5%;
 }
 .stuff li img {
 	margin-top: 12.5px;
-	right: 35%;
+	right: 25%;
 	position: absolute;
 }
 
@@ -146,12 +149,18 @@ h1 img {
 	}
 }
 
-@media screen and (max-width : 1200px)   {
+@media screen and (max-width : 1400px)   {
+	.cv, .blog, .stuff {
+		width: 30%;
+	}
+	.cv, .blog {
+		margin-right: 5%;
+	}
 	.stuff li a {
-		margin-left: -17.5%;
+		margin-left: 15%;
 	}
 	.stuff li img {
-		right: 25%;
+		right: 15%;
 	}
 
 }
@@ -166,9 +175,9 @@ h1 img {
 		clear: both;
 	}
 	.stuff li a {
-		margin-left: -15%;
+		margin-left: 25%;
 	}
 	.stuff li img {
-		right: 35%;
+		right: 25%;
 	}
 }
