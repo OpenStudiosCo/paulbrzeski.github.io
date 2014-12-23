@@ -5,9 +5,12 @@ The Blob Blocks Blog.
 
 A blog made from blob blocks.
 
-What are blob blocks? 
+#What are blob blocks? 
 
-Amorphous blobs of content or functionality. 
+Amorphous blobs sent to this planet by Xenu. 
 
-The Blob Block system is all about building a website dynamically using only the browser's Javascript capabilities.
+Eventually they will assume control of us all. 
 
+Until then, they are being used for this blog. 
+
+Mariska Hargitay.

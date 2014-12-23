@@ -23,8 +23,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 */
 
 #container {
-	margin: 0px 5%;
-	width: 90%;
+	margin: 0px 10%;
+	width: 80%;
 }
 
 
@@ -61,15 +61,13 @@ h1 img {
 }
 
 .cv, .blog, .stuff {
-	background-color: red;
 	float: left;
 	width: 33%;
-	padding: 5em 0;
-	height: 300px;
+	padding: 3.5em 0;
 }
 
 .cv, .blog {
-	line-height: 300px;
+	line-height: 200px;
 	margin-right: .5%;
 	font-size: 4em;
 	padding: 1.25em 0;
@@ -110,7 +108,7 @@ h1 img {
 }
 
 .stuff li {
-	line-height: 70px;
+	line-height: 60px;
 	position: relative;
 }
 .stuff li a {
