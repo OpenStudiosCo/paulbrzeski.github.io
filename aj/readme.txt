@@ -5,4 +5,5 @@ Rationale:
 References/sources:
 -	CSS reset (reset.css)
 	http://meyerweb.com/eric/tools/css/reset/
-
+- 	Images from public repo
+	https://github.com/paulbrzeski/Langenium-Universe/tree/gh-pages/art/research

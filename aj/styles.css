@@ -10,10 +10,16 @@
 ***/
 
 /* Colours and fonts */
-
-	html * {
+	html {
+		height: 100%;
+		
+	}
+	body, a { 
 		background-color: #000000;
 		color: #FFFFFF;
+	}
+	body, div, p, a {
+
 		font-family: Arial, "arial";
 		font-size: .975em;
 	}
@@ -22,19 +28,15 @@
 		text-decoration: none;
 	}
 
-	a:hover {
-		text-decoration: underline;
-	}
-
 	/* Headings, labels and links */
 		h1 { font-size: 1.5em }
-		h2 { font-size: 1.25em }
-		h3 { font-size: 1.15em }
+		h2 { font-size: 1.15em }
+		h3 { font-size: 1.05em }
 		#header h1,
 		#content h2, 
 		#content h3 {
 			font-weight: bold;
-			margin: .25em 0 .25em 0;			
+			margin: .5em 0 .5em 0;			
 		}
 		.hidden {
 			position: absolute;
@@ -49,23 +51,64 @@
 	}
 
 	#container > .row {
-		margin: 0px 0px 1em 0px;
+		padding: 1em;
+		margin: .5em 0px .5em 0px;
 		clear: both;
-		display: block;
 		float: left;
+		height: 100%;
+		width: 100%;
 	}
-	
+	/* IMG styles */
+		img.featured {
+			margin: 1em 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	/* Page header */
+		#header {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,000000+100 */
+			background: #333333; /* Old browsers */
+			background: -moz-linear-gradient(top,  #212121 0%, #000000 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#212121), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #212121 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #212121 0%,#000000 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #212121 0%,#000000 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #212121 0%,#000000 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		}
 	/* Main menu */
+		#menu {
+			padding: 1em;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+			background: #b5bdc8; /* Old browsers */
+			background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+		}
 		#menu li {
 			float: left;
 			margin: 0 1em 0 0;
 		}
+		#menu li li {
+			margin: 1.5em 1em 0 0;
+		}
+		#menu li > a {
+			padding: .5em;
+			background-color: #333333;
+		}
+		#menu li > a:hover {
+			background-color: #666666;
+		}
 		#menu li a.active {
 			font-weight: bold;
-			text-decoration: underline;
-		#menu li a:hover {
-			text-decoration: underline;
+			background-color: #666666;
 		}
-
-
+		#menu li a:hover {
+			text-decoration: none;
+		}
 
