@@ -1,5 +1,6 @@
 h1 {
 	padding: 7em 0 0 0;
+	margin-bottom: -100px;
 }
 
 h1 img {
@@ -29,6 +30,16 @@ h1 img {
 }
 .stuff {
 	right: 0;
+}
+
+table tr {
+	padding: .5em 0;
+}
+table td {
+	padding: 0 .5em;
+}
+table ul.list li {
+	list-style: inside;
 }
 
 @media screen and (max-width : 1400px)   {
