@@ -33,21 +33,23 @@ h1 img {
 	right: 0;
 }
 
-
-.stuff li {
+#stuff {
+	width: 100%;
+}
+#stuff li {
+	width: 95%;
 	list-style: none;
 	text-align: left;
 	line-height: 60px;
 	position: relative;
+	z-index: 2;
 }
-.stuff li a {
-	color: #FFFFFF;
-	margin-left: 22.5%;
+#stuff li a {
+	color: #000000;
+
 }
-.stuff li img {
-	margin-top: 12.5px;
-	right: 20%;
-	position: absolute;
+#stuff li img {
+	float: right;
 }
 
 @media screen and (max-width : 1400px)   {
