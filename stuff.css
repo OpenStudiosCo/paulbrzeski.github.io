@@ -1,6 +1,6 @@
 h1 {
-	padding: 7em 0 0 0;
-	margin-bottom: -100px;
+	padding: 3em 0 0 0;
+	margin-bottom: -50px;
 }
 
 h1 img {
@@ -24,6 +24,7 @@ h1 img {
 	width: 150px;
 	line-height: 100px;
 	height: 100px;
+	list-style: none;
 }
 .cv {
 	left: 0;
@@ -32,9 +33,6 @@ h1 img {
 	right: 0;
 }
 
-.stuff {
-	width: 100%;
-}
 
 .stuff li {
 	list-style: none;
