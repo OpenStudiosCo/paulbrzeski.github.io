@@ -41,6 +41,10 @@
         max-height: 100%;
       }
 
+      ul {
+        padding: 0px;
+      }
+
       #container {
         color: #CCC;
         margin: 0 10%;
@@ -133,6 +137,15 @@
       }
 
       @media only screen and (max-width: 800px) {
+        #header h1,
+        #header ul {
+          float: none;
+        }
+        #header li {
+          text-align: center;
+          width: 100%;
+          display: block;
+        }
         .project,
         .social {
           height: auto;
@@ -260,6 +273,11 @@
           </li>
         </ul>
       </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
     <script src="three.min.js"></script>
 
@@ -292,8 +310,8 @@
       #define distfading 0.510
       #define saturation 0.335
 
-      #define transverseSpeed 15.45
-      #define cloud 0.23
+      #define transverseSpeed 1.45
+      #define cloud 0.253
 
       float triangle(float x, float a) {
         float output2 = 2.0*abs(  2.0*  ( (x/a) - floor( (x/a) + 0.3) ) ) - 1.1;
@@ -457,9 +475,9 @@
         backCol2 *= cloud;
         #endif
         
-        backCol2.r *= 0.70;
+        backCol2.r *= 0.55;
         backCol2.g *= 0.95;
-        backCol2.b *= 1.10;
+        backCol2.b *= 1.05;
         
         gl_FragColor = vec4(backCol2, 1.0);
 
