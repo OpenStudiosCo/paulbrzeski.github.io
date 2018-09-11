@@ -15,7 +15,6 @@
         width: 100%;
         height: 100%;
         margin: 0px;
-        overflow: hidden;
       }
       canvas {
         position: fixed;
@@ -24,25 +23,242 @@
         z-index: -1;
       }
 
-      h1 {
+      h1, h2, h3 {
+        font-weight: 100;
+      }
+
+      * {
         font-family: 'Merriweather', serif;
         color: #FFF;
+      }
+
+      h2 {
+        margin-top: 2em;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
       }
 
       #container {
         color: #CCC;
         margin: 0 10%;
+        width: 80%;
         position: absolute;
+      }
+
+      #header {
+        margin-bottom: 1000px;
+      }
+
+      #header h1 {
+        float: left;
+      }
+
+      #header ul {
+        float: right;
+      }
+
+      #header li {
+        display: inline-block;
+        margin-right: 2em;
+        line-height: 2em;
+        list-style: outside none;
+      }
+
+      #header a {
+        color: #FFF;
+        font-family: 'Merriweather', serif; 
+        text-decoration: none;
+      }
+
+      .project, .work, .social {
+        background: rgba(0,0,0,0.5);
+        padding: 2em;
+      }
+
+      .project {
+        display: inline-block;
+        height: 500px;
+        text-align: center;
+        width: calc(44% - 2em);
+        vertical-align: top;
+      }
+      .project.one {
+        margin-right: 2.5%;
+      }
+      .project.two {
+        margin-left: 2.5%;
+      }
+      .project a {
+        color: #00FFFF;
+        text-decoration: none;
+      }
+
+      .work .list {
+        display: inline-block;
+        margin-right: 1%;
+        width: calc(24% - 2em);
+        vertical-align: top;
+      }
+
+      .work .list li {
+        margin: 1em 0;
+      }
+
+      .social {
+        width: 30%;
+      }
+
+      .social a {
+        color: #FFF;
+        font-family: 'Merriweather', serif;
+        text-decoration: none;
+      }
+
+      .social a img {
+        float: left;
+        margin-right: 2em;
+      }
+      .social a span {
+        display: inline-block;
+        line-height: 34px;
+        vertical-align: middle;
+      }
+
+      .social li {
+        list-style: outside none;
+        margin: 1em 0;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .project,
+        .social {
+          width: calc(100% - 2em);
+        }
+        .work .list {
+          width: 100%;
+        }
       }
 
     </style>
   </head>
   <body>
     <div id="container">
-      <h1>Paul Brzeski</h1>
-      <p>
-        Watch this space!
-      </p>
+      <div id="header">
+        <h1>Paul Brzeski</h1>
+        <ul>
+          <li>
+            <a href='#projects'>Projects</a>
+          </li>
+          <li>
+            <a href='#previous_work'>Previous work</a>
+          </li>
+          <li>
+            <a href='#social'>Social</a>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 id="projects">Projects</h2>
+      <div class="project one">
+        <a href="https://github.com/paulbrzeski/kamigen">
+          <img src="assets/kamigen.png" />
+        </a>
+        <p>
+          Kamigen is the spiritual successor to <a href="https://github.com/paulbrzeski/langenium">Langenium</a>
+        </p>
+      </div>
+      <div class="project two">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://github.com/paulbrzeski/manifold">
+          <img style="filter: invert(100%);" src="assets/manifold.svg" />
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+          Manifold is a 3D modelling tool for the web.
+        </p>
+      </div>
+
+      <h2 id="previous_work">Previous work</h2>
+      <div class="work">
+        <div class="list">
+          <h3>Commercial</h3>
+          <ul>
+            <li>ATS Solutions</li>
+            <li>Biowashball Australia</li>
+            <li>Challenge Settlements</li>
+            <li>iiNet</li>
+            <li>Laurance Wines</li>
+            <li>Westnet</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>Education and non-profit</h3>
+          <ul>
+            <li>RSPCA Australia</li>
+            <li>RSPCA WA</li>
+            <li>University of Monash</li>
+            <li>University of Southampton</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>Industrial and construction</h3>
+          <ul>
+            <li>Content Living</li>
+            <li>Dreamstart Homes</li>
+            <li>Empyreal Interiors</li>
+            <li>New Choice Homes</li>
+            <li>TLC Projects</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>Government</h3>
+          <ul>
+            <li>Crimestoppers UK</li>
+            <li>Shire of Murray</li>
+            <li>Shire of Shark Bay</li>
+          </ul>
+        </div>
+      </div>
+      <h2 id="social">Social</h2>
+      <div class="social">
+        <ul>
+          <li>
+            <a href='https://www.deviantart.com/thezeski'>
+              <img src="assets/deviantart.png" />
+              <span>DeviantArt</span>
+            </a>
+          </li>
+          <li>
+            <a href='https://github.com/paulbrzeski'>
+              <img src="assets/github.png" />
+              <span>Github</span>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/paulbrzeski/'>
+              <img src="assets/instagram.png" />
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/paul-brzeski-59764b82/'>
+              <img src="assets/linkedin.png" />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="three.min.js"></script>
 
