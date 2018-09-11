@@ -86,14 +86,14 @@
         display: inline-block;
         height: 500px;
         text-align: center;
-        width: calc(44% - 2em);
+        width: calc(44% - 4em);
         vertical-align: top;
       }
       .project.one {
-        margin-right: 2.5%;
+        margin-right: 5%;
       }
       .project.two {
-        margin-left: 2.5%;
+        margin-left: 5%;
       }
       .project a {
         color: #00FFFF;
@@ -136,10 +136,13 @@
         margin: 1em 0;
       }
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 1000px) {
         #header h1,
         #header ul {
           float: none;
+        }
+        #header ul {
+          margin-top: 4em;
         }
         #header li {
           text-align: center;
