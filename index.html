@@ -10,272 +10,153 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
-    <style>
-      html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-      }
-      canvas {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
+    <link href="./semantic.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
 
-      h1, h2, h3 {
-        font-weight: 100;
-      }
-
-      * {
-        font-family: 'Merriweather', serif;
-        color: #FFF;
-      }
-
-      h2 {
-        margin-top: 2em;
-      }
-
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      ul {
-        padding: 0px;
-      }
-
-      #container {
-        color: #CCC;
-        margin: 0 10%;
-        width: 80%;
-        position: absolute;
-      }
-
-      #header {
-        margin-bottom: 1000px;
-      }
-
-      #header h1 {
-        float: left;
-      }
-
-      #header ul {
-        float: right;
-      }
-
-      #header li {
-        display: inline-block;
-        margin-right: 2em;
-        line-height: 2em;
-        list-style: outside none;
-      }
-
-      #header a {
-        color: #FFF;
-        font-family: 'Merriweather', serif; 
-        text-decoration: none;
-      }
-
-      .project, .work, .social {
-        background: rgba(0,0,0,0.5);
-        padding: 2em;
-      }
-
-      .project {
-        display: inline-block;
-        height: 500px;
-        text-align: center;
-        width: calc(44% - 4em);
-        vertical-align: top;
-      }
-      .project.one {
-        margin-right: 5%;
-      }
-      .project.two {
-        margin-left: 5%;
-      }
-      .project a {
-        color: #00FFFF;
-        text-decoration: none;
-      }
-
-      .work .list {
-        display: inline-block;
-        margin-right: 1%;
-        width: calc(24% - 2em);
-        vertical-align: top;
-      }
-
-      .work .list li {
-        list-style: inside;
-        margin: 1em 0;
-      }
-
-      .social {
-        width: 30%;
-      }
-
-      .social a {
-        color: #FFF;
-        font-family: 'Merriweather', serif;
-        text-decoration: none;
-      }
-
-      .social a img {
-        float: left;
-        margin-right: 2em;
-      }
-      .social a span {
-        display: inline-block;
-        line-height: 34px;
-        vertical-align: middle;
-      }
-
-      .social li {
-        list-style: inside none;
-        margin: 1em 0;
-      }
-
-      @media only screen and (max-width: 1000px) {
-        #header h1,
-        #header ul {
-          float: none;
-        }
-        #header ul {
-          margin-top: 10em;
-        }
-        #header li {
-          text-align: center;
-          width: 100%;
-          display: block;
-        }
-        .project,
-        .social {
-          height: auto;
-          width: calc(100% - 4em);
-        }
-        .work .list {
-          width: 100%;
-        }
-      }
-
-    </style>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <h1>Paul Brzeski</h1>
-        <ul>
-          <li>
-            <a href='#projects'>Projects</a>
-          </li>
-          <li>
-            <a href='#previous_work'>Previous work</a>
-          </li>
-          <li>
-            <a href='#social'>Social</a>
-          </li>
-        </ul>
-      </div>
-      
-      <h2 id="projects">Projects</h2>
-      <div class="project one">
-        <a href="https://github.com/paulbrzeski/kamigen">
-          <img src="assets/kamigen.png" />
-        </a>
-        <p>
-          Kamigen is the spiritual successor to <a href="https://github.com/paulbrzeski/langenium">Langenium</a>
-        </p>
-      </div>
-      <div class="project two">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="https://github.com/paulbrzeski/manifold">
-          <img style="filter: invert(100%);" src="assets/manifold.svg" />
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>
-          Manifold is a 3D modelling tool for the web.
-        </p>
-      </div>
-
-      <h2 id="previous_work">Previous work</h2>
-      <div class="work">
-        <div class="list">
-          <h3>Commercial</h3>
-          <ul>
-            <li>ATS Solutions</li>
-            <li>Biowashball Australia</li>
-            <li>Challenge Settlements</li>
-            <li>iiNet</li>
-            <li>Laurance Wines</li>
-            <li>Westnet</li>
-          </ul>
-        </div>
-        <div class="list">
-          <h3>Education and non-profit</h3>
-          <ul>
-            <li>RSPCA Australia</li>
-            <li>RSPCA WA</li>
-            <li>University of Monash</li>
-            <li>University of Southampton</li>
-          </ul>
-        </div>
-        <div class="list">
-          <h3>Industrial and construction</h3>
-          <ul>
-            <li>Content Living</li>
-            <li>Dreamstart Homes</li>
-            <li>Empyreal Interiors</li>
-            <li>New Choice Homes</li>
-            <li>TLC Projects</li>
-          </ul>
-        </div>
-        <div class="list">
-          <h3>Government</h3>
-          <ul>
-            <li>Crimestoppers UK</li>
-            <li>Shire of Murray</li>
-            <li>Shire of Shark Bay</li>
+    <div id="container" class="ui stackable grid">
+      <div class="sixteen wide column header">
+        <div class="ui inverted secondary stackable menu">
+          <div class="item">
+            <h1>Paul Brzeski</h1>      
+          </div>
+          <ul class="right menu">
+            <li class="item">
+              <a href='#projects'>Projects</a>
+            </li>
+            <li class="item">
+              <a href='#about'>About</a>
+            </li>
+            <li class="item">
+              <a href='#past_work'>Past work</a>
+            </li>
+            <li class="item">
+              <a href='#art'>Art</a>
+            </li>
+            <li class="item">
+              <a href='#social'>Social</a>
+            </li>
           </ul>
         </div>
       </div>
-      <h2 id="social">Social</h2>
-      <div class="social">
-        <ul>
-          <li>
-            <a href='https://www.deviantart.com/thezeski'>
-              <img src="assets/deviantart.png" />
-              <span>DeviantArt</span>
-            </a>
-          </li>
-          <li>
-            <a href='https://github.com/paulbrzeski'>
-              <img src="assets/github.png" />
-              <span>Github</span>
-            </a>
-          </li>
-          <li>
-            <a href='https://www.instagram.com/paulbrzeski/'>
-              <img src="assets/instagram.png" />
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/paul-brzeski-59764b82/'>
-              <img src="assets/linkedin.png" />
-              <span>LinkedIn</span>
-            </a>
-          </li>
-        </ul>
+      <!-- Projects -->
+      <h2 id="projects" class="column">Projects</h2>
+      <div class="two column row">
+        <div class="column ui item project">
+          <a href="https://github.com/paulbrzeski/kamigen" class="image">
+            <img class="ui fluid image" src="assets/kamigen.png" />
+          </a>
+          <div class="content">
+            Kamigen is the spiritual successor to <a href="https://github.com/paulbrzeski/langenium">Langenium</a>
+          </div>
+        </div>
+        <div class="column ui item project">
+          <a href="https://github.com/paulbrzeski/manifold" class="image">
+            <img class="ui fluid image" style="padding: 3em 0; filter: invert(100%);" src="assets/manifold.svg" />
+          </a>
+          <div class="content">
+            Manifold is a 3D modelling tool for the web.
+          </div>
+        </div>
+      </div>
+      <!-- About and Past Work -->
+      <div class="two column row">
+        <div class="column">
+          <h2 id="about">About</h2>
+          <div class="about">
+            <br />
+            <p>I am a self taught full stack developer with over 10 years in the industry and double that in personal experience.</p>
+            <p>Worked on projects for various sectors including government, higher education, tourism and telecommunications.</p>
+            <p>In my down time I enjoy comic books, cycling and developing cutting edge stuff.</p>
+          </div>
+        </div>
+        <div class="column">
+          <h2 id="past_work">Past work</h2>
+          <div class="ui left floated bulleted inverted list">
+            <h3>Project types</h3>
+            <div class="item">Data warehouses</div>
+            <div class="item">Desktop applications</div>
+            <div class="item">Digital art</div>
+            <div class="item">Server applications</div>
+            <div class="item">Web games</div>
+            <div class="item">Web applications</div>
+            <div class="item">Websites</div>
+          </div>
+          <div class="ui right floated bulleted inverted list">
+            <h3>Sectors</h3>
+            <div class="item">Government (Local, State, Federal and Foreign)</div>
+            <div class="item">Education and training</div>
+            <div class="item">Finance and professional services</div>
+            <div class="item">Industrial and construction</div>
+            <div class="item">Non-profit</div>
+            <div class="item">Telecommunications</div>
+            <div class="item">Travel and tourism</div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- Art and Social -->
+      <div class="two column row">
+        <div class="column">
+          <h2 id="art">Art</h2>
+          <div class="art">
+            <div class="ui small images">
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/9th-of-August-2013-Water-Effects-Comparison-424632775">
+                <img src="./assets/9th_of_august_2013__water_effects_comparison_by_nimf-d70tcqv.png">
+              </a>
+              <a class="ui image" href="https://www.youtube.com/watch?v=bx1qSntZxVI">
+                <img src="./assets/screenshot_from_langenium_staging_4_1_14_by_nimf-d70tmnb.png">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Langenium-Master-Timeline-W-I-P-Official-Poster-556303137">
+                <img src="./assets/langenium_master_timeline__w_i_p__official_poster__by_thezeski-d977i8x.png">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Langenium-Mega-Poster-555921091">
+                <img src="./assets/langenium_mega_poster_by_thezeski-d96zbgj.png">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Tree-424872361">
+                <img src="./assets/tree_by_thezeski-d70yhm1.jpg">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/1010717-17763999">
+                <img src="./assets/1010717_by_nimf.jpg">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Blast-from-the-past-19709258">
+                <img src="./assets/blast_from_the_past_by_nimf.jpg">
+              </a>
+              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Illustration-of-Shiva-564836554">
+                <img src="./assets/illustration_of_shiva_by_thezeski-d9caeoa.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h2 id="social">Social</h2>
+          <br />
+          <br />
+          <div class="social">
+            <div class="ui large labels">
+              <a class="ui image black label" href='https://www.deviantart.com/thezeski'>
+                <img src="assets/deviantart.png" />
+                <span>DeviantArt</span>
+              </a>
+              <a class="ui image black label" href='https://github.com/paulbrzeski'>
+                <img src="assets/github.png" />
+                <span>Github</span>
+              </a>
+              <a class="ui image black label" href='https://www.instagram.com/paulbrzeski/'>
+                <img src="assets/instagram.png" />
+                <span>Instagram</span>
+              </a>
+              <a class="ui image black label" href='https://www.linkedin.com/in/paul-brzeski-59764b82/'>
+                <img src="assets/linkedin.png" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <br>
       <br>
@@ -283,6 +164,8 @@
       <br>
       <br>
     </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="semantic.min.js"></script>
     <script src="three.min.js"></script>
 
     <script id="vs" type="not-js">
