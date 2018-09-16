@@ -18,7 +18,11 @@ canvas {
 }
 
 #container > .row {
-  margin-bottom: 12em;
+  margin-bottom: 8em;
+}
+
+#container > .row h2 {
+  margin-bottom: 2em;
 }
 
 h1, h2, h3 {
@@ -49,7 +53,7 @@ ul {
 }
 
 #projects {
-  margin: 2000px auto 0 auto;
+  margin: 2000px auto 2em auto;
 }
 
 .project .content {
@@ -65,9 +69,19 @@ ul {
   margin: 1em;
 }
 
+.project, .about, .past_work, .art, .social {
+  background: rgba(0,0,0,0.35);
+  display: block;
+  padding: 2em;
+}
+
+.past_work {
+  overflow: auto;
+}
+
 @media only screen and (max-width: 1000px) {
   #projects {
-    margin-top: 1000px !important;
+    margin: 1000px auto 2em auto !important;
   }
 
   .header, .header * {
