@@ -18,6 +18,12 @@ a:hover {
 a:hover {
   text-decoration: underline;
 }
+table h3 {
+  text-align: center;
+}
+table p {
+  text-align: justify;
+}
 h1#logo {
   font-weight: 100;
   text-align: center;
