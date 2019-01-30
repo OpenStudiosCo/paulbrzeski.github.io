@@ -3,108 +3,133 @@
   <head>
     <title>Homepage | Made in Kettlefish (https://github.com/paulbrzeski/kettlefish)
     </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
     <link href="./dist/styles.css" rel="stylesheet">
   </head>
   <body>
-    <h1> <a href="/new-index.html">Paul Brzeski</a></h1>
-    <ul class="menu">
-      <li> <a href="/services.html">Services</a></li>
-      <li><a href="/articles.html">Articles</a></li>
-      <li><a href="/about.html">About</a></li>
-    </ul>Weird homepage thingy
-    <h2>Services for hire</h2>
-    <ul>
-      <li>
-        <h3>Auditing</h3>
-        <p>Risk assessment, policy and compliance auditing</p>
-      </li>
-      <li>
-        <h3>Business process design</h3>
-        <p>Innovate and automate business processes</p>
-      </li>
-      <li>
-        <h3>Consultancy</h3>
-        <p>Consult companies and organisations about software, business process and IT.</p>
-      </li>
-      <li>
-        <h3>Data analytics</h3>
-        <p>Provide tools/scripts/software for research automation and data analysis</p>
-      </li>
-      <li>
-        <h3>Documentation and training workshops</h3>
-        <p>Create a baseline of understanding and competence within your organisation</p>
-      </li>
-      <li>
-        <h3>Research</h3>
-        <p>Compare software, investigate, research technologies, languages and frameworks</p>
-      </li>
-      <li>
-        <h3>Software/web development</h3>
-        <p>Develop custom applications, systems, integrations and bugfixes</p>
-      </li>
-      <li>
-        <h3>System design</h3>
-        <p>Design custom business systems using a mix of technology</p>
-      </li>
-      <li>
-        <h3>Test automation</h3>
-        <p>Build, configure and run automated tests</p>
-      </li>
-      <li>
-        <h3>Testing and Quality Assurance</h3>
-        <p>Auditing, testing, reviewing</p>
-      </li>
-    </ul>
-    <h2>Recent articles</h2>
-    <ul>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>Windows 10 Review</h3>
-        <p>Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.</p>
-      </li>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>Set Raytracers to Maximum</h3>
-        <p>So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when..</p>
-      </li>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>How deep is the river if you cannot see the bottom?</h3>
-        <p>Upgrading your computer isn’t too hard — you work out where you can get good gains or if the whole setup needs a replacement. Unfortunately the latter option isn’t available for the human brain.</p>
-      </li>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>Creating good tools for a brave new world</h3>
-        <p>I’m building a 2D/3D hybrid graphic design tool called Manifold. In this article I’m going to discuss the approach I’m taking in order to fit it into the workflow that I need for building games. I see this problem from a “recipe” perspective — what do I want the process to look like and what tools do I need to execute it.</p>
-      </li>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>My angel is the manifold</h3>
-        <p>Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. <br>I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.</p>
-      </li>
-      <li><img src="/assets/logo-01.png" width="160" height="160">
-        <h3>In order to save time, you must first invent the universe</h3>
-        <p>One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.</p>
-      </li>
-    </ul>
-    <h2>Active projects</h2>
-    <ul>
-      <li>
-        <h3>Kamigen</h3>
-        <p>A tropical cyberpunk game with supersonic aircraft. The setting is based on the island of Camiguin in Philippines as a tribute to my heritage and the wonder I felt when I visited as a kid.</p>
-      </li>
-      <li>
-        <h3>Kettlefish</h3>
-        <p>An opinionated boilerplate to create static websites (like this one!). Out of the box Kettlefish comes with a default homepage built using a Semantic UI layout example, allowing anyone who knows what these tools are to hit the ground running.</p>
-      </li>
-      <li>
-        <h3>Manifold</h3>
-        <p>A hybrid 2D/3D design tool, this is an experimental program to address the need for fast and efficient modelling for Three.JS scenes. The 2D vector component can also be used for general illustration and design needs.</p>
-      </li>
-    </ul>
-    <h2>Social media</h2>
-    <ul>
-      <li>DeviantArt</li>
-      <li>Github</li>
-      <li>Instagram</li>
-      <li>LinkedIn</li>
-    </ul>
+    <h1 class="ui header" id="logo"><a href="/new-index.html">Paul Brzeski</a></h1>
+    <div class="ui fluid menu inverted attached" id="menu"><a class="item" href="/services.html">SERVICES</a><a class="item" href="/articles.html">ARTICLES</a><a class="item" href="/about.html">ABOUT</a></div>
+    <canvas></canvas>
+    <div class="ui main container">
+      <h2 class="ui dividing header">Services for hire</h2>
+      <div class="ui two column very relaxed stackable grid">
+        <div class="column">
+          <div class="ui list">
+            <div class="item">
+              <h3>Auditing</h3>
+              <p>Risk assessment, policy and compliance auditing</p>
+            </div>
+            <div class="item">
+              <h3>Business process design</h3>
+              <p>Innovate and automate business processes</p>
+            </div>
+            <div class="item">
+              <h3>Consultancy</h3>
+              <p>Consult companies and organisations about software, business process and IT.</p>
+            </div>
+            <div class="item">
+              <h3>Data analytics</h3>
+              <p>Provide tools/scripts/software for research automation and data analysis</p>
+            </div>
+            <div class="item">
+              <h3>Documentation and training workshops</h3>
+              <p>Create a baseline of understanding and competence within your organisation</p>
+            </div>
+            <div class="item">
+              <h3>Research</h3>
+              <p>Compare software, investigate, research technologies, languages and frameworks</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui list">
+            <div class="item">
+              <h3>Software/web development</h3>
+              <p>Develop custom applications, systems, integrations and bugfixes</p>
+            </div>
+            <div class="item">
+              <h3>System design</h3>
+              <p>Design custom business systems using a mix of technology</p>
+            </div>
+            <div class="item">
+              <h3>Test automation</h3>
+              <p>Build, configure and run automated tests</p>
+            </div>
+            <div class="item">
+              <h3>Testing and Quality Assurance</h3>
+              <p>Auditing, testing, reviewing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui two column very relaxed stackable grid">
+        <div class="column">
+          <h2 class="ui dividing header">Recent articles</h2>
+          <div class="ui horizontal segments">
+            <div class="ui segment basic"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>Windows 10 Review</h3>
+              <p>Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.</p>
+            </div>
+            <div class="ui segment basic"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>Set Raytracers to Maximum</h3>
+              <p>So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when..</p>
+            </div>
+            <div class="ui segment"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>How deep is the river if you cannot see the bottom?</h3>
+              <p>Upgrading your computer isn’t too hard — you work out where you can get good gains or if the whole setup needs a replacement. Unfortunately the latter option isn’t available for the human brain.</p>
+            </div>
+          </div>
+          <div class="ui horizontal segments">
+            <div class="ui segment"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>Creating good tools for a brave new world</h3>
+              <p>I’m building a 2D/3D hybrid graphic design tool called Manifold. In this article I’m going to discuss the approach I’m taking in order to fit it into the workflow that I need for building games. I see this problem from a “recipe” perspective — what do I want the process to look like and what tools do I need to execute it.</p>
+            </div>
+            <div class="ui segment"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>My angel is the manifold</h3>
+              <p>Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.</p>
+            </div>
+            <div class="ui segment"><img src="/assets/logo-01.png" width="160" height="160">
+              <h3>In order to save time, you must first invent the universe</h3>
+              <p>One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h2 class="ui dividing header">Active projects</h2>
+          <div class="ui vertical segments">
+            <div class="ui segment">
+              <h3>Kamigen</h3>
+              <p>A tropical cyberpunk game with supersonic aircraft. The setting is based on the island of Camiguin in Philippines as a tribute to my heritage and the wonder I felt when I visited as a kid.</p>
+            </div>
+            <div class="ui segment">
+              <h3>Kettlefish</h3>
+              <p>An opinionated boilerplate to create static websites (like this one!). Out of the box Kettlefish comes with a default homepage built using a Semantic UI layout example, allowing anyone who knows what these tools are to hit the ground running.</p>
+            </div>
+            <div class="ui segment">
+              <h3>Manifold</h3>
+              <p>A hybrid 2D/3D design tool, this is an experimental program to address the need for fast and efficient modelling for Three.JS scenes. The 2D vector component can also be used for general illustration and design needs.</p>
+            </div>
+          </div>
+          <h2 class="ui dividing header">Social media</h2>
+          <ul>
+            <li>DeviantArt</li>
+            <li>Github</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="ui container">
+        <div class="ui grid"> 
+          <div class="left floated column four wide">ABN 50 711 323 074</div>
+          <div class="right floated column four wide">© Paul Brzeski 2019</div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
