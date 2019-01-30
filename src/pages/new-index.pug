@@ -1,0 +1,87 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Homepage | Made in Kettlefish (https://github.com/paulbrzeski/kettlefish)
+
+block append page
+  | Weird homepage thingy
+  h2 Services for hire
+  ul
+    li
+      h3 Auditing
+      p Risk assessment, policy and compliance auditing
+    li
+      h3 Business process design
+      p Innovate and automate business processes
+    li
+      h3 Consultancy
+      p Consult companies and organisations about software, business process and IT.
+    li
+      h3 Data analytics
+      p Provide tools/scripts/software for research automation and data analysis
+    li
+      h3 Documentation and training workshops
+      p Create a baseline of understanding and competence within your organisation
+    li
+      h3 Research
+      p Compare software, investigate, research technologies, languages and frameworks
+    li
+      h3 Software/web development
+      p Develop custom applications, systems, integrations and bugfixes
+    li
+      h3 System design
+      p Design custom business systems using a mix of technology
+    li
+      h3 Test automation
+      p Build, configure and run automated tests
+    li
+      h3 Testing and Quality Assurance
+      p Auditing, testing, reviewing
+  h2 Recent articles
+  ul
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 Windows 10 Review
+      p Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 Set Raytracers to Maximum
+      p So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when..
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 How deep is the river if you cannot see the bottom?
+      p Upgrading your computer isn’t too hard — you work out where you can get good gains or if the whole setup needs a replacement. Unfortunately the latter option isn’t available for the human brain.
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 Creating good tools for a brave new world
+      p I’m building a 2D/3D hybrid graphic design tool called Manifold. In this article I’m going to discuss the approach I’m taking in order to fit it into the workflow that I need for building games. I see this problem from a “recipe” perspective — what do I want the process to look like and what tools do I need to execute it.
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 My angel is the manifold
+      p Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. 
+        br
+        | I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.
+    li
+      img(src='/assets/logo-01.png', width='160', height='160')
+      h3 In order to save time, you must first invent the universe
+      p One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.
+  h2 Active projects
+  ul
+    li
+      h3 Kamigen
+      p A tropical cyberpunk game with supersonic aircraft. The setting is based on the island of Camiguin in Philippines as a tribute to my heritage and the wonder I felt when I visited as a kid.
+    li
+      h3 Kettlefish
+      p An opinionated boilerplate to create static websites (like this one!). Out of the box Kettlefish comes with a default homepage built using a Semantic UI layout example, allowing anyone who knows what these tools are to hit the ground running.
+    li
+      h3 Manifold
+      p A hybrid 2D/3D design tool, this is an experimental program to address the need for fast and efficient modelling for Three.JS scenes. The 2D vector component can also be used for general illustration and design needs.
+  h2 Social media
+  ul
+    li DeviantArt
+    li Github
+    li Instagram
+    li LinkedIn
