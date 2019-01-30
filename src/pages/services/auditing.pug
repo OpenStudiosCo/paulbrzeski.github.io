@@ -1,0 +1,31 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Auditing | Services | Paul Brzeski
+
+block append page
+  .ui.main.container
+    h2.ui.dividing.header Auditing
+    canvas
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column.middle.aligned
+        .ui.list
+          .item
+            h3 Risk assessment, policy and compliance auditing
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Enjoy solving complex problems and ensures the intention of a task is carried out; I don't just try to tick a box
+              li History of diligence leading to discovery of unforeseen issues and risks others miss, or don't report
+              li Regularly performing regulatory compliance and data quality audits in various capacities since 2006
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Address concerns systems are not accessible to people with disabilities
+              li Complete technical tasks for regulatory compliance
+              li Produce reports on privacy and data security in complex systems

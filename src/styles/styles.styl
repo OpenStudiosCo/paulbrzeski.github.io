@@ -29,9 +29,11 @@ h1#logo
   text-align center
   padding-top .75em
 
-h2.ui.dividing.header, h2.service.contract
-  font-weight 100
-  margin-top 1em
+h2.ui.dividing.header,
+h2.service.contract,
+h3.ui.dividing.header
+  font-weight 100 !important
+  margin-top 1em !important
 
 #menu
   background #000000
@@ -47,6 +49,9 @@ h2.ui.dividing.header, h2.service.contract
     display none
     
 canvas
-  height 420px
+  height 220px
   width 100%
   background-color #002233
+  
+  &.home
+    height 420px

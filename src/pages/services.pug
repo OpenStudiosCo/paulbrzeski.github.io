@@ -4,7 +4,7 @@ block append scripts
   script(src='./dist/app.js')
 
 block append title
-  | Services | Made in Kettlefish (https://github.com/paulbrzeski/kettlefish)
+  | Services | Paul Brzeski
 
 block append page
   .ui.main.container
@@ -29,10 +29,12 @@ block append page
       .column
         .ui.list
           .item
-            h3 Auditing
+            h3
+              a(href='/services/auditing.html') Auditing
             p Risk assessment, policy and compliance auditing
           .item
-            h3 Business process design
+            h3
+              a(href='/services/business-process-design.html') Business process design
             p Innovate and automate business processes
           .item
             h3 Consultancy
