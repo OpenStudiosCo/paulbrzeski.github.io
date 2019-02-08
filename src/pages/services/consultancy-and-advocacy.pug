@@ -1,0 +1,44 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Consultancy and advocacy | Services | Paul Brzeski
+
+block append page
+  .ui.main.container
+    h2.ui.dividing.header Consultancy and advocacy
+    canvas
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column.middle.aligned
+        .ui.list
+          .item
+            h4 Consult companies and organisations about software, business process and IT. Advocate for pragmatic best practices to stakeholders and delivering ROI
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Experienced mediator and facilitator of communication
+              li Genuinely want to contribute to the success of my clients
+              li Self motivated to improve the lives of others, with technology or something else
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Improve quality and efficiency of work done on company systems
+              li Propose and implement measures to ensure systems are accessible to the elderly and disabled
+              li Review and recommend off the shelf software to solve a problem
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Microsoft Office and Google Docs
+              li W3C, WCAG and reputable publications
+              li XMind for brainstorming/mind mapping
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li Internet and telecommunications service providers
+              li Government
+              li NGO and charity
+              li Professional services

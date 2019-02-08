@@ -1,0 +1,44 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Test automation | Services | Paul Brzeski
+
+block append page
+  .ui.main.container
+    h2.ui.dividing.header Test automation
+    canvas
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column.middle.aligned
+        .ui.list
+          .item
+            h3 Build, configure and run automated tests in an existing or new framework
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Diligence to ensure all business logic has proper test coverage
+              li Leveraging other skills as a developer to do things normally not seen in this space
+              li Variety of past work means I have seen a lot of different ways of doing things
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Implement tests within a continuous integration tools such as Atlassian Bamboo, BitBucket Pipelines or Travis CI
+              li Implement validation layer via stored procedures so that applications sharing a database cannot create bad data
+              li Setup Git hooks to enforce linting
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Build and scheduling: Atlassian Bamboo, Bash scripts, Cron, Tidal Enterprise Scheduler
+              li Linters and file checkers: JSLint, PHP Codesniffer, Regular Expressions in scripts
+              li Testing: C#.NET, JUnit, PHPUnit, Selenium
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Professional services
+              li Tourism

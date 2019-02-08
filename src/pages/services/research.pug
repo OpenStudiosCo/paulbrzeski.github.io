@@ -1,0 +1,46 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Research | Services | Paul Brzeski
+
+block append page
+  .ui.main.container
+    h2.ui.dividing.header Research
+    canvas
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column.middle.aligned
+        .ui.list
+          .item
+            h3 Compare software, investigate, research technologies, languages and frameworks
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Broad interests allowing me to engage with any topic
+              li Diligent and time efficient
+              li Good eye for quality products and information
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Interview staff within an organisation and analyse operations for areas of improvement on a range of measures - human error rate, efficiency, ease of use, reporting and automation options
+              li Investigate any privacy and security issues within a system, recommend practical solutions
+              li Review your website against competitors on a range of measures - accessibility, usefulness, engagement
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Databases, graphs and spreadsheets
+              li Reputable publications and authorities on a subject - e.g. ISO, W3C, Human Rights Commission
+              li XMind for brainstorming/mind mapping
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Government
+              li NGO and charity
+              li Professional services
+              li Tourism

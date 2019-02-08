@@ -18,6 +18,9 @@ a:hover {
 a:hover {
   text-decoration: underline;
 }
+.column .ui.list .item {
+  margin: 0.5em 0;
+}
 table h3 {
   text-align: center;
 }
