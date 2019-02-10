@@ -11,7 +11,7 @@ $(document)
     var geometry = new THREE.PlaneBufferGeometry(2, 2);
 
     var uniforms = {
-      time: { type: "f", value: 1.0 },
+      time: { type: "f", value: Math.random() },
       resolution: { type: "v2", value: new THREE.Vector2() },
       mouse: { type: "v2", value: new THREE.Vector2() },
     };
@@ -55,7 +55,7 @@ $(document)
 
     function render(time) {
       resize();
-      uniforms.time.value = time * 0.001;
+      uniforms.time.value += time * 0.0000001;
       renderer.render(scene, camera);
       requestAnimationFrame(render);
     }
