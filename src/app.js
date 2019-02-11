@@ -55,7 +55,7 @@ $(document)
 
     function render(time) {
       resize();
-      uniforms.time.value += time * 0.0000001;
+      uniforms.time.value += time * 0.000000025;
       renderer.render(scene, camera);
       requestAnimationFrame(render);
     }
