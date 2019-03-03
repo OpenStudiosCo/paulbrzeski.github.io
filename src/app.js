@@ -10,10 +10,10 @@ $(document)
 
     var geometry = new THREE.PlaneBufferGeometry(2, 2);
 
-    var uniforms = {
+    window.uniforms = {
       time: { type: "f", value: Math.random() },
       resolution: { type: "v2", value: new THREE.Vector2() },
-      mouse: { type: "v2", value: new THREE.Vector2() },
+      mouse: { type: "v2", value: new THREE.Vector2() }
     };
 
     var material = new THREE.ShaderMaterial({
@@ -29,7 +29,7 @@ $(document)
     renderer.domElement.addEventListener('mousemove', recordMousePosition);
     renderer.setClearColor( 0xFFFFFF, 0 );
 
-    render(0);
+    render(Math.random());
 
     function recordMousePosition(e) {
       // normalize the mouse position across the canvas
@@ -53,9 +53,22 @@ $(document)
       }
     }
 
+    var direction = 'up';
     function render(time) {
       resize();
-      uniforms.time.value += time * 0.000000025;
+      if (uniforms.time.value > 30) {
+        direction = 'down';
+      }
+      if (uniforms.time.value < 0) {
+        direction = 'up';
+      }
+      if (direction == 'up') {
+        uniforms.time.value += time * .0000001;  
+      }
+      else {
+        uniforms.time.value -= time * .0000001;  
+      }
+      
       renderer.render(scene, camera);
       requestAnimationFrame(render);
     }

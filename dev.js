@@ -22,7 +22,7 @@ chokidar.watch('src', {ignored: /(^|[\/\\])\../}).on('all', (event, path) => {
       run('css');
     }
 
-    if (path.endsWith('.pug')) {
+    if (path.endsWith('.pug') || path.endsWith('.glsl')) {
       run('pug');
     }
   }
