@@ -29,7 +29,7 @@ $(document)
     renderer.domElement.addEventListener('mousemove', recordMousePosition);
     renderer.setClearColor( 0xFFFFFF, 0 );
 
-    render(Math.floor((Math.random() * 1200000000) + 100000));
+    render(Math.floor((Math.random() * 12000000) + 10000));
 
     function recordMousePosition(e) {
       // normalize the mouse position across the canvas
@@ -56,7 +56,10 @@ $(document)
     var direction = 'up';
     function render(time) {
       resize();
-      if (uniforms.time.value > 1200000000) {
+      if (time > 12000000) {
+        time = Math.floor((Math.random() * 12000000) + 10000);
+      }
+      if (uniforms.time.value > 12000000) {
         direction = 'down';
       }
       if (uniforms.time.value < 0) {
