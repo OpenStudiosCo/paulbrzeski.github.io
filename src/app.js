@@ -55,8 +55,6 @@ $(document)
 
     var direction = 'up';
     function render(time) {
-      console.log(time);
-      console.log(uniforms.time.value);
       resize();
       if (uniforms.time.value > 1200000000) {
         direction = 'down';
