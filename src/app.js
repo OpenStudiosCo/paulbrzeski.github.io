@@ -54,22 +54,23 @@ $(document)
     }
 
     var direction = 'up';
+    var time_max = 120000;
     function render(time) {
       resize();
-      if (time > 12000000) {
-        time = Math.floor((Math.random() * 12000000) + 10000);
+      if (time > time_max) {
+        time = Math.floor((Math.random() * time_max) + time_max / 100);
       }
-      if (uniforms.time.value > 12000000) {
+      if (uniforms.time.value > time_max) {
         direction = 'down';
       }
       if (uniforms.time.value < 0) {
         direction = 'up';
       }
       if (direction == 'up') {
-        uniforms.time.value += time * .0000001;  
+        uniforms.time.value += time * .000001;  
       }
       else {
-        uniforms.time.value -= time * .0000001;  
+        uniforms.time.value -= time * .000001;  
       }
       
       renderer.render(scene, camera);
