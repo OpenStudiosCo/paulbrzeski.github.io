@@ -54,7 +54,7 @@ $(document)
     }
 
     var direction = 'up';
-    var time_max = 120000;
+    var time_max = 1200;
     function render(time) {
       resize();
       if (time > time_max) {
