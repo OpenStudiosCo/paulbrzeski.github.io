@@ -58,7 +58,7 @@ $(document)
     function render(time) {
       resize();
       if (time > time_max) {
-        time = Math.floor((Math.random() * time_max) + time_max / 100);
+        time = Math.floor((Math.random() * time_max) + time_max / 1000);
       }
       if (uniforms.time.value > time_max) {
         direction = 'down';
@@ -67,10 +67,10 @@ $(document)
         direction = 'up';
       }
       if (direction == 'up') {
-        uniforms.time.value += time * .000001;  
+        uniforms.time.value += time * .0000001;  
       }
       else {
-        uniforms.time.value -= time * .000001;  
+        uniforms.time.value -= time * .0000001;  
       }
       
       renderer.render(scene, camera);
