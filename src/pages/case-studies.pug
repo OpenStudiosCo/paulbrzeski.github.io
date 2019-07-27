@@ -4,22 +4,26 @@ block append scripts
   script(src='./dist/app.js')
 
 block append title
-  | Services
+  | Case studies
 
 block append page
+  header
+    img.ui.image(src='/assets/case-studies.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ')
+    h2 Case studies
   .ui.main.container
-    h2.ui.dividing.header Case Studies
-    .ui.two.column.very.relaxed.stackable.grid
-      .column
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/cJcr09qIVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-        h3
-          a(href='/case-studies/langenium.html') Langenium
-        p Consuming much of my spare time from 2012 to 2017, 
-          a(href='https://github.com/paulbrzeski/Langenium') Langenium 
-          | was a concept MMORPG built on socket.io, Three.JS and Node.JS. At its height the website received 1000 visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.
-      .column
+    .ui.list
+      .item
+        iframe.ui.image(width="560" height="315" src="https://www.youtube.com/embed/cJcr09qIVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .content
+          h3
+            a(href='/case-studies/langenium.html') Langenium
+          p Consuming much of my spare time from 2012 to 2017, 
+            a(href='https://github.com/paulbrzeski/Langenium') Langenium 
+            | was a concept MMORPG built on socket.io, Three.JS and Node.JS. At its height the website received 1000 visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.
+      .item
         a(href='/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html')
-          img.ui.image.fluid(src='/assets/1_i5HV9jeFSSRjc_9O_PWGTQ.jpeg' alt='Screenshot of Houdini functionality to generate buildings in Maya')
-        h3
-          a(href='/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html') The Best 3D Design Tools for Indie Game Development in 2019
-        p I've decided to present my own perspective as a hobbyist Indie game developer with drawing and visual art skills that could be called "child like". I have some background in graphic design due to past work, but as you'll read on in this case study that's not quite the  same as the art skills needed to freely pull things from your mind and recreate them in a virtual world.
+          img.ui.large.image.fluid(src='/assets/1_i5HV9jeFSSRjc_9O_PWGTQ.jpeg' alt='Screenshot of Houdini functionality to generate buildings in Maya')
+        .content
+          h3
+            a(href='/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html') The Best 3D Design Tools for Indie Game Development in 2019
+          p I've decided to present my own perspective as a hobbyist Indie game developer with drawing and visual art skills that could be called "child like". I have some background in graphic design due to past work, but as you'll read on in this case study that's not quite the  same as the art skills needed to freely pull things from your mind and recreate them in a virtual world.

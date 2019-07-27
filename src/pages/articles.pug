@@ -7,16 +7,19 @@ block append title
   | Articles
 
 block append page
+  header
+    img.ui.image(src='/assets/articles.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -650px ')
+    h2 Articles
   .ui.main.container
-    h2.ui.dividing.header Articles
     table.ui.five.column.very.basic.table
       tr.top.aligned
-        td
+        td(colspan='5')
           a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74')
-            img.ui.fluid.image(src='/assets/thumb1.PNG', width='160', height='160')
+            img.ui.fluid.large.image(src='/assets/thumb1.PNG', width='160', height='160')
           h3
             a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74') Windows 10 Review
           p Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.
+      tr.top.aligned
         td
           a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
             img.ui.fluid.image(src='/assets/thumb2.PNG', width='160', height='160')
@@ -41,13 +44,13 @@ block append page
           h3
             a(href='https://medium.com/@mail_59849/my-angel-is-the-manifold-d0b718d03071') My angel is the manifold
           p Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.
-      tr.top.aligned
         td
           a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418')
             img.ui.fluid.image(src='/assets/thumb6.PNG', width='160', height='160')
           h3
             a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418') In order to save time, you must first invent the universe
           p One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.
+      tr.top.aligned
         td
           h3
             a(href='https://medium.com/@mail_59849/confessions-of-a-dancing-cellocher-9851077e84ee') Confessions of a Dancing Cellocher
@@ -60,4 +63,4 @@ block append page
           h3
             a(href='https://medium.com/@mail_59849/how-i-learned-to-stop-coding-and-love-the-web-5027b268649f') How I learned to stop coding and love the web
           p AS a programmer, I love to build my own tools or come up with my own solutions. My hobby has been great for my professional career, but my own ability to complete personal projects in my free time has gone out the window. It seems staying up for days, like I did growing up playing with Flash and Visual Basic, trying to solve one problem doesn’t work as well for a grown adult with bills. Talking to pets can help, but sometimes they just distract me.
-        td
+        td(colspan='2')
