@@ -7,10 +7,14 @@ block append title
   | System design | Services
 
 block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section System design
+  header
+    img.ui.image(src='/assets/system-design.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -125px ')
+    h2 Design software architecture and processes using a mix of technology
   .ui.main.container
-    h2.ui.dividing.header System design
-    h3 Design software architecture and processes using a mix of technology
-    canvas
     .ui.two.column.very.relaxed.stackable.grid.centered
       .column
         .ui.list

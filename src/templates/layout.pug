@@ -16,23 +16,23 @@ html
       .ui.container
         .ui.grid
           .row
-            .left.floated.column.four.wide
-              .ui.horizontal.list.inverted
-                .ui.item
-                  .ui.mini.image
-                    a(href='https://www.deviantart.com/thezeski' title='DeviantArt')
-                      img(src='/assets/deviantart.png' alt='Deviantart')
-                .ui.item
-                  .ui.mini.image
-                    a(href='https://github.com/paulbrzeski' title='Github')
-                      img(src='/assets/github.png' alt='Github')
-                .ui.item
-                  .ui.mini.image
-                    a(href='https://www.instagram.com/paulbrzeski/' title='Instagram')
-                      img(src='/assets/instagram.png' alt='Instagram')
-                .ui.item
-                  .ui.mini.image
-                    a.header(href='https://www.linkedin.com/in/paul-brzeski-59764b82/' title='LinkedIn')
-                      img(src='/assets/linkedin.png' alt='LinkedIn')
+            .left.floated.column
+              .ui.menu.secondary
+                .item
+                  a(href='https://www.deviantart.com/thezeski' title='DeviantArt')
+                    img.ui.mini.image(src='/assets/deviantart.png' alt='Deviantart')
+                    span DeviantArt
+                .item
+                  a(href='https://github.com/paulbrzeski' title='Github')
+                    img.ui.mini.image(src='/assets/github.png' alt='Github')
+                    span Github
+                .item
+                  a(href='https://www.instagram.com/paulbrzeski/' title='Instagram')
+                    img.ui.mini.image(src='/assets/instagram.png' alt='Instagram')
+                    span Instagram
+                .item
+                  a.header(href='https://www.linkedin.com/in/paul-brzeski-59764b82/' title='LinkedIn')
+                    img.ui.mini.image(src='/assets/linkedin.png' alt='LinkedIn')
+                    span LinkedIn
             .right.floated.column.three.wide ABN 50 711 323 074
     include /src/templates/scripts.pug

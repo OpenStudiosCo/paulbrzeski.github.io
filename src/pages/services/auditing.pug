@@ -7,10 +7,14 @@ block append title
   | Auditing | Services
 
 block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Auditing
+  header
+    img.ui.image(src='/assets/auditing.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -425px ')
+    h2 Risk assessment, policy and compliance auditing
   .ui.main.container
-    h2.ui.dividing.header Auditing
-    h3 Risk assessment, policy and compliance auditing
-    canvas
     .ui.two.column.very.relaxed.stackable.grid.centered
       .column
         .ui.list

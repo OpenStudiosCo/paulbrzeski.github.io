@@ -7,64 +7,69 @@ block append title
   | Services
 
 block append page
+  header
+    img.ui.image(src='/assets/services.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ')
+    h2 Services
   .ui.main.container
-    h2.ui.dividing.header Services
-    .ui.two.column.very.relaxed.stackable.grid.centered
-      .column.middle.aligned
-        .ui.list
-          .item
-            h2.service.contract Hourly
-            strong Cost: $150 AUD per hour
-            br
-            br
-            br
-            br
-          .item
-            h2.service.contract Project
-            strong Cost: Quote required
-            br
-            br
-            br
-            br
-      .column
-        .ui.list
-          .item
-            h3
-              a(href='/services/auditing.html') Auditing
-            p Risk assessment, policy and compliance auditing
-          .item
-            h3
-              a(href='/services/business-process-design.html') Business process design
-            p Innovate and automate business processes
-          .item
-            h3 
-              a(href='/services/consultancy-and-advocacy.html') Consultancy and advocacy
-            p Consult companies and organisations about software, business process and IT. Advocate for pragmatic best practices to stakeholders and delivering ROI.
-          .item
-            h3 
-              a(href='/services/data-analytics-and-reporting.html') Data analytics and reporting
-            p Provide tools/scripts/software for research automation and data analysis
-          .item
-            h3 
-              a(href='/services/documentation-and-training-workshops.html') Documentation and training workshops
-            p Create a baseline of understanding and competence within your organisation
-          .item
-            h3 
-              a(href='/services/research.html') Research
-            p Compare software, investigate, research technologies, languages and frameworks
-          .item
-            h3 
-              a(href='/services/software-web-development.html') Software/web development
-            p Develop custom applications, systems, integrations and bugfixes
-          .item
-            h3 
-              a(href='/services/system-design.html') System design
-            p Design custom business systems using a mix of technology
-          .item
-            h3 
-              a(href='/services/test-automation.html') Test automation
-            p Build, configure and run automated tests in an existing or new framework
-          .item
-            h3 
-              a(href='/services/testing-and-quality-assurance.html') Testing and Quality Assurance
-            p Auditing, testing and reviewing technical decisions, direction, platform and process.
+    .ui.very.relaxed.stackable.grid.centered
+      .row
+        .column.ten.wide
+          h3 Hello!
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .column.six.wide
+          img.ui.image.medium(src='/assets/me.jpeg')
+      .ui.divider
+      .row
+        .column.middle.aligned
+          .ui.very.relaxed.stackable.grid.centered
+            .column.three.wide
+              h2.service.contract Hourly
+              strong Cost: $150 AUD per hour
+            .column.three.wide
+              h2.service.contract Project
+              strong Cost: Quote required
+      .ui.divider
+      .row
+        .column
+          .ui.grid
+            .item
+              h3 
+                a(href='/services/auditing.html' title='Risk assessment, policy and compliance auditing') Auditing
+                  img.ui.image.medium(src='/assets/auditing.jpg')
+            .item
+              h3 
+                a(href='/services/business-process-design.html' title='Innovate and automate business processes') Business process design
+                  img.ui.image.medium(src='/assets/business-process-design.jpg')
+            .item
+              h3 
+                a(href='/services/consultancy-and-advocacy.html' title='Consult companies and organisations about software, business process and IT. Advocate for pragmatic best practices to stakeholders and delivering ROI.') Consultancy and advocacy
+                  img.ui.image.medium(src='/assets/services.jpg')
+            .item
+              h3 
+                a(href='/services/data-analytics-and-reporting.html' title='Provide tools/scripts/software for research automation and data analysis') Data analytics and reporting
+                  img.ui.image.medium(src='/assets/data-analytics.jpg')
+            .item
+              h3 
+                a(href='/services/documentation-and-training-workshops.html' title='Create a baseline of understanding and capability within your organisation') Documentation and training workshops
+                  img.ui.image.medium(src='/assets/documentation.jpg')
+            .item
+              h3 
+                a(href='/services/research.html' title='Compare software, investigate, research technologies, languages and frameworks') Research
+                  img.ui.image.medium(src='/assets/research.jpg')
+            .item
+              h3 
+                a(href='/services/software-web-development.html' title='Develop custom applications, systems, integrations and bugfixes') Software/web development
+                  img.ui.image.medium(src='/assets/software-web-dev.jpg')
+            .item
+              h3 
+                a(href='/services/system-design.html' title='Design custom business systems using a mix of technology') System design
+                  img.ui.image.medium(src='/assets/system-design.jpg')
+            .item
+              h3 
+                a(href='/services/test-automation.html' title='Build, configure and run automated tests in an existing or new framework') Test automation
+                  img.ui.image.medium(src='/assets/test-automation.jpg')
+            .item
+              h3 
+                a(href='/services/testing-and-quality-assurance.html' title='Auditing, testing and reviewing technical decisions, direction, platform and process') Testing and Quality Assurance
+                  img.ui.image.medium(src='/assets/test-quality.jpg')
