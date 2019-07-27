@@ -1,8 +1,11 @@
-h1#logo.ui.header
-  a(href="/") Paul Brzeski
-
-#menu.ui.fluid.menu.inverted.attached
-  a.item(href="/services.html") SERVICES
-  a.item(href="/case-studies.html") CASE STUDIES
-  a.item(href="/articles.html") ARTICLES
-  a.item(href="/about.html") ABOUT
+.ui.grid
+  .column.six.wide
+    h1#logo.ui.header
+    a(href="/index.html" title="Homepage")
+      img.ui.image(src="/assets/logo.png")
+  .column.ten.wide
+    #menu.ui.menu.fluid.four.item.borderless
+      a.item(href="/services.html") SERVICES
+      a.item(href="/case-studies.html") CASE STUDIES
+      a.item(href="/articles.html") ARTICLES
+      a.item(href="/about.html") ABOUT
