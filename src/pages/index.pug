@@ -1,7 +1,8 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  script(src='/dist/app.js')
+  link(href='/dist/home.css', rel='stylesheet')
 
 block append title
   | Home
@@ -10,13 +11,13 @@ block append page
   #slideshow.ui.list
     .item
       img.ui.image(src='/assets/scientific-approach.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -450px ')
-      span.caption.right Comprehensive and scientific approach, I won't say it's a fact unless data can prove it
+      .caption.right Comprehensive and scientific approach, I won't say it's a fact unless data can prove it
     .item
       img.ui.image(src='/assets/coding-experience.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -450px ')
-      span.caption.left Writing code for over 20 years and still learning new things every day
+      .caption.left Writing code for over 20 years and still learning new things every day
     .item
       img.ui.image(src='/assets/passion.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -250px ')
-      span.caption.left A genuine passion for finding better ways to do things
+      .caption.left A genuine passion for finding better ways to do things
   #services
     h2.ui.dividing.header Services for hire
     .ui.grid
@@ -24,52 +25,52 @@ block append page
         h3 
           a(href='/services/auditing.html' title='Risk assessment, policy and compliance auditing')
             img(src='/assets/auditing.jpg')
-            span.caption Auditing
+            .caption Auditing
       .item
         h3 
           a(href='/services/business-process-design.html' title='Innovate and automate business processes')
             img(src='/assets/business-process-design.jpg')
-            span.caption Business process design
+            .caption Business process design
       .item
         h3 
-          a(href='/services/consultancy-and-advocacy.html' title='Consult companies and organisations about software, business process and IT. Advocate for pragmatic best practices to stakeholders and delivering ROI.')
+          a(href='/services/consultancy-and-advocacy.html' title='Digital Transformation for companies of all sizes. Advocate for pragmatic best practices to stakeholders and delivering ROI.')
             img(src='/assets/services.jpg')
-            span.caption Consultancy and advocacy
+            .caption Consultancy and advocacy
       .item
         h3 
           a(href='/services/data-analytics-and-reporting.html' title='Provide tools/scripts/software for research automation and data analysis')
             img(src='/assets/data-analytics.jpg')
-            span.caption Data analytics and reporting
+            .caption Data analytics and reporting
       .item
         h3 
           a(href='/services/documentation-and-training-workshops.html' title='Create a baseline of understanding and capability within your organisation')
             img(src='/assets/documentation.jpg')
-            span.caption Documentation and training workshops
+            .caption Documentation and training workshops
       .item
         h3 
           a(href='/services/research.html' title='Compare software, investigate, research technologies, languages and frameworks')
             img(src='/assets/research.jpg')
-            span.caption Research
+            .caption Research
       .item
         h3 
           a(href='/services/software-web-development.html' title='Develop custom applications, systems, integrations and bugfixes')
             img(src='/assets/software-web-dev.jpg')
-            span.caption Software/web development
+            .caption Software/web development
       .item
         h3 
           a(href='/services/system-design.html' title='Design custom business systems using a mix of technology')
             img(src='/assets/system-design.jpg')
-            span.caption System design
+            .caption System design
       .item
         h3 
           a(href='/services/test-automation.html' title='Build, configure and run automated tests in an existing or new framework')
             img(src='/assets/test-automation.jpg')
-            span.caption Test automation
+            .caption Test automation
       .item
         h3 
           a(href='/services/testing-and-quality-assurance.html' title='Auditing, testing and reviewing technical decisions, direction, platform and process')
             img(src='/assets/test-quality.jpg')
-            span.caption Testing and Quality Assurance
+            .caption Testing and Quality Assurance
   #projects
     h2.ui.dividing.header Active projects
     .ui.list

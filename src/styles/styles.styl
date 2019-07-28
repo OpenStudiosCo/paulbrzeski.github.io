@@ -10,9 +10,12 @@
   .column.wide
     padding-bottom 0.5em !important
 
+// Header for all non home pages
 header
   position relative
   text-align center
+  img
+    margin-bottom 2em
   h2
     color #FFFFFF
     font-size 36pt
@@ -50,126 +53,3 @@ footer
   span
     color #000000
     margin 0 .5em
-/*
-  Homepage
-*/
-#slideshow
-  margin 0
-  .item
-    position relative
-  .caption
-    font-size 2em
-    letter-spacing .1em
-    line-height 1.6em
-    position absolute
-    top 525px
-    padding 1.5em
-    background rgba(0,0,0,0.85)
-    color #FFFFFF
-    &.left
-      left 0
-      max-width 40%
-      padding-left 4em
-    &.right
-      max-width 50%
-      padding-right 4em
-      right 0
-
-#services, #projects, #articles
-  margin 2em
-
-#services
-  .item
-    height 250px
-    margin 1em 1em 1em 0
-    width calc(20% - 1em)
-    position relative
-    overflow hidden
-    img
-      height 250px
-      min-width 347px
-      object-fit cover
-      object-position center
-    .caption
-      display block
-      width 100%
-      position absolute
-      bottom 0
-      padding 1.5em
-      background rgba(0,0,0,0.85)
-      color #FFFFFF
-    &:hover
-      .caption
-        padding-bottom 2.5em
-        transition padding 0.125s
-
-#projects
-  .item
-    border solid 1px #CCC
-    margin 1em
-    padding 1em
-    h3
-      color #000000
-      font-size 2em
-      font-weight 700
-      margin 2em 1em
-    p
-      display block
-      font-size 1.4em
-      line-height 2.1em
-      margin 0 1.5em
-    img
-      height 420px
-      object-fit cover
-      object-position left
-      
-#articles
-  .column
-    h3
-      color #000000
-      font-size 1.5em
-      font-weight 700
-      margin 1em 0 1em -0.5em
-    p
-      margin 0em 1em 0 -0.5em
-      font-size 1em
-      line-height 1.8em
-    img
-      height 330px
-      height 330px
-      object-fit cover
-      object-position left
-
-// Below snippet credit to https://codepen.io/abbasarezoo/pen/NbJrqj
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  
-  margin: 0;
-  padding: 1rem 0;
-  
-  list-style-type: none;
-  
-    li {
-      margin: 0 0.25rem;
-    }
-  
-    button {
-      cursor: pointer;
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      padding: 0;
-      
-      border: none;
-      border-radius: 100%;
-      background-color: #CCCCCC;
-      
-      text-indent: -9999px;
-    }
-  
-    li.slick-active button {
-      background-color: #000000;
-    }
-  
-}
