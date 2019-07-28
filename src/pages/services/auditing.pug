@@ -1,7 +1,7 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/service.css', rel='stylesheet')
 
 block append title
   | Auditing | Services
@@ -12,9 +12,9 @@ block append page
     .divider >
     .active.section Auditing
   header
-    img.ui.image(src='/assets/auditing.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -425px ')
-    h2 Risk assessment, policy and compliance auditing
-  .ui.main.container
+    img.ui.image(src='/assets/auditing.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Risk assessment, policy and compliance auditing
+  #service
     .ui.two.column.very.relaxed.stackable.grid.centered
       .column
         .ui.list

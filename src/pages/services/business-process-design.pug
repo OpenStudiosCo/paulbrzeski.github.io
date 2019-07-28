@@ -1,7 +1,7 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/service.css', rel='stylesheet')
 
 block append title
   | Business process design | Services
@@ -12,9 +12,9 @@ block append page
     .divider >
     .active.section Business process design
   header
-    img.ui.image(src='/assets/business-process-design.jpg' style='object-fit: cover; max-height: 550px; width: 100%; object-position: 0px -425px ')
+    img.ui.image(src='/assets/business-process-design.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -225px ')
     h2 Innovate and automate business processes
-  .ui.main.container
+  #service
     .ui.two.column.very.relaxed.stackable.grid.centered
       .column
         .ui.list

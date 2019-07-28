@@ -1,7 +1,7 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/service.css', rel='stylesheet')
 
 block append title
   | Test automation | Services
@@ -12,9 +12,9 @@ block append page
     .divider >
     .active.section Test automation
   header
-    img.ui.image(src='/assets/test-automation.jpg' style='object-fit: cover; max-height: 750px; width: 100%; object-position: 0px -425px ')
+    img.ui.image(src='/assets/test-automation.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
     h2 Build, configure and run automated tests in an existing or new framework
-  .ui.main.container
+  #service
     .ui.two.column.very.relaxed.stackable.grid.centered
       .column
         .ui.list

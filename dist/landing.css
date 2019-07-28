@@ -1,0 +1,23 @@
+/*
+  Landing Page
+*/
+header {
+  position: relative;
+  text-align: center;
+}
+header img {
+  margin-bottom: 2em;
+}
+header h2 {
+  color: #fff;
+  font-size: 36pt;
+  font-weight: 300;
+  position: absolute;
+  top: calc(165px - 1em);
+  left: 0;
+  letter-spacing: 0.2em;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
