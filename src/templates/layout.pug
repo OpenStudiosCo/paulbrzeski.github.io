@@ -6,8 +6,9 @@ html
       |  | Paul Brzeski | Software engineering and technical strategy | Perth, Western Australia
     base(href='/')
     meta(name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0')
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700', rel='stylesheet')
     link(href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css', rel='stylesheet')
+    link(href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', rel='stylesheet')
     link(href='./dist/styles.css', rel='stylesheet')
   body
     include /src/templates/header.pug
@@ -35,5 +36,6 @@ html
                   a.header(href='https://www.linkedin.com/in/paul-brzeski-59764b82/' title='LinkedIn')
                     img.ui.mini.image(src='/assets/linkedin.png' alt='LinkedIn')
                     span LinkedIn
-            .right.floated.column.three.wide ABN 50 711 323 074
+            .right.floated.column.three.wide
+              h3 ABN 50 711 323 074
     include /src/templates/scripts.pug

@@ -5,17 +5,18 @@
     </title>
     <base href="/">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
     <link href="./dist/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="ui grid">
-      <div class="column six wide">
-        <h1 class="ui header" id="logo"></h1><a href="/index.html" title="Homepage"><img class="ui image" src="/assets/logo.png"></a>
+    <div class="ui grid stackable" id="global-header">
+      <div class="column eight wide">
+        <h1 class="ui header" id="logo"><a href="/index.html" title="Homepage"><img class="ui image" src="/assets/logo.png"></a></h1>
       </div>
-      <div class="column ten wide">
-        <div class="ui menu fluid four item borderless" id="menu"><a class="item" href="/services.html">SERVICES</a><a class="item" href="/case-studies.html">CASE STUDIES</a><a class="item" href="/articles.html">ARTICLES</a><a class="item" href="/about.html">ABOUT</a></div>
+      <div class="column eight wide">
+        <div class="ui menu fluid four item stackable" id="menu"><a class="item" href="/services.html">Services</a><a class="item" href="/case-studies.html">Case Studies</a><a class="item" href="/articles.html">Articles</a><a class="item" href="/about.html">About</a></div>
       </div>
     </div>
     <header><img class="ui image" src="/assets/about.jpg" style="object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -200px ">
@@ -80,7 +81,9 @@
                 <div class="item"><a class="header" href="https://www.linkedin.com/in/paul-brzeski-59764b82/" title="LinkedIn"><img class="ui mini image" src="/assets/linkedin.png" alt="LinkedIn"><span>LinkedIn</span></a></div>
               </div>
             </div>
-            <div class="right floated column three wide">ABN 50 711 323 074</div>
+            <div class="right floated column three wide">
+              <h3>ABN 50 711 323 074</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -88,23 +91,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
-    <script src="./dist/app.js"></script>
-    <script id="vs" type="not-js">void main() {
-	gl_Position = vec4( position, 1.0 );
-}
-    </script>
-    <script id="fs" type="not-js">precision mediump float;uniform vec2 resolution;uniform vec2 mouse;//Robert Schütze (trirop) 07.12.2015
-uniform float time;
-void main()
-{
-  vec3 p = vec3((gl_FragCoord.xy)/(resolution.y),sin(time / 25.0));
-  for (int i = 0; i < 40; i++)
-  {
-    p.xzy = vec3(1.3,0.999,0.7)*(abs((abs(p)/dot(p,p)-vec3(1.0,1.0,cos(time / 25.0)*0.5))));
-  }
-  gl_FragColor.rgb = p;gl_FragColor.a = 1.0;  
-}
-    </script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./dist/app.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125551739-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

@@ -2,14 +2,10 @@ block vendor_scripts
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
   script(src='/three.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js')
+  script(src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
 
 block scripts
 
-script#vs(type="not-js")
-  include /src/templates/vs.glsl
-
-script#fs(type="not-js")
-  include /src/templates/fs.glsl
 <!-- Global site tag (gtag.js) - Google Analytics -->
 script(async src='https://www.googletagmanager.com/gtag/js?id=UA-125551739-1')
 script
