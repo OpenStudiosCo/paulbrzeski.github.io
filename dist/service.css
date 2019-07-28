@@ -26,6 +26,8 @@ header h2.right {
   width: 100%;
   background: #191c1c;
   background: linear-gradient(to bottom, #191c1c 1%, #45484d 100%);
+  letter-spacing: 0.1em;
+  text-shadow: 5px 5px 5px #000;
 }
 .ui.breadcrumb .section,
 .ui.breadcrumb .divider {

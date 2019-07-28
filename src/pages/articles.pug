@@ -1,7 +1,8 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/landing.css', rel='stylesheet')
+  link(href='/dist/articles.css', rel='stylesheet')
 
 block append title
   | Articles
@@ -10,57 +11,73 @@ block append page
   header
     img.ui.image(src='/assets/articles.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -650px ')
     h2 Articles
-  .ui.main.container
-    table.ui.five.column.very.basic.table
-      tr.top.aligned
-        td(colspan='5')
-          a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74')
-            img.ui.fluid.large.image(src='/assets/thumb1.PNG', width='160', height='160')
-          h3
-            a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74') Windows 10 Review
-          p Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.
-      tr.top.aligned
-        td
-          a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
-            img.ui.fluid.image(src='/assets/thumb2.PNG', width='160', height='160')
-          h3 
-            a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441') Set Raytracers to Maximum
-          p So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when..
-        td
-          a(href='https://medium.com/@mail_59849/how-deep-is-the-river-if-you-cannot-see-the-bottom-40910b0fd80c')
-            img.ui.fluid.image(src='/assets/thumb3.PNG', width='160', height='160')
-          h3
-            a(href='https://medium.com/@mail_59849/how-deep-is-the-river-if-you-cannot-see-the-bottom-40910b0fd80c') How deep is the river if you cannot see the bottom?
-          p Upgrading your computer isn’t too hard — you work out where you can get good gains or if the whole setup needs a replacement. Unfortunately the latter option isn’t available for the human brain.
-        td
-          a(href='https://medium.com/@mail_59849/creating-good-tools-for-a-brave-new-world-a85fa2da43cf')
-            img.ui.fluid.image(src='/assets/thumb4.PNG', width='160', height='160')
-          h3
-            a(href='https://medium.com/@mail_59849/creating-good-tools-for-a-brave-new-world-a85fa2da43cf') Creating good tools for a brave new world
-          p I’m building a 2D/3D hybrid graphic design tool called Manifold. In this article I’m going to discuss the approach I’m taking in order to fit it into the workflow that I need for building games. I see this problem from a “recipe” perspective — what do I want the process to look like and what tools do I need to execute it.
-        td
-          a(href='https://medium.com/@mail_59849/my-angel-is-the-manifold-d0b718d03071')
-            img.ui.fluid.image(src='/assets/thumb5.PNG', width='160', height='160')
-          h3
-            a(href='https://medium.com/@mail_59849/my-angel-is-the-manifold-d0b718d03071') My angel is the manifold
-          p Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.
-        td
-          a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418')
-            img.ui.fluid.image(src='/assets/thumb6.PNG', width='160', height='160')
-          h3
-            a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418') In order to save time, you must first invent the universe
-          p One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.
-      tr.top.aligned
-        td
-          h3
-            a(href='https://medium.com/@mail_59849/confessions-of-a-dancing-cellocher-9851077e84ee') Confessions of a Dancing Cellocher
+  #articles
+    .ui.grid.three.column.wide
+      .row
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74')
+                img(src='/assets/thumb1.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/windows-10-review-2018-d343f2846d74')
+                h3 Windows 10 Review
+              p Fuck. That is a good word to describe this operating system and I hope that this article takes your mind off some of the crap we are all putting up with at home and at work. Windows 10 has been great for Apple, that’s for sure.
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
+                img(src='/assets/thumb2.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
+                h3 Set Raytracers to Maximum
+              p So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when..
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/how-deep-is-the-river-if-you-cannot-see-the-bottom-40910b0fd80c')
+                img(src='/assets/thumb3.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/how-deep-is-the-river-if-you-cannot-see-the-bottom-40910b0fd80c')
+                h3 How deep is the river if you cannot see the bottom?
+              p Upgrading your computer isn’t too hard — you work out where you can get good gains or if the whole setup needs a replacement. Unfortunately the latter option isn’t available for the human brain.
+      .row
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/creating-good-tools-for-a-brave-new-world-a85fa2da43cf')
+                img(src='/assets/thumb4.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/creating-good-tools-for-a-brave-new-world-a85fa2da43cf')
+                h3 Creating good tools for a brave new world
+              p I’m building a 2D/3D hybrid graphic design tool called Manifold. In this article I’m going to discuss the approach I’m taking in order to fit it into the workflow that I need for building games. I see this problem from a “recipe” perspective — what do I want the process to look like and what tools do I need to execute it.
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/my-angel-is-the-manifold-d0b718d03071')
+                img(src='/assets/thumb5.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/my-angel-is-the-manifold-d0b718d03071')
+                h3 My angel is the manifold
+              p Naming is the most important decision in a new open source project. It needs to convey a meaning, be ubiquitous, unique, low GI, etc. I’m coming up to the 5th anniversary of developing Langenium and I’m actually further away from a playable game than the early days of the project.
+        .column
+          .ui.grid
+            .column.nine.wide
+              a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418')
+                img(src='/assets/thumb6.PNG')
+            .column.seven.wide
+              a(href='https://medium.com/@mail_59849/in-order-to-save-time-you-must-first-invent-the-universe-dcb30e67418')
+                h3 In order to save time, you must first invent the universe
+              p One of the hardest parts of developing a 3D game is coming up with assets such as models, textures and even concept art itself. This is especially hard if you suck at 3D modelling and frankly don’t have time for it.
+        .column
+          a(href='https://medium.com/@mail_59849/confessions-of-a-dancing-cellocher-9851077e84ee')
+            h3 Confessions of a Dancing Cellocher
           p I use music as a tool, to perk me up when my brain doesn’t want to undertake the task at hand. A lot of the time this is my day job or housework, but it applies just as easily to exercise and even driving.
-        td
-          h3
-            a(href='https://medium.com/@mail_59849/what-is-me-44512e2cd277') What is me?
+        .column
+          a(href='https://medium.com/@mail_59849/what-is-me-44512e2cd277')
+            h3 What is me?
           p I was originally going to use my personal website as a base for blogging, linking off to my other places on the web, maybe showcasing some of my work. Typical web presence for someone in my line of work and with my interests.
-        td
-          h3
-            a(href='https://medium.com/@mail_59849/how-i-learned-to-stop-coding-and-love-the-web-5027b268649f') How I learned to stop coding and love the web
+        .column
+          a(href='https://medium.com/@mail_59849/how-i-learned-to-stop-coding-and-love-the-web-5027b268649f')
+            h3 How I learned to stop coding and love the web
           p AS a programmer, I love to build my own tools or come up with my own solutions. My hobby has been great for my professional career, but my own ability to complete personal projects in my free time has gone out the window. It seems staying up for days, like I did growing up playing with Flash and Visual Basic, trying to solve one problem doesn’t work as well for a grown adult with bills. Talking to pets can help, but sometimes they just distract me.
-        td(colspan='2')

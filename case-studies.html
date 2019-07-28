@@ -22,19 +22,28 @@
     <header><img class="ui image" src="/assets/case-studies.jpg" style="object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ">
       <h2>Case studies</h2>
     </header>
-    <div class="ui main container">
+    <div id="case_studies">
       <div class="ui list">
         <div class="item">
-          <iframe class="ui image" width="560" height="315" src="https://www.youtube.com/embed/cJcr09qIVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="content">
-            <h3><a href="/case-studies/langenium.html">Langenium</a></h3>
-            <p>Consuming much of my spare time from 2012 to 2017, <a href="https://github.com/paulbrzeski/Langenium">Langenium </a>was a concept MMORPG built on socket.io, Three.JS and Node.JS. At its height the website received 1000 visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.</p>
+          <div class="ui grid">
+            <div class="column six wide">
+              <iframe class="ui image" width="560" height="350" src="https://www.youtube.com/embed/cJcr09qIVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="column ten wide"><a href="/case-studies/langenium.html">
+                <h3>Langenium</h3></a>
+              <p>Consuming much of my spare time from 2012 to 2017, <a href="https://github.com/paulbrzeski/Langenium">Langenium </a>was a concept MMORPG built on socket.io, Three.JS and Node.JS. At its height the website received 1000 visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.</p>
+            </div>
           </div>
         </div>
-        <div class="item"><a href="/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html"><img class="ui large image fluid" src="/assets/1_i5HV9jeFSSRjc_9O_PWGTQ.jpeg" alt="Screenshot of Houdini functionality to generate buildings in Maya"></a>
-          <div class="content">
-            <h3><a href="/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html">The Best 3D Design Tools for Indie Game Development in 2019</a></h3>
-            <p>I've decided to present my own perspective as a hobbyist Indie game developer with drawing and visual art skills that could be called "child like". I have some background in graphic design due to past work, but as you'll read on in this case study that's not quite the  same as the art skills needed to freely pull things from your mind and recreate them in a virtual world.</p>
+        <div class="item">
+          <div class="ui grid">
+            <div class="column six wide"><a href="/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html"><img class="ui large image fluid" src="/assets/1_i5HV9jeFSSRjc_9O_PWGTQ.jpeg" alt="Screenshot of Houdini functionality to generate buildings in Maya"></a></div>
+            <div class="column ten wide">
+              <div class="content"><a href="/case-studies/best-3D-design-tools-for-indie-game-development-in-2019.html"> 
+                  <h3>The Best 3D Design Tools for Indie Game Development in 2019</h3></a>
+                <p>I've decided to present my own perspective as a hobbyist Indie game developer with drawing and visual art skills that could be called "child like". I have some background in graphic design due to past work, but as you'll read on in this case study that's not quite the  same as the art skills needed to freely pull things from your mind and recreate them in a virtual world.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -62,7 +71,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link href="/dist/landing.css" rel="stylesheet"><!-- Global site tag (gtag.js) - Google Analytics -->
+    <link href="/dist/landing.css" rel="stylesheet">
+    <link href="/dist/case-studies.css" rel="stylesheet"><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125551739-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
