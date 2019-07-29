@@ -10,7 +10,7 @@ $(document).ready(function() {
     nextArrow: false
   });
 
-  $('#projects .ui.list').slick({
+  $('#project_list').slick({
     dots: true,
     centerMode: true,
     prevArrow: false,
