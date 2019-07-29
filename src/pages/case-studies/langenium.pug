@@ -1,14 +1,17 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/landing.css', rel='stylesheet')
+  link(href='/dist/case-studies.css', rel='stylesheet')
 
 block append title
   | Langenium | Case Studies
 
 block append page
-  .ui.main.container
-    h2.ui.dividing.header.centered Langenium
+  header
+    img.ui.image(src='/assets/case-studies.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ')
+    h2 Langenium
+  #case_studies
     .ui.one.column.very.relaxed.stackable.grid
       .column.ten.wide.centered
         p Consuming much of my spare time from 2012 to 2017, 

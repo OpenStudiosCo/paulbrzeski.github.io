@@ -6,7 +6,6 @@
   margin: 0 auto;
 }
 #articles h3 {
-  font-weight: 300;
   color: #000;
   margin: 0 0 1em 0;
 }
@@ -16,6 +15,7 @@
 #articles .row.main h3 {
   padding: 1em 0;
   font-size: 2.4em;
+  font-weight: 300;
 }
 #articles .row.main p {
   font-size: 1.4em;

@@ -1,14 +1,17 @@
 extends /src/templates/layout.pug
 
 block append scripts
-  script(src='./dist/app.js')
+  link(href='/dist/landing.css', rel='stylesheet')
+  link(href='/dist/case-studies.css', rel='stylesheet')
 
 block append title
   | The Best 3D Design Tools for Indie Game Development in 2019 | Case Studies
 
 block append page
-  .ui.main.container
-    h2.ui.dividing.header.centered The Best 3D Design Tools for Indie Game Development in 2019
+  header
+    img.ui.image(src='/assets/case-studies.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ')
+    h2 The Best 3D Design Tools for Indie Game Development in 2019
+  #case_studies
     .ui.one.column.very.relaxed.stackable.grid
       .column.ten.wide.centered
         p This case study is under construction, check back soon!
