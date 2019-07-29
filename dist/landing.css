@@ -10,7 +10,7 @@ header img {
 }
 header h2 {
   color: #fff;
-  font-size: 36pt;
+  font-size: 36px;
   font-weight: 300;
   position: absolute;
   top: calc(165px - 1em);
@@ -22,6 +22,10 @@ header h2 {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 1000px) {
+  header h2 {
+    font-size: 24px;
+    top: calc(125px - 1em);
+  }
   header img {
     object-position: 0 0 !important;
   }

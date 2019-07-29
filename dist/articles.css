@@ -9,18 +9,20 @@
   color: #000;
   margin: 0 0 1em 0;
 }
-#articles .row.main {
-  padding: 4em;
-}
-#articles .row.main h3 {
-  padding: 1em 0;
-  font-size: 2.4em;
-  font-weight: 300;
-}
-#articles .row.main p {
-  font-size: 1.4em;
-  line-height: 2.1em;
-}
 #articles p {
   line-height: 2em;
+}
+@media only screen and (min-width: 1000px) {
+  #articles .row.main {
+    padding: 4em;
+  }
+  #articles .row.main h3 {
+    padding: 1em 0;
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  #articles .row.main p {
+    font-size: 1.4em;
+    line-height: 2.1em;
+  }
 }

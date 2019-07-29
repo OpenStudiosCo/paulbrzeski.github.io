@@ -1,6 +1,9 @@
 /*
   Service Page
 */
+header {
+  position: relative;
+}
 header h2 {
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -27,7 +30,13 @@ header h2.right {
   }
   header .caption {
     font-size: 1em;
-    top: 40%;
+    top: 8em;
+  }
+  header .caption.left {
+    max-width: 90%;
+  }
+  header .caption.right {
+    max-width: 90%;
   }
 }
 @media only screen and (min-width: 1000px) {

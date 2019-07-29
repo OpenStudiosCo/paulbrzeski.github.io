@@ -3,6 +3,7 @@
 */
 
 header
+  position relative
   h2
     font-weight 300
     letter-spacing .1em
@@ -27,7 +28,12 @@ header
       object-position 0 0 !important
     .caption
       font-size 1em
-      top 40%
+      top 8em
+      &.left
+        max-width 90%
+      &.right
+        max-width 90%
+
 
 @media only screen and (min-width: 1000px) 
   header

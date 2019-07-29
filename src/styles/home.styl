@@ -30,6 +30,10 @@
     .caption
       font-size 1em
       top 30%
+      &.left
+        max-width 60%
+      &.right
+        max-width 70%
 
 @media only screen and (min-width: 1000px) 
   #slideshow .ui.image
@@ -76,8 +80,7 @@
       .caption
         bottom 2em
 
-#projects
-  .item
+#projects > .ui.grid > .column
     border solid 1px #CCC
     margin 1em
     padding 1em

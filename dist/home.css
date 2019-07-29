@@ -35,6 +35,12 @@
     font-size: 1em;
     top: 30%;
   }
+  #slideshow .caption.left {
+    max-width: 60%;
+  }
+  #slideshow .caption.right {
+    max-width: 70%;
+  }
 }
 @media only screen and (min-width: 1000px) {
   #slideshow .ui.image {
@@ -84,24 +90,24 @@
     bottom: 2em;
   }
 }
-#projects .item {
+#projects > .ui.grid > .column {
   border: solid 1px #ccc;
   margin: 1em;
   padding: 1em;
 }
-#projects .item h3 {
+#projects > .ui.grid > .column h3 {
   color: #000;
   font-size: 2em;
   font-weight: 700;
   margin: 2em 1em;
 }
-#projects .item p {
+#projects > .ui.grid > .column p {
   display: block;
   font-size: 1.4em;
   line-height: 2.1em;
   margin: 0 1.5em;
 }
-#projects .item img {
+#projects > .ui.grid > .column img {
   height: 420px;
   object-fit: cover;
   object-position: left;
