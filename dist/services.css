@@ -9,20 +9,20 @@
   font-size: 2.5em;
   line-height: 3.5em;
 }
-#services .item {
+#services #service_list .column {
   height: 330px;
   margin: 1em 1.75em 1em 0;
   width: calc(33% - 1.75em);
   position: relative;
   overflow: hidden;
 }
-#services .item img {
+#services #service_list .column img {
   height: 330px;
   min-width: 475px;
   object-fit: cover;
   object-position: center;
 }
-#services .item .caption {
+#services #service_list .column .caption {
   display: block;
   height: 125px;
   width: 100%;

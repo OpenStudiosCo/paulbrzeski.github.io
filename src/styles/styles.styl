@@ -5,6 +5,8 @@
 *
   font-family 'Merriweather', serif !important
   font-weight 300
+i.icon
+  font-family 'Icons' !important
 
 #global-header
   .column.wide
@@ -24,7 +26,24 @@
     margin 2em 1em
     padding 0em 1em
     text-transform uppercase
-    
+
+#mobile_menu_toggle
+  color #333333
+  font-size 2em
+  position absolute
+  right 1em
+  top 1.4em
+  cursor pointer
+
+@media only screen and (min-width: 1000px) 
+  #mobile_menu_toggle
+    display none
+
+@media only screen and (max-width: 1000px) 
+  #logo
+    padding-right 4em
+  #menu
+    display none
 
 footer
   h3
@@ -35,3 +54,8 @@ footer
   span
     color #000000
     margin 0 .5em
+
+@media only screen and (max-width: 1000px) 
+  footer *
+    text-align center
+    margin 0 auto

@@ -21,6 +21,23 @@ header h2.right {
   padding-right: 3em;
   right: 0;
 }
+@media only screen and (max-width: 1000px) {
+  header .ui.image {
+    object-position: 0 0 !important;
+  }
+  header .caption {
+    font-size: 1em;
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header .ui.image {
+    object-fit: cover;
+    max-height: 750px;
+    width: 100%;
+    object-position: 0px -450px;
+  }
+}
 .ui.breadcrumb {
   padding: 1em 1.6em;
   width: 100%;
