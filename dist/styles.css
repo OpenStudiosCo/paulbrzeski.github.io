@@ -12,7 +12,12 @@ i.icon {
   padding-bottom: 0.5em !important;
 }
 #logo {
-  padding: 1em;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 1000px) {
+  #logo {
+    padding: 1em;
+  }
 }
 #menu {
   background: none transparent;
