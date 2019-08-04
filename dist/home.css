@@ -121,19 +121,19 @@
     margin: 1em;
     padding: 1em;
   }
-  h3 {
+  #projects .project h3 {
     color: #000;
     font-size: 2rem;
     font-weight: 700;
     margin: 2em 1em;
   }
-  p {
+  #projects .project p {
     display: block;
     font-size: 1.4rem;
     line-height: 2.1em;
     margin: 0 1.5em;
   }
-  img {
+  #projects .project img {
     height: 420px;
     object-fit: cover;
     object-position: left;
