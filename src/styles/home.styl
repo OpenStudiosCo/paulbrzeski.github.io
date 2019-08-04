@@ -84,24 +84,42 @@
         bottom 2em
 
 #projects .project
-    border solid 1px #CCC
+  border solid 1px #CCC
+  margin .25em
+  padding .25em
+  h3
+    color #000000
+    font-size 1.4rem
+    font-weight 700
+    margin 2em 1em
+  p
+    display block
+    line-height 1.4em
+    margin 0 1.5em
+  img
+    height 420px
+    object-fit cover
+    object-position left
+
+@media only screen and (min-width: 1000px)
+  #projects .project
     margin 1em
     padding 1em
-    h3
-      color #000000
-      font-size 2em
-      font-weight 700
-      margin 2em 1em
-    p
-      display block
-      font-size 1.4em
-      line-height 2.1em
-      margin 0 1.5em
-    img
-      height 420px
-      object-fit cover
-      object-position left
-      
+  h3
+    color #000000
+    font-size 2rem
+    font-weight 700
+    margin 2em 1em
+  p
+    display block
+    font-size 1.4rem
+    line-height 2.1em
+    margin 0 1.5em
+  img
+    height 420px
+    object-fit cover
+    object-position left
+
 #articles
   .column
     overflow hidden
