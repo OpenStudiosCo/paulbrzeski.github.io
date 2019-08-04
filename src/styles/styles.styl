@@ -2,6 +2,8 @@
   Global
 */
 
+$desktop-breakpoint = 1500px
+
 *
   font-family 'Merriweather', serif !important
   font-weight 300
@@ -12,10 +14,15 @@ i.icon
   .column.wide
     padding-bottom 0.5em !important
 
-#logo
-  padding 1em 0
+@media only screen and (max-width: $desktop-breakpoint) 
+  #global-header
+    .column
+      padding 1em 0.25em !important
 
-@media only screen and (min-width: 1000px) 
+#logo
+  padding 1em 0 0
+
+@media only screen and (min-width: $desktop-breakpoint) 
   #logo
     padding 1em
     
@@ -39,13 +46,13 @@ i.icon
   top 1.4em
   cursor pointer
 
-@media only screen and (min-width: 1000px) 
+@media only screen and (min-width: $desktop-breakpoint) 
   #mobile_menu_toggle
     display none
   #menu
     display flex !important
 
-@media only screen and (max-width: 1000px) 
+@media only screen and (max-width: $desktop-breakpoint) 
   #logo
     padding-right 4em
   #menu
@@ -61,7 +68,7 @@ footer
     color #000000
     margin 0 .5em
 
-@media only screen and (max-width: 1000px) 
+@media only screen and (max-width: $desktop-breakpoint) 
   footer *
     text-align center
     margin 0 auto
