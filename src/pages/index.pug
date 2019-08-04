@@ -1,8 +1,10 @@
 extends /src/templates/layout.pug
 
+block append head
+  link(href='/dist/home.css', rel='stylesheet')
+
 block append scripts
   script(src='/dist/app.js')
-  link(href='/dist/home.css', rel='stylesheet')
 
 block append title
   | Home
