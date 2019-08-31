@@ -47,7 +47,7 @@ i.icon {
   cursor: pointer;
 }
 .ui.divider {
-  margin: 3rem 0 !important;
+  margin: 2rem 0 !important;
 }
 @media only screen and (min-width: 1500px) {
   #mobile_menu_toggle {
@@ -81,7 +81,7 @@ footer img {
   display: inline-block !important;
 }
 footer img.logo {
-  margin-top: 1rrem;
+  margin-top: 1rem;
 }
 footer span {
   display: inline-block;
