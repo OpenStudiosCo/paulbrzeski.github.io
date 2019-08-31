@@ -4,6 +4,7 @@
 * {
   font-family: 'Merriweather', serif !important;
   font-weight: 300;
+  letter-spacing: 0.075em;
 }
 i.icon {
   font-family: 'Icons' !important;
@@ -61,16 +62,28 @@ i.icon {
     display: none;
   }
 }
+footer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 5em;
+}
 footer h3 {
-  font-weight: 300;
+  font-weight: bold;
   line-height: 3em;
+}
+footer h5 {
+  float: right;
 }
 footer img {
   display: inline-block !important;
 }
+footer img.logo {
+  margin-top: 1rem;
+}
 footer span {
+  display: inline-block;
   color: #000;
-  margin: 0 0.5em;
+  margin: 0.5em;
 }
 @media only screen and (max-width: 1500px) {
   footer {

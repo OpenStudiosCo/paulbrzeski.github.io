@@ -16,27 +16,44 @@ html
     block page
     .ui.divider
     footer
-      .ui.container
-        .ui.grid.stackable
-          .row
-            .left.floated.column
-              .ui.menu.secondary.stackable
-                .item
-                  a(href='https://www.deviantart.com/thezeski' title='DeviantArt')
-                    img.ui.mini.image(src='/assets/deviantart.png' alt='Deviantart')
-                    span DeviantArt
-                .item
-                  a(href='https://github.com/paulbrzeski' title='Github')
-                    img.ui.mini.image(src='/assets/github.png' alt='Github')
-                    span Github
-                .item
-                  a(href='https://www.instagram.com/paulbrzeski/' title='Instagram')
-                    img.ui.mini.image(src='/assets/instagram.png' alt='Instagram')
-                    span Instagram
-                .item
-                  a.header(href='https://www.linkedin.com/in/paul-brzeski-59764b82/' title='LinkedIn')
-                    img.ui.mini.image(src='/assets/linkedin.png' alt='LinkedIn')
-                    span LinkedIn
-            .right.floated.column.three.wide
-              h3 ABN 50 711 323 074
+      .ui.grid.stackable
+        .row
+          .column.five.wide
+            h3 Get in touch
+            .ui.list
+              .item
+                a(href='https://www.deviantart.com/thezeski' title='DeviantArt')
+                  img.ui.mini.image(src='/assets/deviantart.png' alt='Deviantart')
+                  span DeviantArt
+              .item
+                a(href='https://github.com/paulbrzeski' title='Github')
+                  img.ui.mini.image(src='/assets/github.png' alt='Github')
+                  span Github
+              .item
+                a(href='https://www.instagram.com/paulbrzeski/' title='Instagram')
+                  img.ui.mini.image(src='/assets/instagram.png' alt='Instagram')
+                  span Instagram
+              .item
+                a.header(href='https://www.linkedin.com/in/paul-brzeski-59764b82/' title='LinkedIn')
+                  img.ui.mini.image(src='/assets/linkedin.png' alt='LinkedIn')
+                  span LinkedIn
+          .column.five.wide
+            h3 Work smarter, not harder.
+            .ui.list
+              .item
+                a(href="/services.html")
+                  span Services
+              .item
+                a(href="/case-studies.html")
+                  span Case Studies
+              .item
+                a(href="/articles.html")
+                  span Articles
+              .item
+                a(href="/about.html")
+                  span About
+          .column.five.wide
+            a(href="/" title="Homepage")
+              img.logo.ui.fluid.image(src="/assets/logo.png")
+            h5 ABN 50 711 323 074
     include /src/templates/scripts.pug

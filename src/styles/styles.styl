@@ -7,6 +7,7 @@ $desktop-breakpoint = 1500px
 *
   font-family 'Merriweather', serif !important
   font-weight 300
+  letter-spacing .075em
 i.icon
   font-family 'Icons' !important
 
@@ -59,14 +60,22 @@ i.icon
     display none
 
 footer
+  max-width $desktop-breakpoint
+  margin 0 auto
+  padding-bottom 5em
   h3
-    font-weight 300
+    font-weight bold
     line-height 3em
+  h5
+      float right
   img
     display inline-block !important
+    &.logo
+      margin-top 1rem
   span
+    display inline-block
     color #000000
-    margin 0 .5em
+    margin .5em
 
 @media only screen and (max-width: $desktop-breakpoint) 
   footer
