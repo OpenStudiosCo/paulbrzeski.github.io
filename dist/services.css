@@ -20,6 +20,10 @@
   position: relative;
   overflow: hidden;
 }
+#services #service_list .column h3 {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
 #services #service_list .column img {
   height: 330px;
   min-width: 475px;
