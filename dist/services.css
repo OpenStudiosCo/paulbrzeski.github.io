@@ -32,3 +32,21 @@
   background: rgba(0,0,0,0.85);
   color: #fff;
 }
+#services #methodology .left.aligned div {
+  margin: 0.5em 0;
+}
+#services #engagement_types .column {
+  background: rgba(0,0,0,0.1);
+  margin: 2em;
+}
+#services #benefits h4 {
+  margin: 1.5rem 0.5rem;
+  text-align: left;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+#services #benefits p {
+  display: block;
+  margin: 0.5rem;
+  text-align: left;
+}
