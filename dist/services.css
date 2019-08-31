@@ -5,6 +5,10 @@
   margin: 0 auto;
   width: 80%;
 }
+#services h3 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
 #services .hello {
   font-size: 2.5em;
   line-height: 3.5em;
@@ -38,6 +42,9 @@
 #services #engagement_types .column {
   background: rgba(0,0,0,0.1);
   margin: 2em;
+}
+#services #benefits {
+  padding-bottom: 3em;
 }
 #services #benefits h4 {
   margin: 1.5rem 0.5rem;
