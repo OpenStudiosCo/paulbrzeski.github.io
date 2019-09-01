@@ -5,24 +5,27 @@
   width: 80%;
   margin: 0 auto;
 }
+#articles .column {
+  margin: 1.25rem 0;
+}
 #articles h3 {
   color: #000;
-  margin: 0 0 1em 0;
+  margin: 0 0 1.25rem 0;
 }
 #articles p {
-  line-height: 2em;
+  line-height: 2rem;
 }
 @media only screen and (min-width: 1000px) {
   #articles .row.main {
-    padding: 4em;
+    padding: 4rem;
   }
   #articles .row.main h3 {
-    padding: 1em 0;
-    font-size: 2.4em;
+    padding: 1rem 0;
+    font-size: 2.4rem;
     font-weight: 300;
   }
   #articles .row.main p {
-    font-size: 1.4em;
-    line-height: 2.1em;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
 }
