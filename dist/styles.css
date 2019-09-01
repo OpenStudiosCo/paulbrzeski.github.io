@@ -82,14 +82,15 @@ footer h5 {
 }
 footer img {
   display: inline-block !important;
+  margin-right: 2rem;
 }
 footer img.logo {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0;
 }
 footer span {
   display: inline-block;
   color: #000;
-  margin: 0.5rem;
+  line-height: 2.5rem;
 }
 @media only screen and (max-width: 1500px) {
   footer {
