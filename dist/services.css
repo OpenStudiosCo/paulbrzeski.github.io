@@ -3,7 +3,6 @@
 */
 #services {
   margin: 0 auto;
-  width: 80%;
 }
 #services h3 {
   font-size: 1.6rem;
@@ -19,10 +18,14 @@
   width: calc(33% - 1.75rem);
   position: relative;
   overflow: hidden;
+  padding: 1rem 0rem !important;
+}
+#services #service_list .column.empty {
+  display: none;
 }
 #services #service_list .column h3 {
   font-size: 1.2rem;
-  line-height: 2.4rem;
+  line-height: 1.8rem;
 }
 #services #service_list .column img {
   height: 330px;
@@ -32,13 +35,18 @@
 }
 #services #service_list .column .caption {
   display: block;
-  height: 125px;
+  height: 150px;
   width: 100%;
   position: absolute;
   bottom: 0;
   padding: 1.5rem;
   background: rgba(0,0,0,0.85);
   color: #fff;
+}
+#services #methodology > p {
+  margin: 2rem 0 3rem;
+  text-align: left;
+  line-height: 2rem;
 }
 #services #methodology .left.aligned div {
   margin: 0.5rem 0;
@@ -60,4 +68,15 @@
   display: block;
   margin: 0.5rem;
   text-align: left;
+}
+@media only screen and (min-width: 1500px) {
+  #services {
+    width: 80%;
+  }
+  #services #service_list .column {
+    padding: 1rem 1rem !important;
+  }
+  #services #service_list .column.empty {
+    display: inline-block;
+  }
 }

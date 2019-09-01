@@ -2,6 +2,7 @@ extends /src/templates/layout.pug
 
 block append head
   link(href='/dist/landing.css', rel='stylesheet')
+  link(href='/dist/about.css', rel='stylesheet')
 
 block append title
   | About
@@ -10,7 +11,7 @@ block append page
   header
     img.ui.image(src='/assets/about.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -200px ')
     h2 About
-  .ui.main.container
+  #about_page
     p(style='font-size: 1.6rem') Founded in 2019, Paul Brzeski Consulting offers solutions that are researched, made to last and, most importantly, built for humans.
     .ui.two.column.very.relaxed.stackable.grid
       .row
