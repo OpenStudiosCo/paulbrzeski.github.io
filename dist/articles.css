@@ -3,6 +3,7 @@
 */
 #articles {
   margin: 0 auto;
+  width: 95%;
 }
 #articles .column {
   margin: 1.25rem 0;
