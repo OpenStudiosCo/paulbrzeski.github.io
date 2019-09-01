@@ -55,6 +55,11 @@
     object-position: 0px -150px !important;
   }
 }
+.founded {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 2rem;
+}
 #services,
 #projects,
 #articles {

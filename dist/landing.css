@@ -3,7 +3,7 @@
 */
 header {
   position: relative;
-  text-align: center;
+  text-align: center !important;
 }
 header img {
   margin-bottom: 2em;

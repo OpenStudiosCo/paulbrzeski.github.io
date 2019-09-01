@@ -6,6 +6,9 @@
   font-weight: 300;
   letter-spacing: 0.075rem;
 }
+p {
+  text-align: justify;
+}
 i.icon {
   font-family: 'Icons' !important;
 }
