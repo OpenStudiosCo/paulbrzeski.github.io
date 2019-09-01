@@ -2,7 +2,6 @@
   Articles
 */
 #articles {
-  width: 80%;
   margin: 0 auto;
 }
 #articles .column {
@@ -15,12 +14,12 @@
 #articles p {
   line-height: 2rem;
 }
-@media only screen and (min-width: 1000px) {
-  #articles .row.main {
-    padding: 4rem;
+@media only screen and (min-width: 1500px) {
+  #articles {
+    width: 80%;
   }
   #articles .row.main h3 {
-    padding: 1rem 0;
+    padding: 3rem 0;
     font-size: 2.4rem;
     font-weight: 300;
   }
