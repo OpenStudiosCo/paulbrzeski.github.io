@@ -1,0 +1,65 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Tutoring and Professional Coaching | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Tutoring and Professional Coaching
+  header
+    img.ui.image(src='/assets/tutoring-professional-coaching.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -325px ')
+    h2.caption.left Bespoke lesson plans and advice for your career and needs
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header What you'll get:
+            ul
+              li Lesson plans tailored to your needs, I don't want to waste your time with things you can learn on your own
+              li Experienced trainer, I've upskilled scores of co-workers and professionals over the course of my career
+              li Solid advice from a seasoned professional, I'll take your career goals and personality into account when coming up with a plan
+      .column
+        .item
+          h3.ui.dividing.header Delivery formats and scheduling:
+          ul
+            li Ad-hoc as needed catch-ups to go over issues
+            li One on one training in person and remotely
+            li Regular scheduled time 
+    .ui.one.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Example Subjects
+            .ui.three.column.very.relaxed.stackable.grid.centered
+              .column
+                h4 DevOps, Project management and Collaboration
+                ul
+                  li How to use Git within a CI environment
+                  li What is the point of project management?
+                  li Collaboration strategies and principles to uphold
+              .column
+                h4 IT Basics and Computer skill development
+                ul
+                  li Working efficiently and how to find answers online
+                  li Solving problems with technology
+              .column
+                h4 Software engineering and maintenance
+                ul
+                  li Business Process and System design
+                  li Database design and operations
+              .column
+                h4 System Administration
+                ul
+                  li Get confident with Linux and inheriting an environment
+                  li Migrations and hardening, Disaster Recovery planning
+              .column
+                h4 Web development
+                ul
+                  li Become a front-end master - learn all the acronyms i.e. CSS, WebGl, WCAG, BEM, MVC
+                  li Learn how to integrate web front-ends and systems with enterprise back of house
