@@ -15,19 +15,10 @@ i.icon {
 #global-header .column.wide {
   padding-bottom: 0.5rem !important;
 }
-@media only screen and (max-width: 1500px) {
-  #global-header .column {
-    padding: 1rem 2rem !important;
-    width: 100%;
-  }
-}
 #logo {
-  padding: 1rem 0.5rem 0;
-}
-@media only screen and (min-width: 1500px) {
-  #logo {
-    padding: 2rem;
-  }
+  padding-top: 1.8rem;
+  padding-right: 2rem;
+  margin-left: -1.5rem;
 }
 #menu {
   background: none transparent;
@@ -46,8 +37,8 @@ i.icon {
   color: #333;
   font-size: 2rem;
   position: absolute;
-  right: 0.5rem;
-  top: 1.9rem;
+  right: 0.75rem;
+  top: 2.7rem;
   cursor: pointer;
 }
 .ui.divider {
@@ -56,24 +47,8 @@ i.icon {
 #menu[style*='display: block'] {
   display: flex !important;
 }
-@media only screen and (min-width: 1500px) {
-  #mobile_menu_toggle {
-    display: none;
-  }
-  #menu {
-    display: flex !important;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  #logo {
-    padding-right: 4rem;
-  }
-  #menu {
-    display: none;
-  }
-}
 footer {
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 5rem;
 }
@@ -95,23 +70,4 @@ footer span {
   display: inline-block;
   color: #000;
   line-height: 2.5rem;
-}
-@media only screen and (max-width: 1500px) {
-  footer {
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  footer,
-  footer * {
-    text-align: center;
-  }
-  footer a {
-    width: 100%;
-  }
-  footer span {
-    margin: 0 auto;
-  }
-  footer img {
-    float: left;
-  }
 }
