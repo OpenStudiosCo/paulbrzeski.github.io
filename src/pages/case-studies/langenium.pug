@@ -12,12 +12,97 @@ block append page
     img.ui.image(src='/assets/case-studies.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ')
     h2 Langenium
   #case_studies
-    .ui.one.column.very.relaxed.stackable.grid
-      .column.ten.wide.centered
-        p Consuming much of my spare time from 2012 to 2017, 
-          a(href='https://github.com/paulbrzeski/Langenium') Langenium 
-          | was a concept MMORPG built on socket.io, Three.JS and Node.JS. At its height the website received 1000 visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.
-        p Using a separate Git repository to manage art assets and Readme files in Github, I had a really good system for managing my art assets that has informed my view on the value of version control to this day.
-        p The below video demonstrates one of the last builds of the game featuring a smooth frame rate, procedurally generated environment while also being rendered using the server to allow multiplayer functionality.
-        p I'm still working on the rest of this article, please check back soon!
-        iframe(width="680" height="400" src="https://www.youtube.com/embed/bx1qSntZxVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .ui.ten.column.very.relaxed.stackable.grid
+      .row.centered
+        .column.ten.wide.centered
+          p Consuming much of my spare time from 2012 to 2017, 
+            a(href='https://github.com/paulbrzeski/Langenium') Langenium 
+            | was a concept MMORPG built for the web browser and around a content streaming model. At its height the website received 1000 
+            | visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.
+      .row.centered
+        .column.seven.wide
+          iframe(width="680" height="400" src="https://www.youtube.com/embed/a4ebwHrVykI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .column.three.wide
+          h5 3D Render Framework: 
+          a(href='https://threejs.org/') Three.JS 
+          h5 Other frontend libs: 
+          a(href='https://jquery.com/') jQuery 
+          | ,  
+          a(href='https://semantic-ui.com/') Semantic UI
+          h5 Frontend application: 
+          a(href='https://pugjs.org/') PugJS 
+          | ,  
+          a(href='http://stylus-lang.com/') Stylus 
+          | served by modular 
+          a(href='https://nodejs.org/') Node.js 
+          | game server
+          h5 Backend application: 
+          a(href='https://expressjs.com/') Express 
+          | and 
+          a(href='https://mongoosejs.com/') Mongoose
+          h5 Server/Client Interface:
+          | WebSockets using 
+          a(href='https://socket.io/') socket.io
+      .row.centered
+        .column.ten.wide
+          p.
+            Starting out as a humble test to draw a 3D sphere in the browser, the game engine grew in leaps and bounds over the course of this project.
+            Express.JS and socket.io provided an ideal interface for extensive custom functionality, I used the same movement code on client and server
+            so that a client instance of the game could move characters first and then the server could confirm their true position. This was a huge
+            boon for a game that needed to run at 60FPS for multiple players.
+          p.
+            In hindsight, the biggest mistake in the server was using MongoDB for persistence. I had approximately ten JSON configuration files
+            which could easily have been stored in a local folder, with a base template for deploying to a new server. The need for MongoDB added
+            an extra dependency on every server instance and meant I had to export and import data that would have been easier to maintain within the code base. 
+            Perhaps after a few users joined and proper environments were built that MongoDB database may have started paying dividends, but unfortunately
+            for 5 years it was more of a blocker to the portability and ease of use of the code.
+      .row.centered
+        .column.seven.wide
+          iframe(width="680" height="400" src="https://www.youtube.com/embed/bx1qSntZxVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .column.three.wide
+          p.
+            This video demonstrates one of the last builds of the game featuring a smooth frame rate, procedurally generated environment
+            while also being rendered using the server to allow multiplayer functionality.
+          p.
+            It took about 6 months to perfect the shader effects of the sky and water, both generated a normal map procedurally - allowing clouds in the sky
+            and waves in the ocean to have dynamic lighting.
+      .row.centered
+        .column.ten.wide
+          p.
+            Using a separate Git repository to manage art assets and Readme files in Github, I had a really good system for managing my art assets 
+            that has informed my view on the value of version control to this day.
+          p.
+            The biggest ongoing challenge in this project was producing art and content. One of the things that makes MMORPG worlds appealing is the
+            amount of complexity, depth and variety in the gameplay. Established titles like Eve Online and World of Warcraft have stood the test of
+            time by continually releasing expansions and extending game features in order to keep the experience fresh for players.
+          p.
+            The creative role I'm most confident in is writing - and this showed in Langenium. About two years into the project, Langenium had several
+            storylines, some of them inconsistent, and more ideas than I could possibly put into production. The biggest limitation was tooling - creating 
+            3D models, new visual designs and producing music using the standard industry tools was incredibly time
+            consuming. In a traditional game studio environment those responsibilities would be a full time role if not several peoples roles. 
+      .row.centered
+        .column.seven.wide
+          iframe(width="680" height="400" src="https://www.youtube.com/embed/tPPEHiuq5n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .column.three.wide
+          h5 Design and illustration:
+          a(href='https://www.adobe.com/au/products/illustrator.html') Adobe Illustrator
+          h5 Concept art drawing tool:
+          a(href='http://al.chemy.org/') Alchemy
+          h5 3D Modelling:
+          a(href='https://www.blender.org/') Blender
+          h5 Digital Audio Workstation:
+          a(href='http://lmms.io/') Linux MultiMedia Studio
+      .row.centered
+        .column.ten.wide
+          p.
+            The Langenium server application is retired in the final refactor of the project. The main reason for this was cost - in 2015 I was unemployed 
+            for a few months and had to switch off my Amazon EC2 instance that powered the website and game server. I switched to free Github Pages hosting
+            and developed a workflow that generated a static HTML site instead.
+          p
+            | The work to refactor Langenium's server engine into a client only website and game culminated in my static website generator 
+            a(href='https://www.npmjs.com/package/kettlefish') Kettlefish
+            | . The creative energy and spirit of Langenium has become a smaller and tigher project called 
+            a(href='https://kamigen.com/') Kamigen
+            | . The lessons learned producing art assets and the game engine that rendered them led me to create another piece of software - 
+            a(href='https://openstudios.xyz/projects#manifold') Manifold
+            | , which is a hybrid 2D/3D and raster/vector drawing tool for indie game developers and anyone else with a need to quickly create 3D assets.
