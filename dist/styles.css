@@ -6,6 +6,9 @@
   font-weight: 300;
   letter-spacing: 0.075rem;
 }
+strong {
+  font-weight: bold;
+}
 p {
   text-align: justify;
 }
