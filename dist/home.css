@@ -70,41 +70,6 @@
 #articles {
   margin: 2em;
 }
-#services .column {
-  height: 250px;
-  margin: 1em 1em 1em 0;
-  width: calc(25% - 1em);
-  position: relative;
-  overflow: hidden;
-}
-#services .column img {
-  height: 250px;
-  min-width: 450px;
-  object-fit: cover;
-  object-position: center;
-}
-#services .column .caption {
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding: 1.5em;
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-}
-#services .column:hover .caption {
-  padding-bottom: 2.5em;
-  transition: padding 0.125s;
-}
-@media only screen and (max-width: 1000px) {
-  #services .column img {
-    height: 200px;
-    min-width: calc(100% + 2em);
-  }
-  #services .column .caption {
-    bottom: 2em;
-  }
-}
 #projects .project {
   border: solid 1px #ccc;
   margin: 0.25em;

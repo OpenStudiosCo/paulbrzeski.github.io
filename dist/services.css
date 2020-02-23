@@ -3,7 +3,6 @@
 */
 #services {
   margin: 0 auto;
-  width: 95%;
 }
 #services h3 {
   font-size: 1.6rem;
@@ -15,11 +14,9 @@
 }
 #services .service_list .column {
   height: 330px;
-  margin: 1rem 1.75rem 1rem 0;
-  width: calc(33% - 1.75rem);
   position: relative;
   overflow: hidden;
-  padding: 1rem 0rem !important;
+  padding: 1rem 1rem !important;
 }
 #services .service_list .column.empty {
   display: none;
@@ -43,6 +40,9 @@
   padding: 1.5rem;
   background: rgba(0,0,0,0.85);
   color: #fff;
+}
+#services #methodology {
+  padding: 0 3rem 0 2rem;
 }
 #services #methodology > p {
   margin: 2rem 0 3rem;
@@ -72,7 +72,7 @@
 }
 @media only screen and (min-width: 1500px) {
   #services {
-    width: 80%;
+    padding: 0 3rem 0 2rem;
   }
   #services .service_list .column {
     padding: 1rem 1rem !important;
