@@ -134,6 +134,7 @@
 #articles .column img {
   height: 330px;
   height: 330px;
+  min-width: 100%;
   object-fit: cover;
   object-position: left;
 }
