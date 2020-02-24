@@ -2,6 +2,10 @@
   Responsive styles
 */
 @media only screen and (min-width: 800px) {
+  footer img {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
   #mobile_menu_toggle {
     top: 3.5rem;
     right: 2rem;

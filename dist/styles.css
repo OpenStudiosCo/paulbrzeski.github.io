@@ -61,7 +61,8 @@ footer h5 {
 }
 footer img {
   display: inline-block !important;
-  margin-right: 2rem;
+  margin-left: calc(50% - 8rem);
+  margin-right: -15rem;
 }
 footer img.logo {
   margin: 0.5rem 0 0;
