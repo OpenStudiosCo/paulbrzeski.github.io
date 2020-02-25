@@ -16,4 +16,17 @@ $(document).ready(function() {
     prevArrow: false,
     nextArrow: false
   });
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('.tech_icons i').popup({ on: 'click'});
+    $('.tech_icons i').on('click', function(){
+      $('.tech_icons i.active').removeClass('active');
+      $(this).addClass('active');
+    });
+  }
+  else {
+    $('.tech_icons i').popup();
+  }
+  
+  
 });

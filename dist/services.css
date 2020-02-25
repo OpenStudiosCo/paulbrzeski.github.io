@@ -4,6 +4,19 @@
 #services {
   margin: 0 auto;
 }
+#services .tech_icons {
+  color: #ccc;
+}
+#services i {
+  font-size: 4rem;
+  letter-spacing: 1.5rem;
+  line-height: 6rem;
+  cursor: pointer;
+}
+#services i:hover,
+#services i.active {
+  color: #999;
+}
 #services h3 {
   font-size: 1.6rem;
   line-height: 3.2rem;

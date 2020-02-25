@@ -6,6 +6,12 @@
   font-weight: 300;
   letter-spacing: 0.075rem;
 }
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.fas {
+  font-family: "Font Awesome 5 Free" !important;
+}
 strong {
   font-weight: bold;
 }

@@ -1,6 +1,6 @@
 block vendor_scripts
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js')
+  script(src='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js')
   script(src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
 
 block scripts
@@ -50,3 +50,5 @@ script.
   }(document, 'script', 'facebook-jssdk'));
 // Your customer chat code
 .fb-customerchat(attribution='setup_tool' page_id='114724189897574' theme_color='#6699cc' logged_in_greeting='Hello there! How can I help you?' logged_out_greeting='Hello there! How can I help you?')
+
+script(src='/dist/app.js')

@@ -23,6 +23,9 @@
   }
 }
 @media only screen and (max-width: 1440px) {
+  .column.right.aligned {
+    text-align: left !important;
+  }
   .hide_on_mobile {
     display: none !important;
   }
