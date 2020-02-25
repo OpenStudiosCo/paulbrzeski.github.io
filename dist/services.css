@@ -7,14 +7,14 @@
 #services .tech_icons {
   color: #ccc;
 }
-#services i {
+#services .tech_icons i {
   font-size: 4rem;
   letter-spacing: 1.5rem;
   line-height: 6rem;
   cursor: pointer;
 }
-#services i:hover,
-#services i.active {
+#services .tech_icons i:hover,
+#services .tech_icons i.active {
   color: #999;
 }
 #services h3 {
