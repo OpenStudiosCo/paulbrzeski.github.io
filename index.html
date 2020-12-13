@@ -1,447 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- 
-      Credits:
-      - http://glslsandbox.com/e#48428.0
-      - https://stackoverflow.com/a/35403253/8255070
-    -->
-    <title>Paul Brzeski</title>
-    <meta charset="utf-8">
+    <title>Home | Paul Brzeski Consulting | Software engineering and technical strategy | Perth, Western Australia
+    </title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
-    <link href="./semantic.min.css" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet">
+    <link href="./dist/responsive.css" rel="stylesheet">
+    <link href="/dist/home.css" rel="stylesheet">
+    <link href="/dist/services.css" rel="stylesheet">
   </head>
   <body>
-    <div id="container" class="ui stackable grid">
-      <div class="sixteen wide column header">
-        <div class="ui inverted secondary stackable menu">
-          <div class="item">
-            <h1>Paul Brzeski</h1>      
-          </div>
-          <ul class="right menu">
-            <li class="item">
-              <a href='#projects'>Projects</a>
-            </li>
-            <li class="item">
-              <a href='#about'>About</a>
-            </li>
-            <li class="item">
-              <a href='#past_work'>Past work</a>
-            </li>
-            <li class="item">
-              <a href='#art'>Art</a>
-            </li>
-            <li class="item">
-              <a href='#social'>Social</a>
-            </li>
-          </ul>
-        </div>
+    <div class="ui grid stackable two column" id="global-header">
+      <div class="column">
+        <h1 class="ui header" id="logo"><a href="/" title="Homepage"><img class="ui image" src="/assets/logo.png"></a></h1><a id="mobile_menu_toggle" onclick="$(&quot;#menu&quot;).slideToggle()"><i class="content icon"></i></a>
       </div>
-      <!-- Projects -->
-      <h2 id="projects" class="column">Projects</h2>
-      <div class="two column row">
-        <div class="left floated column seven wide project">
-          <a href="https://github.com/paulbrzeski/kamigen" class="image">
-            <img class="ui fluid image" src="assets/kamigen.png" />
-          </a>
-          <div class="content">
-            Kamigen is the spiritual successor to <a href="https://github.com/paulbrzeski/langenium">Langenium</a>
-          </div>
-        </div>
-        <div class="right floated column seven wide project">
-          <a href="https://github.com/paulbrzeski/manifold" class="image">
-            <img class="ui fluid image" style="padding: 3em 0; filter: invert(100%);" src="assets/manifold.svg" />
-          </a>
-          <div class="content">
-            Manifold is a 3D modelling tool for the web.
-          </div>
-        </div>
+      <div class="column">
+        <div class="ui menu fluid four item stackable" id="menu"><a class="item" href="/services.html">Services</a><a class="item" href="/case-studies.html">Case Studies</a><a class="item" href="/articles.html">Articles</a><a class="item" href="/about.html">About</a></div>
       </div>
-      <!-- About and Past Work -->
-      <div class="two column row">
-        <div class="left floated column seven wide ">
-          <h2 id="about">About</h2>
-          <div class="about">
-            <br />
-            <p>I am a self taught full stack developer with over 10 years in the industry and double that in personal experience.</p>
-            <p>In my down time I enjoy comic books, cycling and developing cutting edge stuff.</p>
-          </div>
-        </div>
-        <div class="right floated column nine wide">
-          <h2 id="past_work">Past work</h2>
-          <div class="ui past_work item">
-            <div class="ui left floated bulleted inverted list">
-              <h3>Project types</h3>
-              <div class="item">Data warehouses</div>
-              <div class="item">Desktop applications</div>
-              <div class="item">Digital art</div>
-              <div class="item">Server applications</div>
-              <div class="item">Web games</div>
-              <div class="item">Web applications</div>
-              <div class="item">Websites</div>
-            </div>
-            <div class="ui right floated bulleted inverted list">
-              <h3>Sectors</h3>
-              <div class="item">Government (Local, State, Federal and Foreign)</div>
-              <div class="item">Education and training</div>
-              <div class="item">Finance and professional services</div>
-              <div class="item">Industrial and construction</div>
-              <div class="item">Non-profit</div>
-              <div class="item">Telecommunications</div>
-              <div class="item">Travel and tourism</div>
-            </div>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
-      </div>
-      <!-- Art and Social -->
-      <div class="two column row">
-        <div class="floated left ten wide column">
-          <h2 id="art">Art</h2>
-          <div class="art">
-            <div class="ui small images">
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/9th-of-August-2013-Water-Effects-Comparison-424632775">
-                <img src="./assets/9th_of_august_2013__water_effects_comparison_by_nimf-d70tcqv.png">
-              </a>
-              <a class="ui image" href="https://www.youtube.com/watch?v=bx1qSntZxVI">
-                <img src="./assets/screenshot_from_langenium_staging_4_1_14_by_nimf-d70tmnb.png">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Langenium-Master-Timeline-W-I-P-Official-Poster-556303137">
-                <img src="./assets/langenium_master_timeline__w_i_p__official_poster__by_thezeski-d977i8x.png">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Langenium-Mega-Poster-555921091">
-                <img src="./assets/langenium_mega_poster_by_thezeski-d96zbgj.png">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Tree-424872361">
-                <img src="./assets/tree_by_thezeski-d70yhm1.jpg">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/1010717-17763999">
-                <img src="./assets/1010717_by_nimf.jpg">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Blast-from-the-past-19709258">
-                <img src="./assets/blast_from_the_past_by_nimf.jpg">
-              </a>
-              <a class="ui image" href="https://www.deviantart.com/thezeski/art/Illustration-of-Shiva-564836554">
-                <img src="./assets/illustration_of_shiva_by_thezeski-d9caeoa.png">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="floated right four wide column">
-          <h2 id="social">Social</h2>
-          <div class="social">
-            <div class="ui large labels">
-              <a class="ui image black label" href='https://www.deviantart.com/thezeski'>
-                <img src="assets/deviantart.png" />
-                <span>DeviantArt</span>
-              </a>
-              <a class="ui image black label" href='https://github.com/paulbrzeski'>
-                <img src="assets/github.png" />
-                <span>Github</span>
-              </a>
-              <a class="ui image black label" href='https://www.instagram.com/paulbrzeski/'>
-                <img src="assets/instagram.png" />
-                <span>Instagram</span>
-              </a>
-              <a class="ui image black label" href='https://www.linkedin.com/in/paul-brzeski-59764b82/'>
-                <img src="assets/linkedin.png" />
-                <span>LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="semantic.min.js"></script>
-    <script src="three.min.js"></script>
-
-    <script id="vs" type="not-js">
-      void main() {
-        gl_Position = vec4( position, 1.0 );
-      }
-    </script>
-    <script id="fs" type="not-js">
-      #ifdef GL_ES
-      precision highp float;
-      #endif
-       
-      uniform float time;
-      uniform vec2 mouse;
-      uniform vec2 resolution;
-
-      #define iterations 9
-      #define formuparam2 0.89
-       
-      #define volsteps 10
-      #define stepsize 0.190
-       
-      #define zoom 2.900
-      #define tile   0.450
-      #define speed2  0.030
-       
-      #define brightness 0.2
-      #define darkmatter 0.320
-      #define distfading 0.510
-      #define saturation 0.335
-
-      #define transverseSpeed 1.45
-      #define cloud 0.253
-
-      float triangle(float x, float a) {
-        float output2 = 2.0*abs(  2.0*  ( (x/a) - floor( (x/a) + 0.3) ) ) - 1.1;
-        return output2;
-      }
-       
-      float field(in vec3 p) {
-        float strength = 7. + .05 * log(1.e-6 + fract(sin(time) * 4373.11));
-        float accum = 0.;
-        float prev = 0.;
-        float tw = 0.;
-
-        for (int i = 0; i < 6; ++i) {
-          float mag = dot(p, p);
-          p = abs(p) / mag + vec3(-.5, -.8 + 0.1*sin(time*0.2 + 2.0), -1.1+0.3*cos(time*0.15));
-          float w = exp(-float(i) / 7.);
-          accum += w * exp(-strength * pow(abs(mag - prev), 1.3));
-          tw += w;
-          prev = mag;
-        }
-        return max(0., 5. * accum / tw - .7);
-      }
-
-      void main() {
-         
-        vec2 uv2 = 2. * gl_FragCoord.xy / resolution.xy - 1.;
-        vec2 uvs = uv2 * resolution.xy / max(resolution.x, resolution.y);       
-        float time2 = time*1.9;
-        float speed = speed2;
-        speed = 0.0015 * cos(time2*0.02 + 3.1415926/4.0);
-        float formuparam = formuparam2;
-          
-        //get coords and direction
-        vec2 uv = uvs;
-        
-               
-        //mouse rotation
-        float a_xz = 0.9;
-        float a_yz = -.6;
-        float a_xy = 0.9 + time*0.04;
-        
-        
-        mat2 rot_xz = mat2(cos(a_xz),sin(a_xz),-sin(a_xz),cos(a_xz));
-        
-        mat2 rot_yz = mat2(cos(a_yz),sin(a_yz),-sin(a_yz),cos(a_yz));
-          
-        mat2 rot_xy = mat2(cos(a_xy),sin(a_xy),-sin(a_xy),cos(a_xy));
-        
-
-        float v2 =1.0;
-        
-        vec3 dir=vec3(uv*zoom,1.);
-       
-        vec3 from=vec3(0.0, 0.0,0.0);
-       
-                                     
-              from.x -= .5*(-0.5);
-              from.y -= .5*(-0.5);
-                     
-                     
-        vec3 forward = vec3(0.,0.,1.);
-                     
-        
-        from.x += transverseSpeed*(1.0)*cos(0.01*time) + 0.001*time;
-        from.y += transverseSpeed*(1.0)*sin(0.01*time) + 0.001*time;
-        from.z += 0.003*time;
-        
-        
-        dir.xy*=rot_xy;
-        forward.xy *= rot_xy;
-
-        dir.xz*=rot_xz;
-        forward.xz *= rot_xz;
-          
-        
-        dir.yz*= rot_yz;
-        forward.yz *= rot_yz;
-         
-
-        
-        from.xy*=-rot_xy;
-        from.xz*=rot_xz;
-        from.yz*= rot_yz;
-         
-        
-        //zoom
-        float zooom = (time2-3311.)*speed;
-        from += forward* zooom;
-        float sampleShift = mod( zooom, stepsize );
-         
-        float zoffset = -sampleShift;
-        sampleShift /= stepsize; // make from 0 to 1
-
-
-        
-        //volumetric rendering
-        float s=0.24;
-        float s3 = s + stepsize/2.0;
-        vec3 v=vec3(0.);
-        float t3 = 0.0;
-        
-        
-        vec3 backCol2 = vec3(0.);
-        for (int r=0; r<volsteps; r++) {
-          vec3 p2=from+(s+zoffset)*dir;// + vec3(0.,0.,zoffset);
-          vec3 p3=(from+(s3+zoffset)*dir )* (1.9/zoom);// + vec3(0.,0.,zoffset);
-          
-          p2 = abs(vec3(tile)-mod(p2,vec3(tile*2.))); // tiling fold
-          p3 = abs(vec3(tile)-mod(p3,vec3(tile*2.))); // tiling fold
-          
-          #ifdef cloud
-          t3 = field(p3);
-          #endif
-          
-          float pa,a=pa=0.;
-          for (int i=0; i<iterations; i++) {
-            p2=abs(p2)/dot(p2,p2)-formuparam; // the magic formula
-            float D = abs(length(p2)-pa); // absolute sum of average change
-            
-            if (i > 2) {
-              a += i > 7 ? min( 12., D) : D;
-            }
-            pa=length(p2);
-          }
-          
-        
-          a*=a*a; // add contrast
-
-          // brightens stuff up a bit
-          float s1 = s+zoffset;
-
-          // need closed form expression for this, now that we shift samples
-          float fade = pow(distfading,max(0.,float(r)-sampleShift));
-          
-          v+=fade;
-
-          // fade out samples as they approach the camera
-          if( r == 0 )
-            fade *= (1. - (sampleShift));
-          // fade in samples as they approach from the distance
-          if( r == volsteps-1 )
-            fade *= sampleShift;
-          v+=vec3(s1,s1*s1,s1*s1*s1*s1)*a*brightness*fade; // coloring based on distance
-          
-          backCol2 += mix(.4, 1., v2) * vec3(0.20 * t3 * t3 * t3, 0.4 * t3 * t3, t3 * 0.7) * fade;
-
-          
-          s+=stepsize;
-          s3 += stepsize;
-          
-          
-          
-          }
-                 
-        v=mix(vec3(length(v)),v,saturation); //color adjust
-         
-        
-        vec4 forCol2 = vec4(v*.01,1.);
-        
-        #ifdef cloud
-        backCol2 *= cloud;
-        #endif
-        
-        backCol2.r *= 0.55;
-        backCol2.g *= 0.95;
-        backCol2.b *= 1.05;
-        
-        gl_FragColor = vec4(backCol2, 1.0);
-
-
-       
-      }
-
-    </script>
-
-    <script>
-      var $ = document.querySelector.bind(document);
-
-      var camera = new THREE.Camera();
-      camera.position.z = 1;
-
-      var scene = new THREE.Scene();
-
-      var geometry = new THREE.PlaneBufferGeometry(2, 2);
-
-      var uniforms = {
-        time: { type: "f", value: 1.0 },
-        resolution: { type: "v2", value: new THREE.Vector2() },
-        mouse: { type: "v2", value: new THREE.Vector2() },
-      };
-
-      var material = new THREE.ShaderMaterial({
-        uniforms: uniforms,
-        vertexShader: $('#vs').text,
-        fragmentShader: $('#fs').text,
-      });
-
-      var mesh = new THREE.Mesh(geometry, material);
-      scene.add(mesh);
-
-      var renderer = new THREE.WebGLRenderer();
-      document.body.appendChild(renderer.domElement);
-      renderer.domElement.addEventListener('mousemove', recordMousePosition);
-
-      render(0);
-
-      function recordMousePosition(e) {
-        // normalize the mouse position across the canvas
-        // so in the shader the values go from -1 to +1
-        var canvas = renderer.domElement;
-        var rect = canvas.getBoundingClientRect();
-
-        uniforms.mouse.value.x = (e.clientX - rect.left) / canvas.clientWidth  *  2 - 1;
-        uniforms.mouse.value.y = (e.clientY - rect.top ) / canvas.clientHeight * -2 + 1;      
-      }
-
-      function resize() {
-        var canvas = renderer.domElement;
-        var dpr    = window.devicePixelRatio / 2;  // make 1 or less if too slow
-        var width  = canvas.clientWidth  * dpr;
-        var height = canvas.clientHeight * dpr;
-        if (width != canvas.width || height != canvas.height) {
-          renderer.setSize( width, height, false );
-          uniforms.resolution.value.x = renderer.domElement.width;
-          uniforms.resolution.value.y = renderer.domElement.height;
-        }
-      }
-
-      function render(time) {
-        resize();
-        uniforms.time.value = time * 0.001;
-        renderer.render(scene, camera);
-        requestAnimationFrame(render);
-      }
-
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <div class="ui list" id="slideshow">
+      <div class="item"><img class="ui image" src="/assets/slide1.jpg" style="object-position: 0px -100px">
+        <div class="caption left">Researched driven approach to technology and business. Scaleable solutions.</div>
+      </div>
+      <div class="item"><img class="ui image" src="/assets/slide2.jpg" style="object-position: 0px -100px">
+        <div class="caption right">Improved customer experience and more productive staff through technology focused business improvement.</div>
+      </div>
+      <div class="item"><img class="ui image" src="/assets/slide3.jpg" style="object-position: 0px -250px">
+        <div class="caption right">Over 20 years experience creating bespoke software and websites for clients of all sizes.</div>
+      </div>
+    </div>
+    <p class="founded">Welcome to Paul Brzeski Consulting, best practice Software Engineering and Technical Consultancy services for hire. I invite you to browse this site to learn more, tap the chat widget or visit me on social media to get in touch.</p>
+    <div class="ui dividing header"></div>
+    <div id="services">
+      <div class="ui grid stackable service_list">
+        <div class="row">
+          <div class="column three wide right aligned">
+            <h3><i class="ui massive icon lightbulb"></i> Strategy</h3><i class="massive inverted grey ui icon angle double right hide_on_mobile"></i>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column three wide justified">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <p>Every project and engagement involves some degree of consultation and technical guidance, I call this strategy.</p>
+            <p>The following Strategy services are based on over a decade of experience and available to add value to your business.</p>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column four wide"><a href="/services/auditing.html"><img class="ui image medium" src="/assets/auditing.jpg">
+              <div class="caption">
+                <h3>Auditing</h3>
+                <p>Risk assessment, policy and compliance auditing</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/consultancy-and-advocacy.html"><img class="ui image medium" src="/assets/services.jpg">
+              <div class="caption">
+                <h3>Consultancy and advocacy</h3>
+                <p>Digital Transformation for companies of all sizes, ROI and needs tailored approach</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/documentation-and-training-workshops.html"><img class="ui image medium" src="/assets/documentation.jpg">
+              <div class="caption">
+                <h3>Documentation and training</h3>
+                <p>Create a baseline of understanding and capability within your organisation</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/quality-assurance.html"><img class="ui image medium" src="/assets/quality-assurance.jpg">
+              <div class="caption">
+                <h3>Quality Assurance (QA)</h3>
+                <p>Auditing, testing and reviewing technical decisions, direction, platform and process</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/technical-project-management.html"><img class="ui image medium" src="/assets/technical-project-management.jpg">
+              <div class="caption">
+                <h3>Technical Project Management</h3>
+                <p>Care for a technical project during a critical stage, or from start to finish</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/tutoring-professional-coaching.html"><img class="ui image medium" src="/assets/tutoring-professional-coaching.jpg">
+              <div class="caption">
+                <h3>Tutoring and Professional Coaching</h3>
+                <p>Bespoke lesson plans and advice for your career and needs</p>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="ui dividing header"></div>
+      <div class="ui grid stackable service_list">
+        <div class="row">
+          <div class="column three wide right aligned">
+            <h3><i class="ui massive icon edit"></i>  Design</h3><i class="massive inverted grey ui icon angle double right hide_on_mobile"></i>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column three wide justified">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <p>The expectations for robust user experiences and information access have been elevated by decades of progress in graphic, web and software design.</p>
+            <p>As a veteran of corporate environments and digital agencies, I have a vast number of past experiences and successful approaches to draw from.</p>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column four wide"><a href="/services/business-process-design.html"><img class="ui image medium" src="/assets/business-process-design.jpg">
+              <div class="caption">
+                <h3>Business process design</h3>
+                <p>Innovate and automate business processes</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/data-analytics-and-reporting.html"><img class="ui image medium" src="/assets/data-analytics.jpg">
+              <div class="caption">
+                <h3>Data analytics and reporting</h3>
+                <p>Provide tools/scripts/software for research automation and data analysis</p>
+              </div></a></div>
+          <div class="column eight wide center aligned">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <div class="tech_icons"><i class="fas fa-wheelchair" data-title="Accessibility" data-content="At the forefront of any design discussion, challenge and solution."></i><i class="fab fa-adobe" data-title="Adobe Creative Suite" data-content="An industry staple, I'm using any of the Adobe tools to produce and reference design work."></i><i class="fab fa-atlassian" data-title="Atlassian Suite" data-content="I've been using Bitbucket, Confluence and Jira for almost a decade."></i><i class="fab fa-deviantart" data-title="DeviantArt" data-content="I frequently post to and reference work on DeviantArt, one of the biggest social networks for creatives"></i><i class="fab fa-dropbox" data-title="Dropbox" data-content="Dropbox, OneDrive and other cloud file sync solutions are essential to team collaboration during design processes."></i><i class="fab fa-evernote" data-title="Evernote" data-content="I use Evernote for all my personal and professional notes. cloud based note tools like Evernote and OneNote are great for project management and team discussions."></i><i class="fab fa-galactic-republic" data-title="Galactic Citizen" data-content="I look for solutions outside the box, often in pop culture and media in order to easily communicate new integrative ideas."></i><i class="fab fa-google-drive" data-title="Google Drive" data-content="Google Drive and Office 365 unlock realtime document collaboration for remote teams. I have extensive experience working with teams interstate and internationally using these tools."></i><i class="fas fa-pencil-alt" data-title="Pencil" data-content="A great open source GUI drawing tool I use for wireframing and diagrams."></i><i class="fab fa-slack-hash" data-title="Slack" data-content="Extensive experience using numerous IM tools for collaboration including Discord, Hangouts, Slack, Skype and Teams."></i><i class="fab fa-trello" data-title="Trello" data-content="A great agile board that has been replicated in numerous other platforms."></i></div>
+          </div>
+          <div class="column four wide"><a href="/services/research.html"><img class="ui image medium" src="/assets/research.jpg">
+              <div class="caption">
+                <h3>Research</h3>
+                <p>Compare software, investigate, research technologies, languages and frameworks</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/system-design.html"><img class="ui image medium" src="/assets/system-design.jpg">
+              <div class="caption">
+                <h3>System design</h3>
+                <p>Design custom business systems using a mix of technology</p>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="ui dividing header"></div>
+      <div class="ui grid stackable service_list">
+        <div class="row">
+          <div class="column three wide right aligned">
+            <h3><i class="ui massive icon cogs"></i> Engineering</h3><i class="massive inverted grey ui icon angle double right hide_on_mobile"></i>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column three wide justified">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <p>I've been writing code for over twenty years and am confident that I can deliver anything given the right plan, time and budget.</p>
+            <p>My past experiences and knowledge of the latest trends inform my offering, ensuring I can bring value in the most efficient manner possible.  </p>
+          </div>
+          <div class="column hide_on_mobile"></div>
+          <div class="column four wide hide_on_mobile right aligned">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3><i class="huge inverted grey ui icon mobile"></i><i class="huge inverted grey ui icon tablet"></i><i class="huge inverted grey ui icon desktop"></i><i class="huge inverted grey ui icon server"></i>
+          </div>
+          <div class="column four wide"><a href="/services/software-web-development.html"><img class="ui image medium" src="/assets/software-web-dev.jpg">
+              <div class="caption">
+                <h3>Software applications</h3>
+                <p>Custom desktop and web applications, services, systems integrations and data systems.</p>
+              </div></a></div>
+          <div class="column eight wide center aligned">
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <h3 class="hide_on_mobile">&nbsp;</h3>
+            <div class="tech_icons"><i class="fab fa-apple" data-title="Apple" data-content="OSX and iOS native applications using PWA and cross compilation"></i><i class="fab fa-angular" data-title="AngularJS" data-content="A modern web application framework, I have worked on a number of Angular based projects"></i><i class="fab fa-cpanel" data-title="cPanel" data-content="The industry standard hosting management tool, I have extensive experience using cPanel"></i><i class="fab fa-css3-alt" data-title="CSS3" data-content="The latest standards in CSS3 and CSS pre-processors like LESS, SASS and Stylus"></i><i class="fab fa-digital-ocean" data-title="Digital Ocean" data-content="My preferred VPS hosting platform due to favorable pricing, I have also used AWS, Azure and Rackspace."></i><i class="fab fa-drupal" data-title="Drupal" data-content="I have over 3 years of experience implementing highly complex bespoke Drupal sites for household names"></i><i class="fas fa-atom" data-title="Electron" data-content="A popular desktop publishing framework I have used to develop native desktop applications using web technology"></i><i class="fab fa-git" data-title="Git" data-content="The industry standard version control system, I use Git in all my work and even use it to manage certain documents"></i><i class="fab fa-html5" data-title="HTML5" data-content="The latest standards in HTML5 and HTML templating languages like Pug and Twig"></i><i class="fab fa-java" data-title="Java" data-content="I've supported and maintained a number of Java based web and conventional desktop applications for companies of all sizes"></i><i class="fab fa-joomla" data-title="Joomla" data-content="I have over 2 years of experience implementing beautiful and user friendly Joomla sites"></i><i class="fab fa-laravel" data-title="Laravel" data-content="I have been involved in a number of Laravel based projects and am comfortable building my own software with it."></i><i class="fab fa-linux" data-title="Linux" data-content="I have over 20 years experience using Linux in my day to day and for work. I currently prefer Manjaro Linux for desktop due to its ease of use and performance."></i><i class="fab fa-mailchimp" data-title="Mailchimp" data-content="I have extensive experience implementing and configuring Mailchimp campaigns as part of website support and new builds."></i><i class="fab fa-markdown" data-title="Markdown" data-content="As most Git hosting platforms automatically render Markdown, I have built navigateable knowledgebases within the Markdown files of Bitbucket and Github repositories"></i><i class="fab fa-modx" data-title="Modx" data-content="I have built a few excellent Modx sites, it is easily my favourite PHP based CMS from a development point of view"></i><i class="fab fa-node-js" data-title="Node.JS and Javascript" data-content="My preferred way to write code, I have extensive experience writing server applications using Node.js and browser applications using Javascript in my professional and personal work."></i><i class="fab fa-cc-paypal" data-title="Paypal and payment gateways" data-content="Numerous websites and systems I've developed have been integrated with Paypal, banks and other B2B payment systems."></i><i class="fab fa-php" data-title="PHP" data-content="I have extensive experience maintaining and developing with PHP on its own and within application and CMS frameworks."></i><i class="fab fa-shopify" data-title="Shopify and E-Commerce" data-content="I have extensive experience maintaining and developing E-Commerce sites with platforms including Drupal Commerce, Magento, Shopify and Woocommerce."></i><i class="fab fa-vuejs" data-title="Vue.js" data-content="My preferred front-end application framework, I enjoy writing front-end applications with Vue.js"></i><i class="fab fa-windows" data-title="Windows Desktop and Server Application Development" data-content="I have almost two decades worth of experience writing software using Visual Studio, first using the platform at the age of eleven."></i><i class="fab fa-wordpress" data-title="Wordpress" data-content="My preferred CMS for most website projects, I have extensive experience designing, configuring, deploying and supporting Wordpress sites."></i></div>
+          </div>
+          <div class="column four wide"><a href="/services/test-automation.html"><img class="ui image medium" src="/assets/test-automation.jpg">
+              <div class="caption">
+                <h3>Test business logic and data integrity</h3>
+                <p>Build, configure and run automated tests in an existing or new framework</p>
+              </div></a></div>
+          <div class="column four wide"><a href="/services/website-development.html"><img class="ui image medium" src="/assets/website-dev.jpg">
+              <div class="caption">
+                <h3>Website development</h3>
+                <p>Custom websites, implement integrations and clear backlog of bugfixes</p>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui dividing header"></div>
+    <div id="articles">
+      <h2>Recent articles</h2><br>
+      <div class="ui grid three column wide stackable">
+        <div class="row">
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/future-jobs-the-rise-of-interdisciplinary-thinking-6e85a1763063"><img src="/assets/thumb11.jpg"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/future-jobs-the-rise-of-interdisciplinary-thinking-6e85a1763063">
+                    <h3>Future Jobs: The Rise of Interdisciplinary Thinking</h3></a>
+                  <p>In the past we may have needed a team professionals to produce a deliverable like a TV commercial or new car design — new AI powered tools and interdisciplinary skills could achieve the same result with just two people or even one person.</p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/when-i-grow-up-i-want-to-be-george-lucas-fba6d5ae93b8"><img src="/assets/thumb10.jpg"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/when-i-grow-up-i-want-to-be-george-lucas-fba6d5ae93b8">
+                    <h3>When I grow up, I want to be George Lucas</h3></a>
+                  <p>When I was 11, I wanted to be a film director. 20 years later, I want to be a specific film director - George Lucas. Star Wars is one film, but the tools and knowledge that it created in 1977 are still used by an entire industry today.</p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/open-source-the-peaceful-revolution-f9aeacd4171d"><img src="/assets/thumb9.jpg"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/open-source-the-peaceful-revolution-f9aeacd4171d">
+                    <h3>Open Source: The peaceful revolution</h3></a>
+                  <p>Why is the Free and Open Source Software movement yet to make a significant impact on multimedia production and video games? </p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/a-matter-of-privacy-and-security-fba3ba6eee23"><img src="/assets/thumb8.jpeg"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/a-matter-of-privacy-and-security-fba3ba6eee23">
+                    <h3>A matter of privacy and security</h3></a>
+                  <p>Websites have existed for some time, and yet we seem to be going backwards when it comes to performance and security. But why is this?</p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/balancing-compliance-ethics-and-value-in-digital-a5874b43ef16"><img src="/assets/thumb7.png"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/balancing-compliance-ethics-and-value-in-digital-a5874b43ef16">
+                    <h3>Balancing compliance, ethics and value in digital</h3></a>
+                  <p>Since 1999 we’ve experienced a tech revolution in business, government and wider society. In 2019 Australia, the web is an integral part of daily life — but how reliable is it all? </p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui grid stackable">
+              <div class="row">
+                <div class="column eight wide"><a href="https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441"><img src="/assets/thumb2.PNG"></a></div>
+                <div class="column hide_on_mobile"></div>
+                <div class="column six wide"><a href="https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441">
+                    <h3>Set Raytracers to Maximum</h3></a>
+                  <p>So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when.</p>
+                </div>
+                <div class="column hide_on_mobile"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <footer>
+      <div class="ui grid stackable">
+        <div class="row">
+          <div class="column five wide right aligned">
+            <h3>Work smarter, not harder.</h3>
+            <div class="ui list very relaxed">
+              <div class="item"><a href="/services.html"><span>Services</span></a></div>
+              <div class="item"><a href="/case-studies.html"><span>Case Studies</span></a></div>
+              <div class="item"><a href="/articles.html"><span>Articles</span></a></div>
+              <div class="item"><a href="/about.html"><span>About</span></a></div>
+            </div>
+          </div>
+          <div class="column two wide hide_on_mobile"></div>
+          <div class="column three wide">
+            <h3>Get in touch</h3>
+            <div class="ui list very relaxed">
+              <div class="item"><a href="https://www.deviantart.com/thezeski" title="DeviantArt"><img class="ui mini image" src="/assets/deviantart.png" alt="Deviantart"><span>DeviantArt</span></a></div>
+              <div class="item"><a href="mailto:info@paulbrzeski.com" title="Email me"><img class="ui mini image" src="/assets/email.PNG" alt="Email"><span>E-mail</span></a></div>
+              <div class="item"><a href="https://www.facebook.com/paulbrzeskico/" title="Facebook"><img class="ui mini image" src="/assets/facebook.png" alt="Facebook"><span>Facebook</span></a></div>
+              <div class="item"><a href="https://github.com/paulbrzeski" title="Github"><img class="ui mini image" src="/assets/github.png" alt="Github"><span>Github</span></a></div>
+              <div class="item"><a href="https://www.instagram.com/paulbrzeski/" title="Instagram"><img class="ui mini image" src="/assets/instagram.png" alt="Instagram"><span>Instagram</span></a></div>
+              <div class="item"><a class="header" href="https://www.linkedin.com/in/paul-brzeski-59764b82/" title="LinkedIn"><img class="ui mini image" src="/assets/linkedin.png" alt="LinkedIn"><span>LinkedIn</span></a></div>
+            </div>
+          </div>
+          <div class="column five wide"><a href="/" title="Homepage"><img class="logo ui fluid image" src="/assets/logo.png"></a>
+            <h5>ABN 50 711 323 074</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125551739-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-125551739-1');
+      var leady_track_key="7uJ8ON00qdEC1Egn";
+      (function(){
+        var l=document.createElement("script");l.type="text/javascript";l.async=true;
+        l.src='https://t.leady.com/'+leady_track_key+"/L.js";
+        var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(l,s);
+      })();
     </script>
+    <script>
+      var owa_baseUrl = 'http://owa.paulbrzeski.com/';
+      var owa_cmds = owa_cmds || [];
+      owa_cmds.push(['setSiteId', 'fc1dfb2a614caab8fded84b3621f2935']);
+      owa_cmds.push(['trackPageView']);
+      owa_cmds.push(['trackClicks']);
+      
+      (function() {
+        var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+        owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+        _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+        var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+      }());
+      
+    </script>
+    <!-- Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+      FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+      });
+      };
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your customer chat code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114724189897574" theme_color="#6699cc" logged_in_greeting="Hello there! How can I help you?" logged_out_greeting="Hello there! How can I help you?"></div>
+    <script src="/dist/app.js"></script>
   </body>
 </html>

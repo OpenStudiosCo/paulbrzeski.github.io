@@ -1,0 +1,31 @@
+/*
+  Articles
+*/
+#articles {
+  margin: 0 auto;
+  width: 95%;
+}
+#articles .column {
+  margin: 1.25rem 0;
+}
+#articles h3 {
+  color: #000;
+  margin: 0 0 1.25rem 0;
+}
+#articles p {
+  line-height: 2rem;
+}
+@media only screen and (min-width: 1500px) {
+  #articles {
+    width: 80%;
+  }
+  #articles .row.main h3 {
+    padding: 3rem 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+  #articles .row.main p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}

@@ -1,0 +1,166 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/landing.css', rel='stylesheet')
+  link(href='/dist/about.css', rel='stylesheet')
+
+block append title
+  | About
+
+block append page
+  header
+    img.ui.image(src='/assets/about.jpg' style='object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -200px ')
+    h2 About
+  #about_page
+    .ui.two.column.very.relaxed.stackable.grid
+      .row
+        .column.sixteen.wide
+          p.founded Founded in 2019, Paul Brzeski Consulting offers solutions that are researched, made to last and, most importantly, built for humans.
+      .row
+        .column
+          h2.ui.dividing.header Professional Objectives
+          ol.ui.very.relaxed.list
+            li.item 
+              | Lead on 
+              strong technology
+              |  and 
+              strong innovation
+              |  using 
+              strong research
+              |  to steer decision making.
+            li.item
+              strong Compliance
+              |  with relevant 
+              strong governing laws
+              |  and 
+              strong best practices 
+              |  in all areas of business.
+            li.item Build 
+              strong sustainable
+              |  long term 
+              strong relationships 
+              | with 
+              strong ethical 
+              | organisations around the 
+              strong world.
+            li.item
+              strong Professional 
+              | lobbying and 
+              strong advocacy 
+              | for the 
+              strong common good
+              | , focused on Australia
+            li.item 
+              strong Contribute 
+              | to the 
+              strong open source code 
+              | movement and 
+              strong collaborate 
+              | with the world’s best.
+            li.item
+              strong Change the world, using all of the above
+          h2.ui.dividing.header Business Values
+          .ui.grid
+            .row
+              .column.three.wide
+                img.ui.image.fluid(src='/assets/aboriginal-flag.png')
+              .column.thirteen.wide
+                p I acknowledge this business is based on Aboriginal land and recognise the strength, resilience and capacity of the Whadjuk people, the traditional custodians of this land.
+            .row
+              .column.three.wide
+                img.ui.image.fluid(src='/assets/linux.png')
+              .column.thirteen.wide
+                p Free and Open Source is as much a way of thinking as it is a software licensing scheme, as such I strive to be accountable, transparent, informative and useful to others in all business interactions and activities.
+            .row
+              .column.three.wide
+                img.ui.image.fluid(src='/assets/pride-flag.jpg')
+              .column.thirteen.wide
+                p It is important to me that working relationships are respectful, positive and inclusive. Everyone works best when they are comfortable and feel appreciated for their effort.
+          h2.ui.dividing.header Technology I have experience with
+          .ui.very.relaxed.grid
+            .row.two.column
+              .column
+                h3 Cloud Tools and Services
+                p Atlassian Suite, Asana, AWS, Azure, cPanel, Harvest, Google Analytics, Office 365, Wrike          
+              .column
+                h3 Database Engines
+                p IBM DB2, MS SQL Server, MongoDB, MySQL and Oracle
+            .row.two.column
+              .column
+                h3 Front-end Frameworks
+                p Backbone, Bootstrap, GMaps, jQuery, Semantic UI, SVG, Three.JS and Underscore
+              .column
+                h3 .NET Solutions
+                p ASP.NET, Exchange Web Services API, .NET MVC, Sitekit CMS, Sharepoint, Umbraco and Windows Services
+            .row.two.column
+              .column
+                h3 Non-Human Languages
+                p CSS, C#, GLSL, Javascript, HTML, Perl, PHP, SQL (various), Visual Basic
+              .column
+                h3 Operating Systems
+                p CentOS, Fedora Core, Manjaro, OSX, Ubuntu, VMware ESXi and Windows Server
+            .row.two.column
+              .column
+                h3 PHP Content Management Systems
+                p Drupal, Joomla, Magento, modX and Wordpress
+              .column
+                h3 Protocols
+                p COM, TCP, SOAP and WebSocket
+            .row.two.column
+              .column
+                h3 Server application Frameworks
+                p ASP.NET, Express.js, socket.io
+              .column
+                h3 Self Hosted Solutions
+                p Elastic Search, Grafana, OpenVPN PhpMyAdmin, SuiteCRM                
+        .column
+          h2.ui.dividing.header My Story
+          .ui.grid
+            .row
+              .column.ten.wide
+                p It probably won't surprise you that I'm of Polish descent, the name is a dead give away. My father is Polish and my mother is Filipino, so I'm actually mixed race.
+                p Born in Australia, I was fortunate to spend some of my youth in my parents home countries - attending parts of primary and high school overseas. This exposure to different cultures and viewpoints was formative to my worldview of humanism.
+                p I wrote my first programs in DOS at age 11 and haven't looked back. I like loud music, fun video games and indulgent snacks. In my downtime I work on my projects, ride my bicycle and wonder about stuff.
+              .column.six.wide
+                img.ui.image.medium(src='/assets/me.jpeg')
+          h2.ui.dividing.header Career History
+          h3 Self Employed Contractor
+          p
+            em Feb 2019 – Ongoing
+          p Software engineering and technical strategy services for hire.
+          h3 Software Engineer, Scantek Solutions
+          p
+            em Oct 2018 – Dec 2018, 3 months
+          ul.ui.very.relaxed.list
+            li Developed automated tests within existing framework
+            li Produced reports for standards compliance and regulatory adherence
+            li Provided support for deployed software and on-call for customer incidents
+            li Setup and administration of company knowledgebase, various documentation initiatives
+            li Setup continuous integration workflow for tests
+          h3 Web Developer, Doghouse Agency
+          p
+            em Dec 2015 – Sep 2018, 2 years and 10 months
+          ul.ui.very.relaxed.list
+            li Developing new websites using Drupal, SASS and modern Javascript frameworks
+            li Integration with web services and creating custom functionality using PHP and Javascript
+            li Supporting existing websites built in Drupal and Magento
+            li Working in a Continuous Integration environment with AGILE workflows
+            li Following best practice initiatives including code reviews and creating pull requests for vendor code
+          h3 Programmer, iiNet
+          p May 2010 – Sep 2015, 4 years and 5 months
+            ul.ui.very.relaxed.list
+              li Investigating and resolving urgent internal software issues or customer incidents
+              li Maintenance and ongoing development of internal systems and data warehouse
+              li Contributing patches for internal systems within internal SDLC guidelines
+              li Performing batch operations to clean and fix data
+          h3 Developer, Precedent
+          p May 2010 – May 2011, 1 year
+            ul.ui.very.relaxed.list
+              li Development of new PHP websites and .Net based systems using project plans from my team and/or the UK staff.
+              li Contribute to and evaluate project plans in order to ensure that all risks and requirements have been accounted for and that all deadlines can be met within the set timeframes
+              li IT support and planning including writing and performing maintenance plans, the setup of new servers and evaluating new hardware/software solutions
+          h3 Programmer, ATS Solutions
+          p Sep 2008 – May 2010, 2 years
+          ul.ui.very.relaxed.list
+            li Developing and maintaining custom software including an internal ASP.NET based CRM, scheduling tool and timesheeting solution which had integrations with QuickBooks.
+            li Development of CMS sites using Joomla and Drupal

@@ -1,0 +1,140 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Website development | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Website development
+  header
+    img.ui.image(src='/assets/website-dev.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Custom websites, implement integrations and clear backlog of bugfixes
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .row
+        .column
+          .ui.list
+            .item
+              h3.ui.dividing.header Why I'm a good choice for this work:
+              ul
+                li Completed dozens of website builds, upgrades and support projects over the past decade. I've used or dabbled with more frameworks than there are new Pokemon.
+                li Experienced with delivering work alone, from start to finish, or as part of a large team
+                li Interdisciplinary approach to solution design, implementation and QA; your back of house experience should be as easy for staff as the front of house is for your customers.
+                li Passionate for staying up to date and a hobbyist working on my own cutting edge projects. The innovations and learnings from my personal interest in games development continue to inform and elevate my day to day work.
+                li Self taught and always ready to learn, I have been making websites since the year 2000
+                li Vast number of past experiences and creative mindsets to draw from when working for you
+            .item
+              h3.ui.dividing.header Example requests:
+              ul
+                li Work with key stakeholders to design, build and support a new website
+                li Extend an existing website with new functionality and integrations
+                li Fix bugs and perform maintenance, e.g. software updates
+                li Provide a technical report of a current websites issues in key areas such as,
+                  ul
+                    li Accessibility and user experience
+                    li Data integrity and error handling
+                    li Performance analysis and tuning
+                    li Privacy and data handling compliance
+                    li Technical debt
+        .column
+          .ui.list
+            .item
+              h3.ui.dividing.header Sectors and people I've worked for
+              .ui.very.relaxed.grid
+                .row.two.column
+                  .column
+                    h4 Construction and logistics
+                    ul
+                      li Content Living
+                      li New Choice Homes 
+                      li Other construction and logistics clients
+                  .column
+                    h4 E-Commerce
+                    ul
+                      li Biowashball Australia
+                      li Laurance Wines
+                      li The Smiling Gift Company
+                      li Other e-Commerce clients
+                .row.two.column
+                  .column
+                    h4 Education
+                    ul
+                      li University of Southampton (UK)
+                      li Other education clients
+                  .column
+                    h4 Information Technology and Telecommunications
+                    ul
+                      li ATS Solutions
+                      li iiNet
+                      li Westnet
+                      li Other IT&T clients
+                .row.two.column
+                  .column
+                    h4 Government
+                    ul
+                      li Shire of Murray
+                      li Shire of Shark Bay
+                      li Other local and state government clients
+                  .column
+                    h4 NGO and charity
+                    ul
+                      li RSPCA Australia
+                      li RSPCA WA
+                      li Other charity clients
+                .row.two.column
+                  .column
+                    h4 Professional services
+                    ul
+                      li Murphys Estate Agents
+                      li Orpheans Dance Studio
+                      li Other small business and professional services clients
+                  .column
+                    h4 Tourism
+                    ul
+                      li Shark Bay World Heritage Discovery & Visitor Centre
+                      li Other tourism clients
+      .row
+        .column.sixteen.wide
+          h3.ui.dividing.header Technology used:
+          .ui.very.relaxed.grid
+            .row.two.column
+              .column
+                h4 Cloud Tools and Services
+                p Atlassian Suite, Asana, AWS, Azure, cPanel, Harvest, Google Analytics, Office 365, Wrike          
+              .column
+                h4 Database Engines
+                p IBM DB2, MS SQL Server, MongoDB, MySQL and Oracle
+            .row.two.column
+              .column
+                h4 Front-end Frameworks
+                p Backbone, Bootstrap, GMaps, jQuery, Semantic UI, SVG, Three.JS and Underscore
+              .column
+                h4 .NET Solutions
+                p ASP.NET, Exchange Web Services API, .NET MVC, Sitekit CMS, Sharepoint, Umbraco and Windows Services
+            .row.two.column
+              .column
+                h4 Non-Human Languages
+                p CSS, C#, GLSL, Javascript, HTML, Perl, PHP, SQL (various), Visual Basic
+              .column
+                h4 Operating Systems
+                p CentOS, Fedora Core, Manjaro, OSX, Ubuntu, VMware ESXi and Windows Server
+            .row.two.column
+              .column
+                h4 PHP Content Management Systems
+                p Drupal, Joomla, Magento, modX and Wordpress
+              .column
+                h4 Protocols
+                p COM, TCP, SOAP and WebSocket
+            .row.two.column
+              .column
+                h4 Self Hosted Solutions
+                p Elastic Search, Grafana, OpenVPN, PhpMyAdmin, SuiteCRM
+              .column
+                h4 Server application Frameworks
+                p ASP.NET, Express.js, Ruby on Rails, socket.io
+              

@@ -1,0 +1,47 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Consultancy and advocacy | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Consultancy and advocacy
+  header
+    img.ui.image(src='/assets/services.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px 0px')
+    h2.caption.left Digital Transformation for companies of all sizes, approaches tailored for maximum ROI
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Experienced mediator and facilitator of communication
+              li Genuinely want to contribute to the success of my clients
+              li Self motivated to improve the lives of others, with technology or something else
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Improve quality and efficiency of work done on company systems
+              li Propose and implement measures to ensure systems are accessible to the elderly and disabled
+              li Review and recommend off the shelf software to solve a problem
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Microsoft Office and Google Docs
+              li W3C, WCAG and reputable publications
+              li XMind for brainstorming/mind mapping
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li Internet and telecommunications service providers
+              li Government
+              li NGO and charity
+              li Professional services

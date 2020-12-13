@@ -1,0 +1,44 @@
+/*
+  Responsive styles
+*/
+$tablet-breakpoint = 800px
+$desktop-breakpoint = 1440px
+
+@media only screen and (min-width: $tablet-breakpoint)
+  footer img
+    margin-left auto
+    margin-right 2rem
+  #mobile_menu_toggle
+    top 3.5rem
+    right 2rem
+  #logo
+    margin-left 2rem
+
+@media only screen and (min-width: $desktop-breakpoint)
+  #mobile_menu_toggle
+    display none
+  #menu
+    display flex !important
+
+@media only screen and (max-width: $desktop-breakpoint)
+  .column.right.aligned
+    text-align left !important
+  .hide_on_mobile
+    display none !important
+  #global-header
+    .column
+      padding 1rem 2rem !important
+      width 100%
+  #menu
+    display none
+  footer
+    margin 0 auto
+    padding 0 2rem
+    &, *
+      text-align center
+    a
+      width 100%
+    span
+      margin 0 auto
+    img
+      float left

@@ -1,0 +1,89 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Software applications | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Software applications
+  header
+    img.ui.image(src='/assets/software-web-dev.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Custom desktop and cloud applications, server services, systems integrations and data systems.
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .row
+        .column
+          .ui.list
+            .item
+              h3.ui.dividing.header Why I'm a good choice for this work:
+              ul
+                li Never permanently stuck on a problem, I look for the absolute truth of a problem and always find a solution
+                li Passionate about software, I actively spend time on my own software projects
+                li Self taught and ready to learn new things, I have been creating software since 1999
+            .item
+              h3.ui.dividing.header Example requests:
+              ul
+                li Extend an existing website with new functionality
+                li Fix bugs and perform maintenance, e.g. software updates
+                li Solve a business problem by building custom software, e.g. Workforce tracking, product and service provisioning
+        .column
+          .ui.list
+            .item
+              h3.ui.dividing.header Software I can build and support
+              ul
+                li Cross platform desktop (Windows, Mac, Linux) applications using Electron 
+                li Cross platform tablet and mobile applications using PWAs and PhoneGap
+                li Service Applications built on .NET or Node.JS
+                li Web Applications using .NET, Node.JS or PHP
+            .item
+              h3.ui.dividing.header Sectors I've built software for:
+              ul
+                li Construction and logistics
+                li Education
+                li Information Technology and Telecommunications
+                li Professional services
+
+      .row
+        .column.sixteen.wide
+          h3.ui.dividing.header Technology used:
+          .ui.very.relaxed.grid
+            .row.two.column
+              .column
+                h4 Cloud Tools and Services
+                p Atlassian Suite, Asana, AWS, Azure, cPanel, Harvest, Google Analytics, Office 365, Wrike          
+              .column
+                h4 Database Engines
+                p IBM DB2, MS SQL Server, MongoDB, MySQL and Oracle
+            .row.two.column
+              .column
+                h4 Front-end Frameworks
+                p Backbone, Bootstrap, GMaps, jQuery, Semantic UI, SVG, Three.JS and Underscore
+              .column
+                h4 .NET Solutions
+                p ASP.NET, Exchange Web Services API, .NET MVC, Sitekit CMS, Sharepoint, Umbraco and Windows Services
+            .row.two.column
+              .column
+                h4 Non-Human Languages
+                p Bash, CSS, C#, GLSL, Javascript, HTML, Perl, PHP, Ruby, SQL (various), Visual Basic
+              .column
+                h4 Operating Systems
+                p CentOS, Fedora Core, Manjaro, OSX, Ubuntu, VMware ESXi and Windows Server
+            .row.two.column
+              .column
+                h4 PHP Content Management Systems
+                p Drupal, Joomla, Magento, modX and Wordpress
+              .column
+                h4 Protocols
+                p COM, TCP, SOAP and WebSocket
+            .row.two.column
+              .column
+                h4 Self Hosted Solutions
+                p Elastic Search, Grafana, OpenVPN, PhpMyAdmin, SuiteCRM
+              .column
+                h4 Server application Frameworks
+                p ASP.NET, Express.js, .NET MVC, Ruby on Rails, socket.io

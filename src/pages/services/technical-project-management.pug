@@ -1,0 +1,49 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Technical Project Management | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Technical Project Management
+  header
+    img.ui.image(src='/assets/technical-project-management.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Care for a technical project during a critical stage, or from start to finish
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Vast experience with software and website projects of all sizes, from start-ups to international companies
+              li Proficient at mitigating "rabbit hole" situations such as off the shelf systems missing functionality
+              li Empathetic listener with a view that a positive mindset and good communication produces the best results
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Convert stakeholder requirements into estimates, tickets and sprint plans
+              li Monitor and steer the technical direction of a project based on Return on Investment (ROI)
+              li Documentation and Business As Usual (BAU) handover plan
+              li Determine and deliver a Minimum Viable Product (MVP)
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Relevant methodology such as AGILE, LEAN and Waterfall
+              li Ticket tracking software - Asana, Atlassian JIRA, Trello, Wrike
+              li Other tools for communication and productivity
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Government, NGO and charity
+              li Professional services
+              li Tourism

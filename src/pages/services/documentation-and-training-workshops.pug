@@ -1,0 +1,49 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Documentation and training workshops | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Documentation and training workshops
+  header
+    img.ui.image(src='/assets/documentation.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.right Create a baseline of understanding and capability within your organisation
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Able to work with a diverse range of people, my approach adjusts to my audience
+              li Diligence to ensure documentation and training plans are robust and meet requirements for BAU operations
+              li Good listener and friendly manner
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Create documentation for and train staff to use a new or existing system
+              li Formalize disparate pieces of information into a nicely branded company document
+              li Update and improve existing documentation
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Microsoft Office and Google Docs
+              li Reputable publications and authorities on a subject - e.g. W3C, Human Rights Commission
+              li XMind for brainstorming/mind mapping
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Government
+              li NGO and charity
+              li Professional services
+              li Tourism

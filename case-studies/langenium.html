@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Langenium | Case Studies | Paul Brzeski Consulting | Software engineering and technical strategy | Perth, Western Australia
+    </title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet">
+    <link href="./dist/responsive.css" rel="stylesheet">
+    <link href="/dist/landing.css" rel="stylesheet">
+    <link href="/dist/case-studies.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="ui grid stackable two column" id="global-header">
+      <div class="column">
+        <h1 class="ui header" id="logo"><a href="/" title="Homepage"><img class="ui image" src="/assets/logo.png"></a></h1><a id="mobile_menu_toggle" onclick="$(&quot;#menu&quot;).slideToggle()"><i class="content icon"></i></a>
+      </div>
+      <div class="column">
+        <div class="ui menu fluid four item stackable" id="menu"><a class="item" href="/services.html">Services</a><a class="item" href="/case-studies.html">Case Studies</a><a class="item" href="/articles.html">Articles</a><a class="item" href="/about.html">About</a></div>
+      </div>
+    </div>
+    <header><img class="ui image" src="/assets/case-studies.jpg" style="object-fit: cover; max-height: 330px; width: 100%; object-position: 0px -425px ">
+      <h2>Langenium</h2>
+    </header>
+    <div id="case_studies">
+      <div class="ui ten column very relaxed stackable grid">
+        <div class="row centered">
+          <div class="column ten wide centered">
+            <p>Consuming much of my spare time from 2012 to 2017, <a href="https://github.com/paulbrzeski/Langenium">Langenium </a>was a concept MMORPG built for the web browser and around a content streaming model. At its height the website received 1000 
+              visits a month and had a working arcade style arena where players could anonymously hop into a flying vehicle and shoot one another.
+            </p>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column seven wide">
+            <div class="video-container">
+              <iframe width="680" height="400" src="https://www.youtube.com/embed/cJcr09qIVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column three wide">
+            <h5>3D Render Framework: </h5><a href="https://threejs.org/">Three.JS </a>
+            <h5>Other frontend libs: </h5><a href="https://jquery.com/">jQuery </a>,  <a href="https://semantic-ui.com/">Semantic UI</a>
+            <h5>Frontend application: </h5><a href="https://pugjs.org/">PugJS </a>,  <a href="http://stylus-lang.com/">Stylus </a>served by modular <a href="https://nodejs.org/">Node.js </a>game server
+            <h5>Backend application: </h5><a href="https://expressjs.com/">Express </a>and <a href="https://mongoosejs.com/">Mongoose</a>
+            <h5>Server/Client Interface:</h5>WebSockets using <a href="https://socket.io/">socket.io</a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column ten wide">
+            <p>
+              Starting out as a humble test to draw a 3D sphere in the browser, the game engine grew in leaps and bounds over the course of this project.
+              Express.JS and socket.io provided an ideal interface for extensive custom functionality, I used the same movement code on client and server
+              so that a client instance of the game could move characters first and then the server could confirm their true position. This was a huge
+              boon for a game that needed to run at 60FPS for multiple players.
+            </p>
+            <p>
+              In hindsight, the biggest mistake in the server was using MongoDB for persistence. I had approximately ten JSON configuration files
+              which could easily have been stored in a local folder, with a base template for deploying to a new server. The need for MongoDB added
+              an extra dependency on every server instance and meant I had to export and import data that would have been easier to maintain within the code base. 
+              Perhaps after a few users joined and proper environments were built that MongoDB database may have started paying dividends, but unfortunately
+              for 5 years it was more of a blocker to the portability and ease of use of the code.
+            </p>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column seven wide">
+            <div class="video-container">
+              <iframe width="680" height="400" src="https://www.youtube.com/embed/bx1qSntZxVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column three wide">
+            <p>
+              This video demonstrates one of the last builds of the game featuring a smooth frame rate, procedurally generated environment
+              while also being rendered using the server to allow multiplayer functionality.
+            </p>
+            <p>
+              It took about 6 months to perfect the shader effects of the sky and water, both generated a normal map procedurally - allowing clouds in the sky
+              and waves in the ocean to have dynamic lighting.
+            </p>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column ten wide">
+            <p>
+              Using a separate Git repository to manage art assets and Readme files in Github, I had a really good system for managing my art assets 
+              that has informed my view on the value of version control to this day.
+            </p>
+            <p>
+              The biggest ongoing challenge in this project was producing art and content. One of the things that makes MMORPG worlds appealing is the
+              amount of complexity, depth and variety in the gameplay. Established titles like Eve Online and World of Warcraft have stood the test of
+              time by continually releasing expansions and extending game features in order to keep the experience fresh for players.
+            </p>
+            <p>
+              The creative role I'm most confident in is writing - and this showed in Langenium. About two years into the project, Langenium had several
+              storylines, some of them inconsistent, and more ideas than I could possibly put into production. The biggest limitation was tooling - creating 
+              3D models, new visual designs and producing music using the standard industry tools was incredibly time
+              consuming. In a traditional game studio environment those responsibilities would be a full time role if not several peoples roles. 
+            </p>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column seven wide">
+            <div class="video-container">
+              <iframe width="680" height="400" src="https://www.youtube.com/embed/tPPEHiuq5n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column three wide">
+            <h5>Design and illustration:</h5><a href="https://www.adobe.com/au/products/illustrator.html">Adobe Illustrator</a>
+            <h5>Concept art drawing tool:</h5><a href="http://al.chemy.org/">Alchemy</a>
+            <h5>3D Modelling:</h5><a href="https://www.blender.org/">Blender</a>
+            <h5>Digital Audio Workstation:</h5><a href="http://lmms.io/">Linux MultiMedia Studio</a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="column ten wide">
+            <p>The Langenium server application is retired in the <a href="https://langenium.paulbrzeski.com/">final refactor of the project</a>. The main reason for this was cost - in 2015 I was unemployed 
+              for a few months and had to switch off my Amazon EC2 instance that powered the website and game server. I switched to free Github Pages hosting
+              and developed a workflow that generated a static HTML site instead.
+            </p>
+            <p>The work to refactor Langenium's server engine into a client only website and game culminated in my static website generator <a href="https://www.npmjs.com/package/kettlefish">Kettlefish</a>. The creative energy and spirit of Langenium has become a smaller and tigher project called <a href="https://kamigen.com/">Kamigen</a>. The lessons learned producing art assets and the game engine that rendered them led me to create another piece of software - <a href="https://openstudios.xyz/projects#manifold">Manifold</a>, which is a hybrid 2D/3D and raster/vector drawing tool for indie game developers and anyone else with a need to quickly create 3D assets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <footer>
+      <div class="ui grid stackable">
+        <div class="row">
+          <div class="column five wide right aligned">
+            <h3>Work smarter, not harder.</h3>
+            <div class="ui list very relaxed">
+              <div class="item"><a href="/services.html"><span>Services</span></a></div>
+              <div class="item"><a href="/case-studies.html"><span>Case Studies</span></a></div>
+              <div class="item"><a href="/articles.html"><span>Articles</span></a></div>
+              <div class="item"><a href="/about.html"><span>About</span></a></div>
+            </div>
+          </div>
+          <div class="column two wide hide_on_mobile"></div>
+          <div class="column three wide">
+            <h3>Get in touch</h3>
+            <div class="ui list very relaxed">
+              <div class="item"><a href="https://www.deviantart.com/thezeski" title="DeviantArt"><img class="ui mini image" src="/assets/deviantart.png" alt="Deviantart"><span>DeviantArt</span></a></div>
+              <div class="item"><a href="mailto:info@paulbrzeski.com" title="Email me"><img class="ui mini image" src="/assets/email.PNG" alt="Email"><span>E-mail</span></a></div>
+              <div class="item"><a href="https://www.facebook.com/paulbrzeskico/" title="Facebook"><img class="ui mini image" src="/assets/facebook.png" alt="Facebook"><span>Facebook</span></a></div>
+              <div class="item"><a href="https://github.com/paulbrzeski" title="Github"><img class="ui mini image" src="/assets/github.png" alt="Github"><span>Github</span></a></div>
+              <div class="item"><a href="https://www.instagram.com/paulbrzeski/" title="Instagram"><img class="ui mini image" src="/assets/instagram.png" alt="Instagram"><span>Instagram</span></a></div>
+              <div class="item"><a class="header" href="https://www.linkedin.com/in/paul-brzeski-59764b82/" title="LinkedIn"><img class="ui mini image" src="/assets/linkedin.png" alt="LinkedIn"><span>LinkedIn</span></a></div>
+            </div>
+          </div>
+          <div class="column five wide"><a href="/" title="Homepage"><img class="logo ui fluid image" src="/assets/logo.png"></a>
+            <h5>ABN 50 711 323 074</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125551739-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-125551739-1');
+      var leady_track_key="7uJ8ON00qdEC1Egn";
+      (function(){
+        var l=document.createElement("script");l.type="text/javascript";l.async=true;
+        l.src='https://t.leady.com/'+leady_track_key+"/L.js";
+        var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(l,s);
+      })();
+    </script>
+    <script>
+      var owa_baseUrl = 'http://owa.paulbrzeski.com/';
+      var owa_cmds = owa_cmds || [];
+      owa_cmds.push(['setSiteId', 'fc1dfb2a614caab8fded84b3621f2935']);
+      owa_cmds.push(['trackPageView']);
+      owa_cmds.push(['trackClicks']);
+      
+      (function() {
+        var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+        owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+        _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+        var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+      }());
+      
+    </script>
+    <!-- Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+      FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+      });
+      };
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your customer chat code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114724189897574" theme_color="#6699cc" logged_in_greeting="Hello there! How can I help you?" logged_out_greeting="Hello there! How can I help you?"></div>
+    <script src="/dist/app.js"></script>
+  </body>
+</html>

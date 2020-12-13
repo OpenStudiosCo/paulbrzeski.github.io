@@ -44,12 +44,8 @@ ul {
   padding: 0px;
 }
 
-#about, #past_work, #art, #social {
+#art, #social {
   text-align: center;
-}
-
-.about {
-  text-align: justify;
 }
 
 #projects {
@@ -69,14 +65,10 @@ ul {
   margin: 1em;
 }
 
-.project, .about, .past_work, .art, .social {
+.project, .art, .social {
   background: rgba(0,0,0,0.35);
   display: block;
   padding: 2em;
-}
-
-.past_work {
-  overflow: auto;
 }
 
 @media only screen and (max-width: 1000px) {

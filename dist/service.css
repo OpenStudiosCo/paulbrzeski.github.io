@@ -1,0 +1,82 @@
+/*
+  Service Page
+*/
+header {
+  position: relative;
+}
+header h2 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 1.6em;
+  position: absolute;
+  top: 40%;
+  padding: 1.5em;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+}
+header h2.left {
+  left: 0;
+  max-width: 50%;
+  padding-left: 3em;
+}
+header h2.right {
+  max-width: 50%;
+  padding-right: 3em;
+  right: 0;
+}
+@media only screen and (max-width: 1000px) {
+  header .ui.image {
+    object-position: 0 0 !important;
+  }
+  header .caption {
+    font-size: 1em;
+    top: 8em;
+  }
+  header .caption.left {
+    max-width: 90%;
+  }
+  header .caption.right {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header .ui.image {
+    object-fit: cover;
+    max-height: 750px;
+    width: 100%;
+    object-position: 0px -450px;
+  }
+}
+.ui.breadcrumb {
+  padding: 1em 1.6em;
+  width: 100%;
+  background: #191c1c;
+  background: linear-gradient(to bottom, #191c1c 1%, #45484d 100%);
+  letter-spacing: 0.1em;
+  text-shadow: 5px 5px 5px #000;
+}
+.ui.breadcrumb .section,
+.ui.breadcrumb .divider {
+  color: #eee;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+}
+.ui.breadcrumb .section:hover,
+.ui.breadcrumb .divider:hover {
+  color: #fff;
+}
+#service {
+  margin: 1em auto 3em;
+  width: 80%;
+}
+#service h3 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 1em 0;
+  padding: 1em 0;
+}
+#service .list li {
+  line-height: 2em;
+  list-style-type: square;
+  margin: 0.5em 0;
+}
