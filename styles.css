@@ -52,8 +52,8 @@ ul {
   text-align: justify;
 }
 
-#projects {
-  margin: 2000px auto 2em auto;
+#about, #past_work {
+  margin: 700px auto 2em auto;
 }
 
 .project .content {
