@@ -101,5 +101,9 @@ ul {
   .header .right.menu {
     margin-top: 5em;
   }
+
+  .past_work .ui.right.floated.bulleted.inverted.list {
+    float: left !important;
+  }
 }
 
