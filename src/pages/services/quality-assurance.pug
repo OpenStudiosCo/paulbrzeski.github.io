@@ -1,0 +1,47 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Testing and Quality Assurance | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Testing and Quality Assurance
+  header
+    img.ui.image(src='/assets/quality-assurance.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Auditing, testing and reviewing technical decisions, direction, platform and process
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Comprehensive and scientific approach, prevent issues down the line
+              li Leveraging other skills as a developer to do things normally not seen in this space
+              li Variety of past work means I have seen a lot of different ways of doing things
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Audit technical debt, data integrity, privacy and accessibility standards
+              li Design and implement a baseline of coding standards and deployment process for developers to follow
+              li Review project process for efficiency, delivery and estimate accuracy
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Databases, graphs and spreadsheets
+              li Industry best practices for subject matter such as data integrity, information architecture and user experience (UX)
+              li Testing: C#.NET, JUnit, PHPUnit, Selenium
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Professional services
+              li Tourism

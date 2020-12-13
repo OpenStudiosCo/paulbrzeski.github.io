@@ -1,0 +1,50 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Data analytics and reporting | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Data analytics and reporting
+  header
+    img.ui.image(src='/assets/data-analytics.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Provide tools/scripts/software for research automation and data analysis
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Comprehensive and scientific approach, I won't say it's a fact unless I can prove it
+              li Keen eye for patterns and trends, often finding the unexpected culprit or truth 
+              li Leveraging other skills as a developer to do things normally not seen in this space
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Compare database snapshots to determine if days of data are missing, following an incident
+              li Create database from log files so that system administrators have better visibility of a system
+              li Setup self service reporting facilities so that your developers don't have to create reports
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Bash scripting to traverse directories of information and push to database for analysis
+              li Microsoft BI Tools for ETL design
+              li .NET Framework for Windows to create fast data applications
+              li Variants of SQL and database tooling in IBM DB2, Microsoft SQL Server and MySQL Workbench
+
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li E-Commerce 
+              li Internet and telecommunications service providers
+              li Government
+              li NGO and charity
+              li Professional services

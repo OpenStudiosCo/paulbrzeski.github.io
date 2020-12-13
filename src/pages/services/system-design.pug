@@ -1,0 +1,49 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | System design | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section System design
+  header
+    img.ui.image(src='/assets/system-design.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -125px ')
+    h2.caption.left Design software architecture and processes using a mix of technology
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Experienced mediator and facilitator of conversation
+              li Keen to improve the lives of others with good software
+              li Variety of past work means I have seen a lot of different ways of doing things
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Create project scope and documents for in-house teams 
+              li Design scalable architecture that can be implemented efficiently in an existing custom system
+              li Study BAU and manual procedures within a company and propose new systems
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Diagramming: Pencil, Visio, MySQL Workbench, SQL Server Management Studio
+              li Industry best practices for information architecture and user experience (UX)
+              li Wireframes: Adobe Illustrator, HTML, paper and pen
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li Education
+              li E-Commerce
+              li Internet and telecommunications service providers
+              li Government
+              li Professional services
+              li Tourism

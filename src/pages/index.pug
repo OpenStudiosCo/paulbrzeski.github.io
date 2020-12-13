@@ -1,0 +1,103 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/home.css', rel='stylesheet')
+  link(href='/dist/services.css', rel='stylesheet')
+
+block append title
+  | Home
+
+block append page
+  #slideshow.ui.list
+    .item
+      img.ui.image(src='/assets/slide1.jpg' style='object-position: 0px -100px')
+      .caption.left Researched driven approach to technology and business. Scaleable solutions.
+    .item
+      img.ui.image(src='/assets/slide2.jpg' style='object-position: 0px -100px')
+      .caption.right Improved customer experience and more productive staff through technology focused business improvement.
+    .item
+      img.ui.image(src='/assets/slide3.jpg' style='object-position: 0px -250px')
+      .caption.right Over 20 years experience creating bespoke software and websites for clients of all sizes.
+  p.founded Welcome to Paul Brzeski Consulting, best practice Software Engineering and Technical Consultancy services for hire. I invite you to browse this site to learn more, tap the chat widget or visit me on social media to get in touch.
+  .ui.dividing.header
+  #services
+    include /src/templates/blocks/services.pug
+  .ui.dividing.header
+  #articles
+    h2 Recent articles
+    br
+    .ui.grid.three.column.wide.stackable
+      .row
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/future-jobs-the-rise-of-interdisciplinary-thinking-6e85a1763063')
+                  img(src='/assets/thumb11.jpg')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/future-jobs-the-rise-of-interdisciplinary-thinking-6e85a1763063')
+                  h3 Future Jobs: The Rise of Interdisciplinary Thinking
+                p In the past we may have needed a team professionals to produce a deliverable like a TV commercial or new car design — new AI powered tools and interdisciplinary skills could achieve the same result with just two people or even one person.
+              .column.hide_on_mobile
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/when-i-grow-up-i-want-to-be-george-lucas-fba6d5ae93b8')
+                  img(src='/assets/thumb10.jpg')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/when-i-grow-up-i-want-to-be-george-lucas-fba6d5ae93b8')
+                  h3 When I grow up, I want to be George Lucas
+                p When I was 11, I wanted to be a film director. 20 years later, I want to be a specific film director - George Lucas. Star Wars is one film, but the tools and knowledge that it created in 1977 are still used by an entire industry today.
+              .column.hide_on_mobile
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/open-source-the-peaceful-revolution-f9aeacd4171d')
+                  img(src='/assets/thumb9.jpg')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/open-source-the-peaceful-revolution-f9aeacd4171d')
+                  h3 Open Source: The peaceful revolution
+                p Why is the Free and Open Source Software movement yet to make a significant impact on multimedia production and video games? 
+              .column.hide_on_mobile
+      .row
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/a-matter-of-privacy-and-security-fba3ba6eee23')
+                  img(src='/assets/thumb8.jpeg')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/a-matter-of-privacy-and-security-fba3ba6eee23')
+                  h3 A matter of privacy and security
+                p Websites have existed for some time, and yet we seem to be going backwards when it comes to performance and security. But why is this?
+              .column.hide_on_mobile
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/balancing-compliance-ethics-and-value-in-digital-a5874b43ef16')
+                  img(src='/assets/thumb7.png')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/balancing-compliance-ethics-and-value-in-digital-a5874b43ef16')
+                  h3 Balancing compliance, ethics and value in digital
+                p Since 1999 we’ve experienced a tech revolution in business, government and wider society. In 2019 Australia, the web is an integral part of daily life — but how reliable is it all? 
+              .column.hide_on_mobile
+        .column
+          .ui.grid.stackable
+            .row
+              .column.eight.wide
+                a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
+                  img(src='/assets/thumb2.PNG')
+              .column.hide_on_mobile
+              .column.six.wide
+                a(href='https://medium.com/@mail_59849/set-raytracers-to-maximum-77a9f0484441')
+                  h3 Set Raytracers to Maximum
+                p So I was casually watching a Youtube video about dogfighting in space. They made a great point that guns on fighters should be close instead of far apart — this is something that I struggled to design for when.
+              .column.hide_on_mobile

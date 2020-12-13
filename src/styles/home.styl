@@ -1,0 +1,152 @@
+/*
+  Homepage
+*/
+
+.ui.dividing.header
+  margin 2rem 0 !important
+  padding-bottom 1rem
+
+#slideshow
+  position relative
+  margin 0
+  .item
+    position relative
+  .caption
+    font-size 2em
+    letter-spacing .1em
+    line-height 1.6em
+    position absolute
+    top 40%
+    padding 1.5em
+    background rgba(0,0,0,0.85)
+    color #FFFFFF
+    &.left
+      left 0
+      max-width 40%
+      padding-left 4em
+    &.right
+      max-width 50%
+      padding-right 4em
+      right 0
+
+@media only screen and (max-width: 1000px) 
+  #slideshow
+    .ui.image
+      object-position 0 0 !important
+    .caption
+      font-size 1em
+      top 30%
+      &.left
+        max-width 60%
+      &.right
+        max-width 70%
+
+@media only screen and (min-width: 1000px)
+  #slideshow .ui.image
+    object-fit: cover
+    max-height: 750px
+    width: 100%
+
+@media only screen and (min-width: 1000px) and (max-width: 1800px) 
+  #slideshow .ui.image
+    object-position: 0px -150px !important
+
+.founded
+  display inline-block
+  font-size 1.4rem
+  line-height 2.8rem
+  margin 2rem
+
+#services, #projects, #articles
+  margin 2em
+
+#projects .project
+  border solid 1px #CCC
+  margin .25em
+  padding .25em
+  h3
+    color #000000
+    font-size 1.4rem
+    font-weight 700
+    margin 2em 1em
+  p
+    display block
+    line-height 1.4em
+    margin 0 1.5em
+  img
+    height 420px
+    object-fit cover
+    object-position left
+
+@media only screen and (min-width: 1000px)
+  #projects .project
+    margin 1em
+    padding 1em
+    h3
+      color #000000
+      font-size 2rem
+      font-weight 700
+      margin 2em 1em
+    p
+      display block
+      font-size 1.4rem
+      line-height 2.1em
+      margin 0 1.5em
+    img
+      height 420px
+      object-fit cover
+      object-position left
+
+#articles
+  padding-bottom 2rem
+  .column
+    overflow hidden
+    h3
+      color #000000
+      font-size 1.3em
+      font-weight 700
+      margin 1em 0 1em -0.5em
+    p
+      margin 0em 1em 0 -0.5em
+      letter-spacing .025em
+      line-height 1.5em
+    img
+      height 330px
+      height 330px
+      min-width 100%
+      object-fit cover
+      object-position left
+
+// Below snippet credit to https://codepen.io/abbasarezoo/pen/NbJrqj
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  
+  margin: 0 auto;
+  padding: 1rem 0;
+  
+  list-style-type: none;
+  
+    li {
+      margin: 0 0.25rem;
+    }
+  
+    button {
+      cursor: pointer;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      padding: 0;
+      
+      border: none;
+      border-radius: 100%;
+      background-color: #CCCCCC;
+      
+      text-indent: -9999px;
+    }
+  
+    li.slick-active button {
+      background-color: #000000;
+    }
+  
+}

@@ -1,0 +1,47 @@
+extends /src/templates/layout.pug
+
+block append head
+  link(href='/dist/service.css', rel='stylesheet')
+
+block append title
+  | Auditing | Services
+
+block append page
+  .ui.breadcrumb.big
+    a.section(href='/services.html') Services
+    .divider >
+    .active.section Auditing
+  header
+    img.ui.image(src='/assets/auditing.jpg' style='object-fit: cover; max-height: 650px; width: 100%; object-position: 0px -425px ')
+    h2.caption.left Risk assessment, policy and compliance auditing
+  #service
+    .ui.two.column.very.relaxed.stackable.grid.centered
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Why I'm a good choice for this work:
+            ul
+              li Enjoy solving complex problems and ensures the intention of a task is carried out; I don't just try to tick a box
+              li History of diligence leading to discovery of unforeseen issues and risks others miss, or don't report
+              li Regularly performing regulatory compliance and data quality audits in various capacities since 2006
+          .item
+            h3.ui.dividing.header Example requests:
+            ul
+              li Address concerns systems are not accessible to people with disabilities
+              li Complete technical tasks for regulatory compliance
+              li Produce reports on privacy and data security in complex systems
+      .column
+        .ui.list
+          .item
+            h3.ui.dividing.header Technology used:
+            ul
+              li Bash scripting to traverse directories of information and push to database for analysis
+              li Custom software for auditing duties, i.e. PCI compliance
+              li .NET Framework for Windows to create fast data applications
+              li Variants of SQL and database tooling in IBM DB2, Microsoft SQL Server and MySQL Workbench
+          .item
+            h3.ui.dividing.header Sectors:
+            ul
+              li e-Commernce
+              li Internet and telecommunications service providers
+              li Government

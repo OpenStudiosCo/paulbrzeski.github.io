@@ -1,0 +1,81 @@
+/*
+  Services
+*/
+
+#services
+  margin 0 auto
+  .tech_icons
+    color #CCCCCC
+    i
+      &:hover,
+      &.active
+        color #999999
+      font-size 4rem
+      letter-spacing: 1.5rem;
+      line-height 6rem
+      cursor pointer
+  h3
+    font-size 1.6rem
+    line-height 3.2rem
+  .hello
+    font-size 2.5rem
+    line-height 3.5rem
+  .service_list .row
+    .column
+      position relative
+      overflow hidden
+      padding: 1rem 1rem !important
+      &.empty
+        display none
+      h3
+        font-size 1.2rem
+        line-height 1.8rem
+      img
+        height 330px
+        min-width 100%
+        object-fit cover
+        object-position center
+      .caption
+        display block
+        height 135px
+        width calc(100% - 2rem)
+        margin-bottom 1rem
+        position absolute
+        bottom 0
+        padding 1.5rem
+        background rgba(0,0,0,0.85)
+        color #FFFFFF
+  #methodology
+    padding 0 3rem 0 2rem
+    > p
+        margin 2rem 0 3rem
+        text-align left
+        line-height 2rem
+    .left.aligned
+      div 
+        margin 0.5rem 0
+  #engagement_types
+    .column
+      background rgba(0,0,0,0.1)
+      margin 1rem !important
+  #benefits
+    padding-bottom 3rem
+    h4
+      margin 1.5rem .5rem
+      text-align left
+      font-size 1.6rem
+      font-weight normal
+    p
+      display block
+      margin .5rem
+      text-align left
+      
+@media only screen and (min-width: 1500px)
+  #services
+    padding 0 3rem 0 2rem
+    .service_list
+      .column
+        padding: 1rem 1rem!important;
+        min-height 330px
+        &.empty
+          display inline-block
