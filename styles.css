@@ -84,8 +84,12 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
-  #projects {
+  #about {
     margin: 1000px auto 2em auto !important;
+  }
+
+  #past_work {
+    margin: 0 auto 2em auto !important;
   }
 
   .header, .header * {
