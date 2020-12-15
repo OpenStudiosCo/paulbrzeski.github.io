@@ -725,7 +725,7 @@ void main(void)
 
       function resize() {
         var canvas = renderer.domElement;
-        var dpr    = window.devicePixelRatio / 2;  // make 1 or less if too slow
+        var dpr    = window.devicePixelRatio;  // make 1 or less if too slow
         var width  = canvas.clientWidth  * dpr;
         var height = canvas.clientHeight * dpr;
         if (width != canvas.width || height != canvas.height) {
@@ -737,7 +737,7 @@ void main(void)
 
       function render(time) {
         resize();
-        uniforms.time.value = time * 0.0001;
+        uniforms.time.value = time * 0.00025;
         renderer.render(scene, camera);
         requestAnimationFrame(render);
       }
