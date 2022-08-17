@@ -14,7 +14,7 @@
     "pug": "pug src/pages -P -o . -b .",
     "rollup": "rollup -c",
     "dev-osx": "sudo http-server -p 80 -c-1 .",
-    "dev": "http-server -p 80 -c-1 .",
+    "dev": "http-server -c-1 .",
     "preinstall": "npm i -g http-server rollup"
   },
   "author": "Paul Brzeski",
